@@ -36,6 +36,14 @@ namespace librarysystem
             Application.Exit();
         }
 
+        private void analyticToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAnalytic frmanalytic = new FrmAnalytic();
+            frmanalytic.Show();
+            this.Dispose();
+
+        }
+
       
        
     }
