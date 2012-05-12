@@ -32,5 +32,14 @@ namespace librarysystem
             da.Fill(ds, tableName);
             return ds.Tables[0];
         }
+        public static System.Data.DataTable getDT(SqlConnection conn, String tableName)
+        {
+            SqlCommand cmd = new SqlCommand("SELECT *FROM " + tableName, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            System.Data.DataSet ds = new System.Data.DataSet();
+            da.Fill(ds, tableName);
+           // SqlCommandBuilder cmd = new SqlCommandBuilder(da);
+            return ds.Tables[0];
+        }
     }
 }
