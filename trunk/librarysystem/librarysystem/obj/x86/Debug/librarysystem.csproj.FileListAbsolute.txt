@@ -54,3 +54,23 @@ C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarys
 C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.Properties.Resources.resources
 C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\library system\librarysystem\librarysystem\librarysystem\bin\Debug\librarysystem.exe.config
+D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librarysystem.exe
+D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librarysystem.pdb
+D:\library system\librarysystem\librarysystem\librarysystem\bin\Debug\librarysystem.exe
+D:\library system\librarysystem\librarysystem\librarysystem\bin\Debug\librarysystem.pdb
+D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmAnalytic.resources
+D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmEditEmployee.resources
+D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmAddEmployee.resources
+D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmDetailEmployee.resources
+D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmEmployee.resources
+D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmDangnhap.resources
+D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmMain.resources
+D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librarysystem.Properties.Resources.resources
+D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmAddBook.resources
+D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmBook.resources
+D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmDetailBook.resources
+D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmEditBook.resources

@@ -44,6 +44,13 @@ namespace librarysystem
 
         }
 
+        private void bookManagerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBook frm = new FrmBook();
+            frm.Show();
+            this.Dispose();
+        }
+
       
        
     }

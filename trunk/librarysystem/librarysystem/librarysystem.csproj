@@ -47,11 +47,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classBook.cs" />
+    <Compile Include="FrmAddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddBook.Designer.cs">
+      <DependentUpon>FrmAddBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAnalytic.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAnalytic.Designer.cs">
       <DependentUpon>FrmAnalytic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBook.Designer.cs">
+      <DependentUpon>FrmBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDetailBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDetailBook.Designer.cs">
+      <DependentUpon>FrmDetailBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditBook.Designer.cs">
+      <DependentUpon>FrmEditBook.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEditEmployee.cs">
       <SubType>Form</SubType>
@@ -103,8 +128,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>systemlibraryDataSet1.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmAddBook.resx">
+      <DependentUpon>FrmAddBook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAnalytic.resx">
       <DependentUpon>FrmAnalytic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBook.resx">
+      <DependentUpon>FrmBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDetailBook.resx">
+      <DependentUpon>FrmDetailBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditBook.resx">
+      <DependentUpon>FrmEditBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEditEmployee.resx">
       <DependentUpon>FrmEditEmployee.cs</DependentUpon>
@@ -132,8 +169,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -168,6 +208,15 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\EditBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\AddBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\InfoBook.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
