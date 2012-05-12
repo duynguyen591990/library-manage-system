@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 
 namespace librarysystem
 {
-    public partial class FrmDangnhap : Form
+    public partial class FrmLogin : Form
     {
         SqlConnection conn;
         SqlCommand cmd;
@@ -19,7 +19,7 @@ namespace librarysystem
         DataTable dt;
         SqlDataReader rd;
        
-        public FrmDangnhap()
+        public FrmLogin()
         {
             InitializeComponent();
         }

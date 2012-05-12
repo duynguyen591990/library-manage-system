@@ -18,7 +18,7 @@ namespace librarysystem
 
         private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmDangnhap frmdangnhap = new FrmDangnhap();
+            FrmLogin frmdangnhap = new FrmLogin();
             frmdangnhap.Show();
             this.Dispose();
                       
