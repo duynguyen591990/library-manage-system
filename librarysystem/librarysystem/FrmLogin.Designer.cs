@@ -1,6 +1,6 @@
 ﻿namespace librarysystem
 {
-    partial class FrmDangnhap
+    partial class FrmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -143,7 +143,7 @@
             this.employeeBindingSource1.DataMember = "Employee";
             this.employeeBindingSource1.DataSource = this.systemlibraryDataSetBindingSource;
             // 
-            // FrmDangnhap
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -155,9 +155,9 @@
             this.Controls.Add(this.txtusername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "FrmDangnhap";
+            this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmDangnhap";
+            this.Text = "FrmLogin";
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemlibraryDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemlibraryDataSet)).EndInit();
