@@ -222,6 +222,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
             this.Name = "FrmEmployee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmEmployee";
             this.Load += new System.EventHandler(this.FrmEmployee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

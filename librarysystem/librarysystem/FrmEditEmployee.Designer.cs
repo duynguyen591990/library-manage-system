@@ -57,6 +57,7 @@
             this.systemlibraryDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.employeeTableAdapter = new librarysystem.systemlibraryDataSet1TableAdapters.EmployeeTableAdapter();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.systemlibraryDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemlibraryDataSet1BindingSource)).BeginInit();
@@ -86,7 +87,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(78, 52);
+            this.groupBox1.Location = new System.Drawing.Point(62, 73);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(382, 369);
             this.groupBox1.TabIndex = 4;
@@ -276,7 +277,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(150, 443);
+            this.btnOK.Location = new System.Drawing.Point(134, 464);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 5;
@@ -286,7 +287,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(305, 443);
+            this.btnCancel.Location = new System.Drawing.Point(289, 464);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 6;
@@ -313,15 +314,29 @@
             // 
             this.employeeTableAdapter.ClearBeforeFill = true;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.SystemColors.Control;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label11.Location = new System.Drawing.Point(164, 27);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(184, 24);
+            this.label11.TabIndex = 9;
+            this.label11.Text = "EDIT EMPLOYEE";
+            // 
             // FrmEditEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(501, 497);
+            this.ClientSize = new System.Drawing.Size(501, 513);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Name = "FrmEditEmployee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmEditEmployee";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -329,6 +344,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.systemlibraryDataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -362,5 +378,6 @@
         private systemlibraryDataSet1 systemlibraryDataSet1;
         private System.Windows.Forms.BindingSource employeeBindingSource;
         private systemlibraryDataSet1TableAdapters.EmployeeTableAdapter employeeTableAdapter;
+        private System.Windows.Forms.Label label11;
     }
 }
