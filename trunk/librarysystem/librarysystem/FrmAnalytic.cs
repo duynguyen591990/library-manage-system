@@ -16,6 +16,7 @@ namespace librarysystem
         SqlCommand cmd;
         SqlDataAdapter da;
         DataSet ds;
+        FrmMain frmmain = new FrmMain();
         public FrmAnalytic()
         {
             InitializeComponent();
@@ -58,6 +59,12 @@ namespace librarysystem
             da.Fill(ds, "Employee");
             dgv.DataSource = ds.Tables[0];
             conn.Close();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            frmmain.Show();
         }
     }
 }

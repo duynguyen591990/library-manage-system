@@ -80,6 +80,7 @@
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.Size = new System.Drawing.Size(153, 20);
             this.txtpassword.TabIndex = 3;
+            this.txtpassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 
@@ -87,7 +88,7 @@
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 4;
-            this.btnLogin.Text = "Đăng nhập";
+            this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -97,7 +98,7 @@
             this.btnexit.Name = "btnexit";
             this.btnexit.Size = new System.Drawing.Size(75, 23);
             this.btnexit.TabIndex = 5;
-            this.btnexit.Text = "Thoát";
+            this.btnexit.Text = "Exit";
             this.btnexit.UseVisualStyleBackColor = true;
             this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
@@ -107,11 +108,11 @@
             this.label3.BackColor = System.Drawing.SystemColors.Control;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(104, 24);
+            this.label3.Location = new System.Drawing.Point(148, 35);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(251, 24);
+            this.label3.Size = new System.Drawing.Size(168, 24);
             this.label3.TabIndex = 6;
-            this.label3.Text = "ĐĂNG NHẬP HỆ THỐNG";
+            this.label3.Text = "LOGIN SYSTEM";
             // 
             // employeeBindingSource2
             // 
@@ -155,6 +156,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmDangnhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDangnhap";
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemlibraryDataSetBindingSource)).EndInit();
