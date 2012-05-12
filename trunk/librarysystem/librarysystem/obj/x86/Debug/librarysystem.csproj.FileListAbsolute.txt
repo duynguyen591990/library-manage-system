@@ -49,7 +49,6 @@ C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarys
 C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmAddEmployee.resources
 C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmDetailEmployee.resources
 C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmEmployee.resources
-C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmDangnhap.resources
 C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmMain.resources
 C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.Properties.Resources.resources
 C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\GenerateResource.read.1.tlog
@@ -74,3 +73,8 @@ D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librar
 D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmBook.resources
 D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmDetailBook.resources
 D:\library system\librarysystem\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmEditBook.resources
+C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmAddBook.resources
+C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmBook.resources
+C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmDetailBook.resources
+C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmEditBook.resources
+C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmLogin.resources
