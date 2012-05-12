@@ -13,15 +13,14 @@ namespace librarysystem
     class classEmployee
     {
         SqlConnection conn;
-        SqlCommand cmd;
+        SqlCommand cmd,cmd1;
         SqlDataReader rd;
         SqlDataAdapter da;
         DataSet ds;
         DataTable dt;
-       
+
         public String txtEmployeeID, txtName, txtDate, txtGender,
-            txtAddress, txtEmail, txtPassword, txtPermission, txtPhone, txtDepartment,
-            a, b, c, d, f, g, h, j, k, l, m, n;
+            txtAddress, txtEmail, txtPassword, txtPermission, txtPhone, txtDepartment;
 
         public void AddEmployee(String txtName, String date, String gender, String txtAddress, String txtEmail, String txtPassword, String cboPermission, String txtPhone, String txtDepartment)
         {
@@ -30,8 +29,6 @@ namespace librarysystem
                 conn = Connect.getConnection();
                 conn.Open();        
                 String sqlstr = "insert into Employee values('" + txtName + "','" + date + "', '" + gender + "' ,'" + txtAddress + "','" + txtEmail + "','" + txtPassword + "','" + cboPermission + "','" + txtPhone + "','" + txtDepartment + "')";
-                MessageBox.Show(sqlstr);
-                MessageBox.Show(gender);
                 cmd = new SqlCommand(sqlstr, conn);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Đã thêm thành công " + txtName + " vào CSDL", "Thành Công");
@@ -145,16 +142,31 @@ namespace librarysystem
             {
                 conn = Connect.getConnection();
                 conn.Open();
-                String strSql = "delete Employee where EmployeeID='" + FrmEmployee.EmployeeIDD + "'";
-                cmd = new SqlCommand(strSql, conn);
+                String strsql1 = " select * from Borrow where EmployeeID='" + FrmEmployee.EmployeeIDD + "'";
+                cmd1 = new SqlCommand(strsql1, conn);
+                da = new SqlDataAdapter(cmd1);
+                ds = new DataSet();
+                dt = new DataTable();
+                da.Fill(ds, "Borrow");
+                da.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    MessageBox.Show("Nhân viên này đang cho mượn book", "Thông Báo");
+                }
+                else
+                {
+                    String strSql = "delete Employee where EmployeeID='" + FrmEmployee.EmployeeIDD + "'";
+                    cmd = new SqlCommand(strSql, conn);
 
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Delete thành công!", "Thành Công");
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Delete thành công!", "Thành Công");
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi " + ex.Message);
             }
+        
         }
 
         public void searcheEmployee(String cbo, String ID, DataGridView dgv)
@@ -197,6 +209,18 @@ namespace librarysystem
                     MessageBox.Show("Lỗi " + ex.Message);
                 }
             }
+        }
+
+        public void loadall(DataGridView dgv)
+        {
+            conn = Connect.getConnection();
+            conn.Open();
+            String strSql = "select * from Employee";
+            cmd = new SqlCommand(strSql, conn);
+            da = new SqlDataAdapter(cmd);
+            ds = new DataSet();
+            da.Fill(ds, "Employee");
+            dgv.DataSource = ds.Tables[0];
         }
     }
 }

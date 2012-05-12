@@ -12,7 +12,7 @@ namespace librarysystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmAnalytic());
+            Application.Run(new FrmEmployee());
         }
     }
 }

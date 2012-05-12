@@ -26,14 +26,7 @@ namespace librarysystem
 
         private void FrmEmployee_Load(object sender, EventArgs e)
         {
-            conn = Connect.getConnection();
-            conn.Open();
-            String strsql = "select * from Employee";
-            cmd = new SqlCommand(strsql, conn);
-            da = new SqlDataAdapter(cmd);
-            ds = new DataSet();
-            da.Fill(ds, "Employee");
-            dataGridView1.DataSource = ds.Tables[0];
+            nhap.loadall(dataGridView1);
 
         }
 
@@ -73,6 +66,7 @@ namespace librarysystem
         {
             EmployeeIDD = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             nhap.deleteEmployee();
+            nhap.loadall(dataGridView1);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
