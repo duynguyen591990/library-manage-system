@@ -48,7 +48,7 @@ namespace librarysystem
         {
             FrmBook frm = new FrmBook();
             frm.Show();
-            this.Hide();
+            this.Dispose();
         }
 
         private void employeeToolStripMenuItem_Click(object sender, EventArgs e)
