@@ -73,6 +73,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classBook.cs" />
+    <Compile Include="CRAnalytic1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRAnalytic1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="CREmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CREmployee1.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DsAnalytic.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsAnalytic.xsd</DependentUpon>
     </Compile>
     <Compile Include="FrmAddBook.cs">
       <SubType>Form</SubType>
@@ -165,6 +176,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>systemlibraryDataSet1.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CRAnalytic1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRAnalytic1.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="CREmployee.resx">
       <DependentUpon>CREmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,6 +232,17 @@
     </Compile>
     <None Include="app.config">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="DsAnalytic.xsc">
+      <DependentUpon>DsAnalytic.xsd</DependentUpon>
+    </None>
+    <None Include="DsAnalytic.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsAnalytic.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DsAnalytic.xss">
+      <DependentUpon>DsAnalytic.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

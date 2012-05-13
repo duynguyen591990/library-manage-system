@@ -79,5 +79,3 @@ C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarys
 C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmEditBook.resources
 C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmLogin.resources
 C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.CREmployee.resources
-C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\ResGen.read.1.tlog
-C:\Users\Administrator\Desktop\QLDA\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\ResGen.write.1.tlog
