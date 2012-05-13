@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.employeeBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.systemlibraryDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -49,6 +48,7 @@
             this.employeeTableAdapter1 = new librarysystem.systemlibraryDataSet1TableAdapters.EmployeeTableAdapter();
             this.employeeBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.btnExit = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemlibraryDataSet1BindingSource)).BeginInit();
@@ -60,24 +60,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(275, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(285, 24);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "EMPLOYEE INFORMATION";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(33, 53);
+            this.dataGridView1.Location = new System.Drawing.Point(33, 74);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(764, 348);
+            this.dataGridView1.Size = new System.Drawing.Size(764, 327);
             this.dataGridView1.TabIndex = 8;
             // 
             // employeeBindingSource3
@@ -112,52 +100,62 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnAdd.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnAdd.Location = new System.Drawing.Point(225, 463);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 9;
             this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnEdit
             // 
+            this.btnEdit.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnEdit.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnEdit.Location = new System.Drawing.Point(378, 463);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 10;
             this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
+            this.btnDelete.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnDelete.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnDelete.Location = new System.Drawing.Point(534, 463);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 11;
             this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnShow
             // 
+            this.btnShow.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnShow.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnShow.Location = new System.Drawing.Point(71, 463);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(75, 23);
             this.btnShow.TabIndex = 12;
             this.btnShow.Text = "Show";
-            this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.UseVisualStyleBackColor = false;
             this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
             // btnSearch
             // 
+            this.btnSearch.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSearch.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnSearch.Location = new System.Drawing.Point(534, 419);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 13;
             this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // employeeTableAdapter
@@ -198,19 +196,34 @@
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnExit.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnExit.Location = new System.Drawing.Point(672, 463);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 16;
             this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(269, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(299, 33);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Employee Information";
             // 
             // FrmEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(823, 533);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.cboList);
             this.Controls.Add(this.txtSearch);
@@ -220,7 +233,6 @@
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label3);
             this.Name = "FrmEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmEmployee";
@@ -241,7 +253,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource systemlibraryDataSetBindingSource;
         private systemlibraryDataSet systemlibraryDataSet;
@@ -261,6 +272,7 @@
         private System.Windows.Forms.BindingSource systemlibraryDataSet1BindingSource;
         private System.Windows.Forms.BindingSource employeeBindingSource2;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label4;
 
     }
 }

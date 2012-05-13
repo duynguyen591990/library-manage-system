@@ -57,7 +57,7 @@
             this.systemlibraryDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.employeeTableAdapter = new librarysystem.systemlibraryDataSet1TableAdapters.EmployeeTableAdapter();
-            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.systemlibraryDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemlibraryDataSet1BindingSource)).BeginInit();
@@ -66,6 +66,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Controls.Add(this.rdFemale);
             this.groupBox1.Controls.Add(this.rdMale);
             this.groupBox1.Controls.Add(this.txtDate);
@@ -87,6 +88,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.groupBox1.Location = new System.Drawing.Point(62, 73);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(382, 369);
@@ -277,22 +279,26 @@
             // 
             // btnOK
             // 
+            this.btnOK.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnOK.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnOK.Location = new System.Drawing.Point(134, 464);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 5;
             this.btnOK.Text = "Ok";
-            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.UseVisualStyleBackColor = false;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnCancel.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnCancel.Location = new System.Drawing.Point(289, 464);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // systemlibraryDataSet1
@@ -314,24 +320,24 @@
             // 
             this.employeeTableAdapter.ClearBeforeFill = true;
             // 
-            // label11
+            // label12
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.SystemColors.Control;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(164, 27);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(184, 24);
-            this.label11.TabIndex = 9;
-            this.label11.Text = "EDIT EMPLOYEE";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Red;
+            this.label12.Location = new System.Drawing.Point(141, 21);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(203, 33);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "Edit Employee";
             // 
             // FrmEditEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(501, 513);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
@@ -378,6 +384,6 @@
         private systemlibraryDataSet1 systemlibraryDataSet1;
         private System.Windows.Forms.BindingSource employeeBindingSource;
         private systemlibraryDataSet1TableAdapters.EmployeeTableAdapter employeeTableAdapter;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }
