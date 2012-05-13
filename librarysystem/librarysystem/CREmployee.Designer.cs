@@ -39,7 +39,7 @@
             this.CrReportEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CrReportEmployee.Location = new System.Drawing.Point(0, 0);
             this.CrReportEmployee.Name = "CrReportEmployee";
-            this.CrReportEmployee.Size = new System.Drawing.Size(726, 505);
+            this.CrReportEmployee.Size = new System.Drawing.Size(1122, 586);
             this.CrReportEmployee.TabIndex = 0;
             this.CrReportEmployee.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
@@ -47,7 +47,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(726, 505);
+            this.ClientSize = new System.Drawing.Size(1122, 586);
             this.Controls.Add(this.CrReportEmployee);
             this.Name = "CREmployee";
             this.Text = "CREmployee";
