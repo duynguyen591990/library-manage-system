@@ -40,7 +40,7 @@ namespace librarysystem
         {
             FrmAnalytic frmanalytic = new FrmAnalytic();
             frmanalytic.Show();
-            this.Dispose();
+            this.Hide();
 
         }
 
