@@ -36,6 +36,7 @@
             this.quảnLýEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quánLýEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bookManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.subjectManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thốngKêToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.analyticToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,7 +44,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnBackup = new System.Windows.Forms.Button();
             this.btnRestore = new System.Windows.Forms.Button();
-            this.subjectManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,11 +108,19 @@
             this.bookManagerToolStripMenuItem.Text = "Book Manager";
             this.bookManagerToolStripMenuItem.Click += new System.EventHandler(this.bookManagerToolStripMenuItem_Click);
             // 
+            // subjectManagerToolStripMenuItem
+            // 
+            this.subjectManagerToolStripMenuItem.Name = "subjectManagerToolStripMenuItem";
+            this.subjectManagerToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.subjectManagerToolStripMenuItem.Text = "Subject Manager";
+            this.subjectManagerToolStripMenuItem.Click += new System.EventHandler(this.subjectManagerToolStripMenuItem_Click);
+            // 
             // thốngKêToolStripMenuItem
             // 
             this.thốngKêToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.analyticToolStripMenuItem,
-            this.employeeToolStripMenuItem});
+            this.employeeToolStripMenuItem,
+            this.bookToolStripMenuItem});
             this.thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
             this.thốngKêToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.thốngKêToolStripMenuItem.Text = "Report";
@@ -119,14 +128,14 @@
             // analyticToolStripMenuItem
             // 
             this.analyticToolStripMenuItem.Name = "analyticToolStripMenuItem";
-            this.analyticToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.analyticToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.analyticToolStripMenuItem.Text = "Analytic";
             this.analyticToolStripMenuItem.Click += new System.EventHandler(this.analyticToolStripMenuItem_Click);
             // 
             // employeeToolStripMenuItem
             // 
             this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
-            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.employeeToolStripMenuItem.Text = "Employee";
             this.employeeToolStripMenuItem.Click += new System.EventHandler(this.employeeToolStripMenuItem_Click);
             // 
@@ -159,12 +168,12 @@
             this.btnRestore.Text = "Restore";
             this.btnRestore.UseVisualStyleBackColor = true;
             // 
-            // subjectManagerToolStripMenuItem
+            // bookToolStripMenuItem
             // 
-            this.subjectManagerToolStripMenuItem.Name = "subjectManagerToolStripMenuItem";
-            this.subjectManagerToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.subjectManagerToolStripMenuItem.Text = "Subject Manager";
-            this.subjectManagerToolStripMenuItem.Click += new System.EventHandler(this.subjectManagerToolStripMenuItem_Click);
+            this.bookToolStripMenuItem.Name = "bookToolStripMenuItem";
+            this.bookToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.bookToolStripMenuItem.Text = "Book";
+            this.bookToolStripMenuItem.Click += new System.EventHandler(this.bookToolStripMenuItem_Click);
             // 
             // FrmMain
             // 
@@ -202,6 +211,7 @@
         private System.Windows.Forms.Button btnRestore;
         private System.Windows.Forms.ToolStripMenuItem employeeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem subjectManagerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bookToolStripMenuItem;
     }
 }
 

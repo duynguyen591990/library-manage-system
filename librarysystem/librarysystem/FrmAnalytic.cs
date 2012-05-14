@@ -18,6 +18,7 @@ namespace librarysystem
         SqlDataAdapter da;
         DataSet ds;
         FrmMain frmmain = new FrmMain();
+        public static int report;
         public FrmAnalytic()
         {
             InitializeComponent();
@@ -33,6 +34,7 @@ namespace librarysystem
             ds = new DataSet();
             da.Fill(ds, "Book");
             dgv.DataSource = ds.Tables[0];
+            report = 1;
             conn.Close();
         }
 
@@ -47,6 +49,7 @@ namespace librarysystem
             ds = new DataSet();
             da.Fill(ds, "Employee");
             dgv.DataSource = ds.Tables[0];
+            report = 2;
             conn.Close();
         }
 
@@ -72,7 +75,6 @@ namespace librarysystem
 
         private void btnReport_Click(object sender, EventArgs e)
         {
-           
             DsAnalytic Ds = new DsAnalytic();
             int fields = dgv.Rows.Count;
             for (int i = 0; i <= fields - 2; i++)
@@ -87,10 +89,14 @@ namespace librarysystem
                                 dgv[6,i].Value.ToString(),
                                 dgv[7,i].Value.ToString()
                 });
-            }         
+            }
             CRAnalytic mCRA = new CRAnalytic(Ds);
             mCRA.Show();
         }
+
+      
+       
+      
        
     }
    

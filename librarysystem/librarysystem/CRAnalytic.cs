@@ -24,8 +24,11 @@ namespace librarysystem
         private void CRAnalytic_Load(object sender, EventArgs e)
         {
            
-            ReportDocument cRep = new ReportDocument();           
+            ReportDocument cRep = new ReportDocument();   
+            if(FrmAnalytic.report == 1)
             cRep.Load("C:/Users/Administrator/Desktop/QLDA/library-manage-system/librarysystem/librarysystem/CRTopBook.rpt");
+            else 
+            cRep.Load("C:/Users/Administrator/Desktop/QLDA/library-manage-system/librarysystem/librarysystem/CRTopBorrow.rpt");
             cRep.SetDataSource(mDS);
             crystalReportViewer1.ReportSource = cRep;
             
