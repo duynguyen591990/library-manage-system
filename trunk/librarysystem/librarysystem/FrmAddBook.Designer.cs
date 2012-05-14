@@ -53,8 +53,8 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -93,18 +93,22 @@
             // 
             // txtISBN
             // 
+            this.txtISBN.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtISBN.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.txtISBN.Location = new System.Drawing.Point(146, 54);
             this.txtISBN.Mask = "999-9999";
             this.txtISBN.Name = "txtISBN";
-            this.txtISBN.Size = new System.Drawing.Size(222, 26);
+            this.txtISBN.Size = new System.Drawing.Size(222, 20);
             this.txtISBN.TabIndex = 1;
             // 
             // txtCallNumber
             // 
+            this.txtCallNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCallNumber.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.txtCallNumber.Location = new System.Drawing.Point(146, 22);
             this.txtCallNumber.Mask = "aa-aa-999";
             this.txtCallNumber.Name = "txtCallNumber";
-            this.txtCallNumber.Size = new System.Drawing.Size(222, 26);
+            this.txtCallNumber.Size = new System.Drawing.Size(222, 20);
             this.txtCallNumber.TabIndex = 0;
             // 
             // CheckPublisher
@@ -177,6 +181,7 @@
             this.txtonLibrary.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtonLibrary.Location = new System.Drawing.Point(345, 223);
             this.txtonLibrary.Name = "txtonLibrary";
+            this.txtonLibrary.ReadOnly = true;
             this.txtonLibrary.Size = new System.Drawing.Size(82, 20);
             this.txtonLibrary.TabIndex = 6;
             // 
@@ -187,6 +192,7 @@
             this.txtNumberofBook.Name = "txtNumberofBook";
             this.txtNumberofBook.Size = new System.Drawing.Size(68, 20);
             this.txtNumberofBook.TabIndex = 5;
+            this.txtNumberofBook.TextChanged += new System.EventHandler(this.txtNumberofBook_TextChanged);
             // 
             // txtPublisher
             // 
@@ -327,15 +333,6 @@
             this.label10.TabIndex = 4;
             this.label10.Text = "Add New Book";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::librarysystem.Properties.Resources.AddBook;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 168);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(156, 156);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnAdd
             // 
             this.btnAdd.ForeColor = System.Drawing.SystemColors.Highlight;
@@ -347,6 +344,15 @@
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // pictureBox1
+            // 
+            //this.pictureBox1.Image = global::librarysystem.Properties.Resources.AddBook1;
+            //this.pictureBox1.Location = new System.Drawing.Point(12, 111);
+            //this.pictureBox1.Name = "pictureBox1";
+            //this.pictureBox1.Size = new System.Drawing.Size(165, 169);
+            //this.pictureBox1.TabIndex = 5;
+            //this.pictureBox1.TabStop = false;
             // 
             // FrmAddBook
             // 
@@ -392,7 +398,6 @@
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label CheckPublisher;
         private System.Windows.Forms.Label CheckAuthor;
         private System.Windows.Forms.Label CheckTitle;
@@ -400,6 +405,7 @@
         private System.Windows.Forms.Label checkCallNumber;
         private System.Windows.Forms.MaskedTextBox txtCallNumber;
         private System.Windows.Forms.MaskedTextBox txtISBN;
+        private System.Windows.Forms.PictureBox pictureBox1;
 
     }
 }

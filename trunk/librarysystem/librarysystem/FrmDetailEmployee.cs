@@ -27,6 +27,7 @@ namespace librarysystem
             lblPermission.Text =nhap.txtPermission;
             lblPhone.Text =nhap.txtPhone;
             lblDepartment.Text =nhap.txtDepartment;
+            nhap.loaddetailemployee(dataGridView1);
 
         }
 

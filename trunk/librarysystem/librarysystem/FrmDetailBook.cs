@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace librarysystem
 {
@@ -25,10 +26,12 @@ namespace librarysystem
             lblISBN.Text = clb.ISBN;
             lblAuthor.Text = clb.Author;
             lblTitle.Text = clb.Title;
-            lblSubject.Text = clb.subject;
             lblNumberofbook.Text = clb.Numberofbook;
             lblbookinlibrary.Text = clb.Bookinlibrary;
-            lblPublisher.Text = clb.Bookinlibrary;
+            lblPublisher.Text = clb.Publisher;
+            lblSubject.Text = clb.subject;
+            clb.loaddetailbook(dgvDetailbook);
+
         }
 
         private void btnOK_Click(object sender, EventArgs e)

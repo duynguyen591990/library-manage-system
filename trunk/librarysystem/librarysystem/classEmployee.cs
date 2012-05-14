@@ -222,5 +222,19 @@ namespace librarysystem
             da.Fill(ds, "Employee");
             dgv.DataSource = ds.Tables[0];
         }
+
+        public void loaddetailemployee(DataGridView dgv)
+        {
+            conn = Connect.getConnection();
+            conn.Open();
+            String sql = "select title,CallNumber,ISBN,SubjectName,author,publisher from Subject e, Employee a,Borrowdetail b,Borrow c, Book d where a.EmployeeID=c.EmployeeID and c.BorrowID=b.BorrowID and b.bookID = d.bookID and d.subjectID = e.subjectID  and a.EmployeeID='"
+                + FrmEmployee.EmployeeID + "'";
+            cmd = new SqlCommand(sql, conn);
+            da = new SqlDataAdapter(cmd);
+            ds = new DataSet();
+            da.Fill(ds, "Employee");
+            dgv.DataSource = ds.Tables["Employee"];
+            conn.Close();
+        }
     }
 }

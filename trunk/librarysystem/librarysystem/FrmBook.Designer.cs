@@ -43,10 +43,11 @@
             // 
             // dgvBook
             // 
+            this.dgvBook.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBook.Location = new System.Drawing.Point(12, 86);
+            this.dgvBook.Location = new System.Drawing.Point(12, 94);
             this.dgvBook.Name = "dgvBook";
-            this.dgvBook.Size = new System.Drawing.Size(656, 157);
+            this.dgvBook.Size = new System.Drawing.Size(656, 186);
             this.dgvBook.TabIndex = 9;
             // 
             // label1
@@ -108,6 +109,7 @@
             this.btnEdit.TabIndex = 4;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnView
             // 
@@ -129,6 +131,7 @@
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // txtSearch
             // 

@@ -34,8 +34,8 @@ namespace librarysystem
             txtEmail.Text = nhap.txtEmail;
             txtPassword.Text = nhap.txtPassword;
 
-           // nhap.load_permission(cboPermission);
-            cboPermission.Text  = nhap.txtPermission;
+            nhap.load_permission(cboPermission);
+            cboPermission.SelectedValue  = nhap.txtPermission;
 
             txtPhone.Text = nhap.txtPhone;
             txtDepartment.Text = nhap.txtDepartment;
@@ -46,7 +46,7 @@ namespace librarysystem
             if (rdMale.Checked)
                 txtGender = "True";
             else txtGender = "False";
-            nhap.updateEmployee(txtName.Text, txtDate.Value.ToString(), txtGender, txtAddress.Text, txtEmail.Text, txtPassword.Text, cboPermission.SelectedItem.ToString(), txtPhone.Text, txtDepartment.Text);
+            nhap.updateEmployee(txtName.Text, txtDate.Value.ToString(), txtGender, txtAddress.Text, txtEmail.Text, txtPassword.Text, cboPermission.SelectedValue.ToString(), txtPhone.Text, txtDepartment.Text);
             this.Dispose();
             frmemployee.Show();
         }

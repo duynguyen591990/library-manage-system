@@ -93,14 +93,17 @@
             // 
             // txtISBN
             // 
+            this.txtISBN.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtISBN.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.txtISBN.Location = new System.Drawing.Point(146, 54);
             this.txtISBN.Mask = "999-9999";
             this.txtISBN.Name = "txtISBN";
-            this.txtISBN.Size = new System.Drawing.Size(222, 26);
+            this.txtISBN.Size = new System.Drawing.Size(222, 20);
             this.txtISBN.TabIndex = 5;
             // 
             // txtCallNumber
             // 
+            this.txtCallNumber.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.txtCallNumber.Location = new System.Drawing.Point(146, 22);
             this.txtCallNumber.Mask = "aa-aa-999";
             this.txtCallNumber.Name = "txtCallNumber";
@@ -175,22 +178,27 @@
             // txtonLibrary
             // 
             this.txtonLibrary.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtonLibrary.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.txtonLibrary.Location = new System.Drawing.Point(345, 223);
             this.txtonLibrary.Name = "txtonLibrary";
+            this.txtonLibrary.ReadOnly = true;
             this.txtonLibrary.Size = new System.Drawing.Size(82, 20);
             this.txtonLibrary.TabIndex = 8;
             // 
             // txtNumberofBook
             // 
             this.txtNumberofBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumberofBook.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.txtNumberofBook.Location = new System.Drawing.Point(146, 223);
             this.txtNumberofBook.Name = "txtNumberofBook";
             this.txtNumberofBook.Size = new System.Drawing.Size(68, 20);
             this.txtNumberofBook.TabIndex = 7;
+            this.txtNumberofBook.TextChanged += new System.EventHandler(this.txtNumberofBook_TextChanged);
             // 
             // txtPublisher
             // 
             this.txtPublisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPublisher.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.txtPublisher.Location = new System.Drawing.Point(146, 171);
             this.txtPublisher.Name = "txtPublisher";
             this.txtPublisher.Size = new System.Drawing.Size(222, 20);
@@ -199,6 +207,7 @@
             // txtAuthor
             // 
             this.txtAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAuthor.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.txtAuthor.Location = new System.Drawing.Point(146, 132);
             this.txtAuthor.Multiline = true;
             this.txtAuthor.Name = "txtAuthor";
@@ -208,6 +217,7 @@
             // txtTitle
             // 
             this.txtTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTitle.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.txtTitle.Location = new System.Drawing.Point(146, 88);
             this.txtTitle.Multiline = true;
             this.txtTitle.Name = "txtTitle";
@@ -314,6 +324,7 @@
             this.btnExit.TabIndex = 8;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnReset
             // 
@@ -324,6 +335,7 @@
             this.btnReset.TabIndex = 7;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnUpdate
             // 
@@ -334,15 +346,16 @@
             this.btnUpdate.TabIndex = 11;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::librarysystem.Properties.Resources.EditBook;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 151);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(155, 161);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            //this.pictureBox1.Image = global::librarysystem.Properties.Resources.EditBook1;
+            //this.pictureBox1.Location = new System.Drawing.Point(27, 108);
+            //this.pictureBox1.Name = "pictureBox1";
+            //this.pictureBox1.Size = new System.Drawing.Size(159, 170);
+            //this.pictureBox1.TabIndex = 12;
+            //this.pictureBox1.TabStop = false;
             // 
             // FrmEditBook
             // 
@@ -358,6 +371,7 @@
             this.Controls.Add(this.btnReset);
             this.Name = "FrmEditBook";
             this.Text = "FrmEditBook";
+            this.Load += new System.EventHandler(this.FrmEditBook_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

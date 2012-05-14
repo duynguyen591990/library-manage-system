@@ -38,8 +38,7 @@ namespace librarysystem
 
         private void btnTopBorrow_Click(object sender, EventArgs e)
         {
-            crystalReportViewer1.Hide();
-            dgv.Show();
+         
             conn = Connect.getConnection();
             conn.Open();
             String strsql = "select   Employee.EmployeeID,   Name,   Gender,   Email,   Department,   [Phone number],   Permission,Count(BorrowID)   [No Borrowed] from   Borrow,   Employee where   Borrow.EmployeeID =   Employee.EmployeeID group   by   Employee.EmployeeID,   Name,   Gender,   Email,   Department,   [Phone number],   Permission";
@@ -53,8 +52,7 @@ namespace librarysystem
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            crystalReportViewer1.Hide();
-            dgv.Show();
+          
             conn = Connect.getConnection();
             conn.Open();
             String strsql = "select   Borrow.BorrowID, Borrow.EmployeeID, Book.BookID, Name, CallNumber, Title,   IssueDate,   DueDate from Borrow, Employee, Book,Borrowdetail where   Borrow.EmployeeID =   Employee.EmployeeID and DueDate='" + dtpDueDate.Value.ToString() + "'";
@@ -74,8 +72,7 @@ namespace librarysystem
 
         private void btnReport_Click(object sender, EventArgs e)
         {
-            dgv.Hide();
-            crystalReportViewer1.Show();
+           
             DsAnalytic Ds = new DsAnalytic();
             int fields = dgv.Rows.Count;
             for (int i = 0; i <= fields - 2; i++)
@@ -90,12 +87,11 @@ namespace librarysystem
                                 dgv[6,i].Value.ToString(),
                                 dgv[7,i].Value.ToString()
                 });
-            }
-
-            ReportDocument cRep = new ReportDocument();
-            cRep.Load("C:/Users/Administrator/Desktop/QLDA/library-manage-system/librarysystem/librarysystem/CRAnalytic1.rpt");
-            cRep.SetDataSource(Ds);
-            crystalReportViewer1.ReportSource = cRep;
+            }         
+            CRAnalytic mCRA = new CRAnalytic(Ds);
+            mCRA.Show();
         }
+       
     }
+   
 }
