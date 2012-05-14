@@ -10,28 +10,28 @@ using System.Data.SqlClient;
 
 namespace librarysystem
 {
-    public partial class CREmployee : Form
+    public partial class CRBook : Form
     {
         SqlConnection conn;
         SqlDataAdapter da;
         DataSet ds;
-        public CREmployee()
+        public CRBook()
         {
             InitializeComponent();
         }
 
-        private void CREmployee_Load(object sender, EventArgs e)
+        private void CRBook_Load(object sender, EventArgs e)
         {
             conn = Connect.getConnection();
             conn.Open();
-            String str = "select * from Employee";
+            String str = "select * from Book";
             da = new SqlDataAdapter(str, conn);
             ds = new DataSet();
-            da.Fill(ds, "Employee");
-            CREmployee1 rpt = new CREmployee1();
+            da.Fill(ds, "Book");
+            CRBook1 rpt = new CRBook1();
             rpt.SetDataSource(ds);
-            CRReportEmployee.ReportSource = rpt;
-            CRReportEmployee.Show();
+            CRReportBook.ReportSource = rpt;
+            CRReportBook.Show();
         }
     }
 }

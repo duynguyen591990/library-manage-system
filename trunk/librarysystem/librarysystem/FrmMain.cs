@@ -51,18 +51,25 @@ namespace librarysystem
             this.Dispose();
         }
 
-        private void employeeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            CREmployee cremployee = new CREmployee();
-            cremployee.Show();
-            this.Hide();
-        }
-
         private void subjectManagerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmSubject frm = new FrmSubject();
             frm.Show();
             this.Hide();
+        }
+
+        private void employeeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CREmployee cremployee = new CREmployee();
+            cremployee.Show();
+
+        }
+
+        private void bookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CRBook crbook = new CRBook();
+            crbook.Show();
+          
         }
 
       
