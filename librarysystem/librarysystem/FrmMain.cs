@@ -58,6 +58,13 @@ namespace librarysystem
             this.Hide();
         }
 
+        private void subjectManagerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmSubject frm = new FrmSubject();
+            frm.Show();
+            this.Hide();
+        }
+
       
        
     }

@@ -36,7 +36,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
-            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
@@ -46,7 +45,7 @@
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Location = new System.Drawing.Point(37, 79);
             this.dgv.Name = "dgv";
-            this.dgv.Size = new System.Drawing.Size(697, 309);
+            this.dgv.Size = new System.Drawing.Size(843, 309);
             this.dgv.TabIndex = 0;
             // 
             // btnTopBook
@@ -109,7 +108,7 @@
             // 
             this.btnExit.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnExit.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnExit.Location = new System.Drawing.Point(631, 479);
+            this.btnExit.Location = new System.Drawing.Point(835, 479);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 6;
@@ -129,23 +128,12 @@
             this.btnReport.UseVisualStyleBackColor = false;
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
-            // crystalReportViewer1
-            // 
-            this.crystalReportViewer1.ActiveViewIndex = -1;
-            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(37, 79);
-            this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(697, 309);
-            this.crystalReportViewer1.TabIndex = 10;
-            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(327, 20);
+            this.label4.Location = new System.Drawing.Point(400, 23);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(118, 33);
             this.label4.TabIndex = 18;
@@ -156,9 +144,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(778, 553);
+            this.ClientSize = new System.Drawing.Size(917, 553);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.btnReport);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
@@ -186,7 +173,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnReport;
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private System.Windows.Forms.Label label4;
     }
 }

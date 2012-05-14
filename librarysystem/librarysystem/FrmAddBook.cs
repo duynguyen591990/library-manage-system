@@ -28,17 +28,10 @@ namespace librarysystem
             if (txtAuthor.Text == "")  CheckAuthor.Text = "*Empty"; 
             if (txtPublisher.Text == "")  CheckPublisher.Text = "*Empty"; 
             //if (txtNumberofBook.Text == "") { check.Text = "*Empty"; };
-            //if (txtonLibrary.Text == "") { checkBookID.Text = "*Empty"; };
-           //Int32 txtsubject = cboSubject.ValueMember;
-            conn = Connect.getConnection();
-            conn.Open();
-            DataTable dt = Connect.getDT(conn, "Subject");
-          //cboSubject.DataSource = dt;
-           cboSubject.DisplayMember = dt.Columns[1].ToString();
-           cboSubject.ValueMember = dt.Columns[0].ToString();
-           int subject = Int32.Parse(cboSubject.ValueMember);
-            clb.AddBook(txtCallNumber.Text,txtISBN.Text,subject,txtTitle.Text,txtAuthor.Text,
-             txtPublisher.Text,Int32.Parse(txtNumberofBook.Text),Int32.Parse(txtonLibrary.Text));
+            //if (txtonLibrary.Text == "") { checkBookID.Text = "*Empty"; 
+            int subjectid = Int32.Parse(cboSubject.SelectedValue.ToString());
+            clb.AddBook(txtCallNumber.Text, txtISBN.Text, subjectid, txtTitle.Text, txtAuthor.Text,
+             txtPublisher.Text, Int32.Parse(txtNumberofBook.Text), Int32.Parse(txtonLibrary.Text));
         }
 
         private void FrmAddBook_Load(object sender, EventArgs e)
@@ -64,5 +57,11 @@ namespace librarysystem
             frm.Show();
             this.Dispose();
         }
+
+        private void txtNumberofBook_TextChanged(object sender, EventArgs e)
+        {
+            txtonLibrary.Text = txtNumberofBook.Text;
+        }
+
     }
 }

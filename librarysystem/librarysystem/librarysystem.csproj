@@ -73,10 +73,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classBook.cs" />
-    <Compile Include="CRAnalytic1.cs">
+    <Compile Include="classSubject.cs" />
+    <Compile Include="CRAnalytic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRAnalytic.Designer.cs">
+      <DependentUpon>CRAnalytic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRTopBook.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CRAnalytic1.rpt</DependentUpon>
+      <DependentUpon>CRTopBook.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CREmployee.cs">
@@ -91,6 +98,10 @@
       <DependentUpon>CREmployee1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DsAnalytic.cs">
+      <DependentUpon>DsAnalytic.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DsAnalytic.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -101,6 +112,12 @@
     </Compile>
     <Compile Include="FrmAddBook.Designer.cs">
       <DependentUpon>FrmAddBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddSubject.designer.cs">
+      <DependentUpon>FrmAddSubject.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmAnalytic.cs">
       <SubType>Form</SubType>
@@ -119,6 +136,12 @@
     </Compile>
     <Compile Include="FrmDetailBook.Designer.cs">
       <DependentUpon>FrmDetailBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDetailSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDetailSubject.designer.cs">
+      <DependentUpon>FrmDetailSubject.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmEditBook.cs">
       <SubType>Form</SubType>
@@ -145,6 +168,12 @@
     <Compile Include="FrmDetailEmployee.Designer.cs">
       <DependentUpon>FrmDetailEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmEditSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditSubject.designer.cs">
+      <DependentUpon>FrmEditSubject.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +193,12 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSubject.designer.cs">
+      <DependentUpon>FrmSubject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="systemlibraryDataSet.Designer.cs">
@@ -176,9 +211,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>systemlibraryDataSet1.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CRAnalytic1.rpt">
+    <EmbeddedResource Include="CRAnalytic.resx">
+      <DependentUpon>CRAnalytic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRTopBook.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CRAnalytic1.cs</LastGenOutput>
+      <LastGenOutput>CRTopBook.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="CREmployee.resx">
       <DependentUpon>CREmployee.cs</DependentUpon>
@@ -190,6 +228,9 @@
     <EmbeddedResource Include="FrmAddBook.resx">
       <DependentUpon>FrmAddBook.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddSubject.resx">
+      <DependentUpon>FrmAddSubject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAnalytic.resx">
       <DependentUpon>FrmAnalytic.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDetailBook.resx">
       <DependentUpon>FrmDetailBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDetailSubject.resx">
+      <DependentUpon>FrmDetailSubject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEditBook.resx">
       <DependentUpon>FrmEditBook.cs</DependentUpon>
@@ -211,6 +255,9 @@
     <EmbeddedResource Include="FrmDetailEmployee.resx">
       <DependentUpon>FrmDetailEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditSubject.resx">
+      <DependentUpon>FrmEditSubject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmEmployee.resx">
       <DependentUpon>FrmEmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -219,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSubject.resx">
+      <DependentUpon>FrmSubject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -312,6 +362,17 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AddSub.png" />
+    <Content Include="Images\EditSub.png" />
+    <Content Include="Images\InfoSub.png" />
+    <Content Include="Resources\AddBook.png" />
+    <Content Include="Resources\AddSub.png" />
+    <Content Include="Resources\EditBook.png" />
+    <Content Include="Resources\EditSub.png" />
+    <Content Include="Resources\InfoBook.png" />
+    <Content Include="Resources\InfoSub.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
