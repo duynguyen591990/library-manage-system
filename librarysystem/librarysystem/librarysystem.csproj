@@ -73,35 +73,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classBook.cs" />
+    <Compile Include="classBorrow.cs" />
     <Compile Include="classSubject.cs" />
-    <Compile Include="CRBook1.cs">
-      <DependentUpon>CRBook1.rpt</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <SubType>Component</SubType>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="CRBook.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CRBook.Designer.cs">
-      <DependentUpon>CRBook.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CRTopBorrow.cs">
-      <DependentUpon>CRTopBorrow.rpt</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <SubType>Component</SubType>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="CRAnalytic.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CRAnalytic.Designer.cs">
       <DependentUpon>CRAnalytic.cs</DependentUpon>
     </Compile>
-    <Compile Include="CRTopBook.cs">
+    <Compile Include="CRAnalytic1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CRTopBook.rpt</DependentUpon>
+      <DependentUpon>CRAnalytic1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CREmployee.cs">
@@ -114,10 +97,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CREmployee1.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="DsAnalytic.cs">
-      <DependentUpon>DsAnalytic.xsd</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DsAnalytic.Designer.cs">
@@ -149,11 +128,35 @@
     <Compile Include="FrmBook.Designer.cs">
       <DependentUpon>FrmBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBorrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBorrow.Designer.cs">
+      <DependentUpon>FrmBorrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheckIn.Designer.cs">
+      <DependentUpon>FrmCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheckOut.Designer.cs">
+      <DependentUpon>FrmCheckOut.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDetailBook.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmDetailBook.Designer.cs">
       <DependentUpon>FrmDetailBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDetailBorrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDetailBorrow.Designer.cs">
+      <DependentUpon>FrmDetailBorrow.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmDetailSubject.cs">
       <SubType>Form</SubType>
@@ -199,6 +202,12 @@
       <DependentUpon>FrmEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Connect.cs" />
+    <Compile Include="FrmFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFee.Designer.cs">
+      <DependentUpon>FrmFee.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,23 +238,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>systemlibraryDataSet1.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CRBook1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CRBook1.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CRBook.resx">
-      <DependentUpon>CRBook.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CRTopBorrow.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CRTopBorrow.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="CRAnalytic.resx">
       <DependentUpon>CRAnalytic.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CRTopBook.rpt">
+    <EmbeddedResource Include="CRAnalytic1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CRTopBook.cs</LastGenOutput>
+      <LastGenOutput>CRAnalytic1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="CREmployee.resx">
       <DependentUpon>CREmployee.cs</DependentUpon>
@@ -265,6 +263,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBook.resx">
       <DependentUpon>FrmBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBorrow.resx">
+      <DependentUpon>FrmBorrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheckIn.resx">
+      <DependentUpon>FrmCheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheckOut.resx">
+      <DependentUpon>FrmCheckOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDetailBook.resx">
       <DependentUpon>FrmDetailBook.cs</DependentUpon>

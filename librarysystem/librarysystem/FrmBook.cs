@@ -23,14 +23,6 @@ namespace librarysystem
 
         private void FrmBook_Load(object sender, EventArgs e)
         {
-            //conn = Connect.getConnection();
-            //conn.Open();
-            //String strsql = "select BookID,CallNumber,ISBN,Subject.SubjectName,Title,Author,Publisher,[No Book],[Book in Library] from Book,Subject where Subject.SubjectID=Book.SubjectID";
-            //cmd = new SqlCommand(strsql, conn);
-            //da = new SqlDataAdapter(cmd);
-            //ds = new DataSet();
-            //da.Fill(ds, "Book");
-            //dgvBook.DataSource = ds.Tables[0];
             clb.reloadgv(dgvBook);
         }
 

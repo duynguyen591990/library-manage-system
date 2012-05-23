@@ -20,7 +20,7 @@
             base.Dispose(disposing);
         }
 
-       
+        #region Windows Form Designer generated code
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -28,33 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.CRReportEmployee = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.CrReportEmployee = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // CRReportEmployee
+            // CrReportEmployee
             // 
-            this.CRReportEmployee.ActiveViewIndex = -1;
-            this.CRReportEmployee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CRReportEmployee.Cursor = System.Windows.Forms.Cursors.Default;
-            this.CRReportEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CRReportEmployee.Location = new System.Drawing.Point(0, 0);
-            this.CRReportEmployee.Name = "CRReportEmployee";
-            this.CRReportEmployee.Size = new System.Drawing.Size(1047, 540);
-            this.CRReportEmployee.TabIndex = 0;
-            this.CRReportEmployee.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            this.CrReportEmployee.ActiveViewIndex = -1;
+            this.CrReportEmployee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CrReportEmployee.Cursor = System.Windows.Forms.Cursors.Default;
+            this.CrReportEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CrReportEmployee.Location = new System.Drawing.Point(0, 0);
+            this.CrReportEmployee.Name = "CrReportEmployee";
+            this.CrReportEmployee.Size = new System.Drawing.Size(1122, 586);
+            this.CrReportEmployee.TabIndex = 0;
+            this.CrReportEmployee.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
             // CREmployee
             // 
-            this.ClientSize = new System.Drawing.Size(1047, 540);
-            this.Controls.Add(this.CRReportEmployee);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1122, 586);
+            this.Controls.Add(this.CrReportEmployee);
             this.Name = "CREmployee";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CREmployee";
             this.Load += new System.EventHandler(this.CREmployee_Load);
             this.ResumeLayout(false);
 
         }
 
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer CRReportEmployee; 
+        #endregion
+
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer CrReportEmployee;
     }
 }

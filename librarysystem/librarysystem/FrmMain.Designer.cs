@@ -44,7 +44,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnBackup = new System.Windows.Forms.Button();
             this.btnRestore = new System.Windows.Forms.Button();
-            this.bookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.borrowManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,7 +89,8 @@
             this.quảnLýEmployeeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quánLýEmployeeToolStripMenuItem,
             this.bookManagerToolStripMenuItem,
-            this.subjectManagerToolStripMenuItem});
+            this.subjectManagerToolStripMenuItem,
+            this.borrowManagerToolStripMenuItem});
             this.quảnLýEmployeeToolStripMenuItem.Name = "quảnLýEmployeeToolStripMenuItem";
             this.quảnLýEmployeeToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.quảnLýEmployeeToolStripMenuItem.Text = "Manage";
@@ -119,8 +120,7 @@
             // 
             this.thốngKêToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.analyticToolStripMenuItem,
-            this.employeeToolStripMenuItem,
-            this.bookToolStripMenuItem});
+            this.employeeToolStripMenuItem});
             this.thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
             this.thốngKêToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.thốngKêToolStripMenuItem.Text = "Report";
@@ -168,12 +168,12 @@
             this.btnRestore.Text = "Restore";
             this.btnRestore.UseVisualStyleBackColor = true;
             // 
-            // bookToolStripMenuItem
+            // borrowManagerToolStripMenuItem
             // 
-            this.bookToolStripMenuItem.Name = "bookToolStripMenuItem";
-            this.bookToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.bookToolStripMenuItem.Text = "Book";
-            this.bookToolStripMenuItem.Click += new System.EventHandler(this.bookToolStripMenuItem_Click);
+            this.borrowManagerToolStripMenuItem.Name = "borrowManagerToolStripMenuItem";
+            this.borrowManagerToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.borrowManagerToolStripMenuItem.Text = "Borrow Manager";
+            this.borrowManagerToolStripMenuItem.Click += new System.EventHandler(this.borrowManagerToolStripMenuItem_Click);
             // 
             // FrmMain
             // 
@@ -211,7 +211,7 @@
         private System.Windows.Forms.Button btnRestore;
         private System.Windows.Forms.ToolStripMenuItem employeeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem subjectManagerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bookToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem borrowManagerToolStripMenuItem;
     }
 }
 
