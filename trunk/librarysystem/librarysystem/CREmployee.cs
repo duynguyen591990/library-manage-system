@@ -30,8 +30,8 @@ namespace librarysystem
             da.Fill(ds, "Employee");
             CREmployee1 rpt = new CREmployee1();
             rpt.SetDataSource(ds);
-            CRReportEmployee.ReportSource = rpt;
-            CRReportEmployee.Show();
+            CrReportEmployee.ReportSource = rpt;
+            CrReportEmployee.Show();
         }
     }
 }

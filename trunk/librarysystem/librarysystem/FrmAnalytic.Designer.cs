@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnReport = new System.Windows.Forms.Button();
+            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
@@ -45,14 +46,14 @@
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Location = new System.Drawing.Point(37, 79);
             this.dgv.Name = "dgv";
-            this.dgv.Size = new System.Drawing.Size(843, 309);
+            this.dgv.Size = new System.Drawing.Size(697, 309);
             this.dgv.TabIndex = 0;
             // 
             // btnTopBook
             // 
             this.btnTopBook.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnTopBook.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnTopBook.Location = new System.Drawing.Point(78, 464);
+            this.btnTopBook.Location = new System.Drawing.Point(58, 479);
             this.btnTopBook.Name = "btnTopBook";
             this.btnTopBook.Size = new System.Drawing.Size(75, 23);
             this.btnTopBook.TabIndex = 1;
@@ -64,7 +65,7 @@
             // 
             this.btnSearch.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSearch.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnSearch.Location = new System.Drawing.Point(592, 416);
+            this.btnSearch.Location = new System.Drawing.Point(518, 423);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 2;
@@ -76,7 +77,7 @@
             // 
             this.btnTopBorrow.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnTopBorrow.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnTopBorrow.Location = new System.Drawing.Point(209, 464);
+            this.btnTopBorrow.Location = new System.Drawing.Point(192, 479);
             this.btnTopBorrow.Name = "btnTopBorrow";
             this.btnTopBorrow.Size = new System.Drawing.Size(83, 23);
             this.btnTopBorrow.TabIndex = 3;
@@ -88,7 +89,7 @@
             // 
             this.dtpDueDate.CustomFormat = "dd/MM/yyyy";
             this.dtpDueDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDueDate.Location = new System.Drawing.Point(357, 416);
+            this.dtpDueDate.Location = new System.Drawing.Point(289, 426);
             this.dtpDueDate.Name = "dtpDueDate";
             this.dtpDueDate.Size = new System.Drawing.Size(200, 20);
             this.dtpDueDate.TabIndex = 4;
@@ -98,7 +99,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(283, 421);
+            this.label1.Location = new System.Drawing.Point(222, 432);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 5;
@@ -108,7 +109,7 @@
             // 
             this.btnExit.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnExit.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnExit.Location = new System.Drawing.Point(788, 464);
+            this.btnExit.Location = new System.Drawing.Point(631, 479);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 6;
@@ -120,7 +121,7 @@
             // 
             this.btnReport.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnReport.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnReport.Location = new System.Drawing.Point(346, 464);
+            this.btnReport.Location = new System.Drawing.Point(347, 479);
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(75, 23);
             this.btnReport.TabIndex = 9;
@@ -128,12 +129,23 @@
             this.btnReport.UseVisualStyleBackColor = false;
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
+            // crystalReportViewer1
+            // 
+            this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer1.Location = new System.Drawing.Point(37, 79);
+            this.crystalReportViewer1.Name = "crystalReportViewer1";
+            this.crystalReportViewer1.Size = new System.Drawing.Size(697, 309);
+            this.crystalReportViewer1.TabIndex = 10;
+            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(400, 23);
+            this.label4.Location = new System.Drawing.Point(327, 20);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(118, 33);
             this.label4.TabIndex = 18;
@@ -144,15 +156,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(917, 513);
-            this.Controls.Add(this.btnTopBorrow);
-            this.Controls.Add(this.btnReport);
-            this.Controls.Add(this.btnTopBook);
+            this.ClientSize = new System.Drawing.Size(778, 553);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.crystalReportViewer1);
+            this.Controls.Add(this.btnReport);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtpDueDate);
+            this.Controls.Add(this.btnTopBorrow);
             this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.btnTopBook);
             this.Controls.Add(this.dgv);
             this.Name = "FrmAnalytic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -173,6 +186,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnReport;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private System.Windows.Forms.Label label4;
     }
 }
