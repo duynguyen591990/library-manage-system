@@ -12,10 +12,10 @@ namespace librarysystem
 {
     public partial class FrmEmployee : Form
     {
-        SqlConnection conn;
-        SqlCommand cmd;
-        SqlDataAdapter da;
-        DataSet ds;
+       // SqlConnection conn;
+        //SqlCommand cmd;
+        //SqlDataAdapter da;
+        //DataSet ds;
         public static String EmployeeID, EmployeeIDE, EmployeeIDD;
         classEmployee nhap = new classEmployee();
         FrmMain frmmain = new FrmMain();
@@ -33,7 +33,6 @@ namespace librarysystem
         private void btnShow_Click(object sender, EventArgs e)
         {
             EmployeeID = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-           // MessageBox.Show(EmployeeID);
             FrmDetailEmployee frmdetailemployee = new FrmDetailEmployee();
             frmdetailemployee.Show();
             this.Hide();

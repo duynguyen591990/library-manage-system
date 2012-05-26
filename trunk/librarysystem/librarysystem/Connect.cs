@@ -9,7 +9,7 @@ namespace librarysystem
 {
     class Connect
     {
-        SqlConnection conn;
+        //SqlConnection conn;
         public static SqlConnection getConnection()
         {
             SqlConnection conn = null;

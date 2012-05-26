@@ -128,7 +128,7 @@ namespace librarysystem
                 cmd = new SqlCommand(strSql, conn);
 
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Update thành công!", "Thành Công");
+                MessageBox.Show("Update successfull!", "Alert");
             }
             catch (Exception ex)
             {
@@ -151,7 +151,7 @@ namespace librarysystem
                 da.Fill(dt);
                 if (dt.Rows.Count > 0)
                 {
-                    MessageBox.Show("Nhân viên này đang cho mượn book", "Thông Báo");
+                    MessageBox.Show("Employee is borrowing book", "Alert");
                 }
                 else
                 {
@@ -159,7 +159,7 @@ namespace librarysystem
                     cmd = new SqlCommand(strSql, conn);
 
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Delete thành công!", "Thành Công");
+                    MessageBox.Show("Delete success!", "Alert");
                 }
             }
             catch (Exception ex)
@@ -227,7 +227,7 @@ namespace librarysystem
         {
             conn = Connect.getConnection();
             conn.Open();
-            String sql = "select title,CallNumber,ISBN,SubjectName,author,publisher from Subject e, Employee a,Borrowdetail b,Borrow c, Book d where a.EmployeeID=c.EmployeeID and c.BorrowID=b.BorrowID and b.bookID = d.bookID and d.subjectID = e.subjectID  and a.EmployeeID='"
+            String sql = "select title,CallNumber,ISBN,SubjectName,author,publisher from Subject e, Employee a,Borrowdetail b, Book d where a.EmployeeID=b.EmployeeID and b.bookID = d.bookID and d.subjectID = e.subjectID  and a.EmployeeID='"
                 + FrmEmployee.EmployeeID + "'";
             cmd = new SqlCommand(sql, conn);
             da = new SqlDataAdapter(cmd);

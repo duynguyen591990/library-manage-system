@@ -14,9 +14,9 @@ namespace librarysystem
     {
         SqlConnection conn;
         SqlCommand cmd;
-        SqlDataAdapter da;
-        DataSet ds;
-        DataTable dt;
+        //SqlDataAdapter da;
+       // DataSet ds;
+        //DataTable dt;
         SqlDataReader rd;
        
         public FrmLogin()

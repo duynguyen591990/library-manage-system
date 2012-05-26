@@ -30,7 +30,7 @@ namespace librarysystem
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            FrmBorrow frm = new FrmBorrow();
+            FrmMain frm = new FrmMain();
             frm.Show();
             this.Dispose();
         }

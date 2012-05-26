@@ -72,6 +72,22 @@ namespace librarysystem
             this.Hide();
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            string text = label1.Text;
+            label1.Text = text.Substring(1,text.Length-1)+text.Substring(0,1);
+        }
+
+        private void guideToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("Guide.docx");
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            label1.Text = "Library";
+        }
+
       
        
     }

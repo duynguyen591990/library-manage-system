@@ -12,8 +12,8 @@ namespace librarysystem
 {
     public partial class FrmAddEmployee : Form
     {
-        SqlConnection conn;
-        SqlCommand cmd;
+       // SqlConnection conn;
+        //SqlCommand cmd;
         String gender;
         classEmployee cl = new classEmployee();
         FrmEmployee frmemployee = new FrmEmployee();
