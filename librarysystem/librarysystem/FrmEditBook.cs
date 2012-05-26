@@ -13,7 +13,7 @@ namespace librarysystem
     public partial class FrmEditBook : Form
     {
         classBook clb = new classBook();
-        SqlConnection conn;
+       // SqlConnection conn;
         public FrmEditBook()
         {
             InitializeComponent();

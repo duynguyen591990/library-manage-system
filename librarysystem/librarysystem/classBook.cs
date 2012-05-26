@@ -89,9 +89,7 @@ namespace librarysystem
                         {
                             conn = Connect.getConnection();
                             conn.Open();
-                         //   String strSql = "select * from Book where Title like'" + txtSearch + "'";
                             String strSql = "select BookID,CallNumber,ISBN,Subject.SubjectName,Title,Author,Publisher,[No Book],[Book in Library] from Book,Subject where Subject.SubjectID=Book.SubjectID and Title like'" + txtSearch + "'";
-                           // MessageBox.Show(strSql);
                             cmd = new SqlCommand(strSql, conn);
                             da = new SqlDataAdapter(cmd);
                             ds = new DataSet();
@@ -109,9 +107,7 @@ namespace librarysystem
                         try
                         {
                             conn = Connect.getConnection();
-                            conn.Open();
-                           // String strSql = "select * from Book where Author like '%" + txtSearch + "%'";
-                            String strSql = "select BookID,CallNumber,ISBN,Subject.SubjectName,Title,Author,Publisher,[No Book],[Book in Library] from Book,Subject where Subject.SubjectID=Book.SubjectID and Author like '%" + txtSearch + "%'";
+                            conn.Open(); String strSql = "select BookID,CallNumber,ISBN,Subject.SubjectName,Title,Author,Publisher,[No Book],[Book in Library] from Book,Subject where Subject.SubjectID=Book.SubjectID and Author like '%" + txtSearch + "%'";
                             cmd = new SqlCommand(strSql, conn);
                             da = new SqlDataAdapter(cmd);
                             ds = new DataSet();
@@ -173,17 +169,14 @@ namespace librarysystem
 
                     conn = Connect.getConnection();
                     conn.Open();
-                   // String strSql = "select * from Book where BookID='" + FrmBook.BookID + "'";
                     String strSql = "select BookID,CallNumber,ISBN,Subject.SubjectName,Title,Author,Publisher,[No Book],[Book in Library] from Book,Subject where Subject.SubjectID=Book.SubjectID and BookID='"+FrmBook.BookID+"'";
                     cmd = new SqlCommand(strSql, conn);
-                    // MessageBox.Show(FrmEmployee.EmployeeID);
                     dr = cmd.ExecuteReader();
                     while (dr.Read())
                     {
                         BookID = dr.GetInt32(0).ToString();
                         CallNumber = dr.GetString(1);
                         ISBN = dr.GetString(2);
-                        //subject = dr.GetInt32(3).ToString();
                         subject = dr.GetString(3);
                         Title = dr.GetString(4);
                         Author = dr.GetString(5);
@@ -281,7 +274,7 @@ namespace librarysystem
         public void loaddetailbook(DataGridView dgv) {
             conn = Connect.getConnection();
             conn.Open();
-            String sql = "select a.EmployeeID,a.Name,a.Email,a.[Phone Number],a.Department ,IssueDate,DueDate from Employee a,Borrowdetail b,Borrow c where a.EmployeeID=c.EmployeeID and c.BorrowID=b.BorrowID and BookID='"
+            String sql = "select a.EmployeeID,a.Name,a.Email,a.[Phone Number],a.Department ,IssueDate,DueDate from Employee a,Borrowdetail b where a.EmployeeID=b.EmployeeID and BookID='"
                 +FrmBook.BookID+"'";
             cmd = new SqlCommand(sql, conn);
             da = new SqlDataAdapter(cmd);

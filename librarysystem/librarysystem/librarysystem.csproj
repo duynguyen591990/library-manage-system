@@ -405,10 +405,24 @@
     <Content Include="Images\InfoSub.png" />
     <Content Include="Resources\AddBook.png" />
     <Content Include="Resources\AddSub.png" />
+    <None Include="Resources\rss.png" />
+    <None Include="Resources\View.png" />
+    <None Include="Resources\TopBorrower.png" />
+    <None Include="Resources\TopBook.png" />
+    <None Include="Resources\Sub.png" />
+    <None Include="Resources\unlock.png" />
+    <None Include="Resources\Computer.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\Book.png" />
+    <None Include="Resources\Borrow.png" />
     <Content Include="Resources\EditBook.png" />
     <Content Include="Resources\EditSub.png" />
+    <None Include="Resources\full_page.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\Employee.png" />
     <Content Include="Resources\InfoBook.png" />
     <Content Include="Resources\InfoSub.png" />
+    <None Include="Resources\Setting.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
