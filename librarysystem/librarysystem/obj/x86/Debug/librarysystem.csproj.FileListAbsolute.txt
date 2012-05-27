@@ -108,3 +108,5 @@ D:\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem
 D:\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmBorrow.resources
 D:\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmCheckIn.resources
 D:\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmCheckOut.resources
+D:\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmDetailBorrow.resources
+D:\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.FrmFee.resources

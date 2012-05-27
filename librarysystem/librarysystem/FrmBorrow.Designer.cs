@@ -52,7 +52,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnExit.ForeColor = System.Drawing.Color.Blue;
             this.btnExit.Location = new System.Drawing.Point(587, 339);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
@@ -63,7 +63,7 @@
             // 
             // btnFee
             // 
-            this.btnFee.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnFee.ForeColor = System.Drawing.Color.Blue;
             this.btnFee.Location = new System.Drawing.Point(439, 339);
             this.btnFee.Name = "btnFee";
             this.btnFee.Size = new System.Drawing.Size(75, 23);
@@ -74,7 +74,7 @@
             // 
             // btnView
             // 
-            this.btnView.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnView.ForeColor = System.Drawing.Color.Blue;
             this.btnView.Location = new System.Drawing.Point(291, 339);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(94, 23);
@@ -85,7 +85,7 @@
             // 
             // btnCheckout
             // 
-            this.btnCheckout.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnCheckout.ForeColor = System.Drawing.Color.Blue;
             this.btnCheckout.Location = new System.Drawing.Point(171, 339);
             this.btnCheckout.Name = "btnCheckout";
             this.btnCheckout.Size = new System.Drawing.Size(75, 23);
@@ -96,7 +96,7 @@
             // 
             // btnCheckin
             // 
-            this.btnCheckin.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnCheckin.ForeColor = System.Drawing.Color.Blue;
             this.btnCheckin.Location = new System.Drawing.Point(38, 339);
             this.btnCheckin.Name = "btnCheckin";
             this.btnCheckin.Size = new System.Drawing.Size(75, 23);
@@ -108,7 +108,7 @@
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnSearch.ForeColor = System.Drawing.Color.Blue;
             this.btnSearch.Location = new System.Drawing.Point(528, 81);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);

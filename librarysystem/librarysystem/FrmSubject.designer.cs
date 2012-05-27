@@ -44,7 +44,7 @@
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txtSearch.ForeColor = System.Drawing.Color.Blue;
             this.txtSearch.Location = new System.Drawing.Point(221, 67);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(120, 20);
@@ -52,7 +52,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnExit.ForeColor = System.Drawing.Color.Blue;
             this.btnExit.Location = new System.Drawing.Point(456, 332);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
@@ -63,7 +63,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnDelete.ForeColor = System.Drawing.Color.Blue;
             this.btnDelete.Location = new System.Drawing.Point(353, 332);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
@@ -74,7 +74,7 @@
             // 
             // btnView
             // 
-            this.btnView.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnView.ForeColor = System.Drawing.Color.Blue;
             this.btnView.Location = new System.Drawing.Point(221, 332);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(94, 23);
@@ -85,7 +85,7 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnEdit.ForeColor = System.Drawing.Color.Blue;
             this.btnEdit.Location = new System.Drawing.Point(121, 332);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
@@ -96,7 +96,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnAdd.ForeColor = System.Drawing.Color.Blue;
             this.btnAdd.Location = new System.Drawing.Point(12, 332);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
@@ -108,7 +108,7 @@
             // btnSearch
             // 
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnSearch.ForeColor = System.Drawing.Color.Blue;
             this.btnSearch.Location = new System.Drawing.Point(399, 65);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
@@ -120,7 +120,7 @@
             // cbxSearch
             // 
             this.cbxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxSearch.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.cbxSearch.ForeColor = System.Drawing.Color.Blue;
             this.cbxSearch.FormattingEnabled = true;
             this.cbxSearch.Items.AddRange(new object[] {
             "All",

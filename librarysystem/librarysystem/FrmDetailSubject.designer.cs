@@ -61,7 +61,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.lblSubjectID);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox1.ForeColor = System.Drawing.Color.Blue;
             this.groupBox1.Location = new System.Drawing.Point(189, 77);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(257, 230);
@@ -125,7 +125,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnOK.ForeColor = System.Drawing.Color.Blue;
             this.btnOK.Location = new System.Drawing.Point(175, 325);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
@@ -136,12 +136,11 @@
             // 
             // pictureBox1
             // 
-            //this.pictureBox1.Image = global::librarysystem.Properties.Resources.InfoSub;
-            //this.pictureBox1.Location = new System.Drawing.Point(12, 103);
-            //this.pictureBox1.Name = "pictureBox1";
-            //this.pictureBox1.Size = new System.Drawing.Size(150, 159);
-            //this.pictureBox1.TabIndex = 2;
-            //this.pictureBox1.TabStop = false;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 99);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(139, 174);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmDetailSubject
             // 

@@ -11,8 +11,8 @@ namespace librarysystem
 {
     public partial class FrmBorrow : Form
     {
+        public static String BorrowID,BookID, EmployeeID;
         classBorrow clb = new classBorrow();
-        public String BorrowID;
         public FrmBorrow()
         {
             InitializeComponent();

@@ -26,8 +26,7 @@ namespace librarysystem.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ANDONGNHI\\SQLEXPRESS;Initial Catalog=systemlibrary;Integrated Securit" +
-            "y=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=Dell-PC;Initial Catalog=systemlibrary;Integrated Security=True")]
         public string systemlibraryConnectionString {
             get {
                 return ((string)(this["systemlibraryConnectionString"]));

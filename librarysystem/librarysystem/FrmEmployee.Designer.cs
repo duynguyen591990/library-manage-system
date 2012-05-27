@@ -101,7 +101,7 @@
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAdd.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnAdd.ForeColor = System.Drawing.Color.Blue;
             this.btnAdd.Location = new System.Drawing.Point(225, 463);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
@@ -113,7 +113,7 @@
             // btnEdit
             // 
             this.btnEdit.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnEdit.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnEdit.ForeColor = System.Drawing.Color.Blue;
             this.btnEdit.Location = new System.Drawing.Point(378, 463);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
@@ -125,7 +125,7 @@
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnDelete.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnDelete.ForeColor = System.Drawing.Color.Blue;
             this.btnDelete.Location = new System.Drawing.Point(534, 463);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
@@ -137,7 +137,7 @@
             // btnShow
             // 
             this.btnShow.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnShow.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnShow.ForeColor = System.Drawing.Color.Blue;
             this.btnShow.Location = new System.Drawing.Point(71, 463);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(75, 23);
@@ -149,7 +149,7 @@
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSearch.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnSearch.ForeColor = System.Drawing.Color.Blue;
             this.btnSearch.Location = new System.Drawing.Point(534, 419);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
@@ -164,6 +164,7 @@
             // 
             // txtSearch
             // 
+            this.txtSearch.ForeColor = System.Drawing.Color.Blue;
             this.txtSearch.Location = new System.Drawing.Point(332, 419);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(177, 20);
@@ -171,6 +172,7 @@
             // 
             // cboList
             // 
+            this.cboList.ForeColor = System.Drawing.Color.Blue;
             this.cboList.FormattingEnabled = true;
             this.cboList.Items.AddRange(new object[] {
             "ID",
@@ -197,7 +199,7 @@
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnExit.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnExit.ForeColor = System.Drawing.Color.Blue;
             this.btnExit.Location = new System.Drawing.Point(672, 463);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);

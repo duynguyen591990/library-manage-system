@@ -276,6 +276,9 @@
     <EmbeddedResource Include="FrmDetailBook.resx">
       <DependentUpon>FrmDetailBook.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmDetailBorrow.resx">
+      <DependentUpon>FrmDetailBorrow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDetailSubject.resx">
       <DependentUpon>FrmDetailSubject.cs</DependentUpon>
     </EmbeddedResource>
@@ -297,6 +300,9 @@
     <EmbeddedResource Include="FrmEmployee.resx">
       <DependentUpon>FrmEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmFee.resx">
+      <DependentUpon>FrmFee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -308,14 +314,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
@@ -403,8 +403,15 @@
     <Content Include="Images\AddSub.png" />
     <Content Include="Images\EditSub.png" />
     <Content Include="Images\InfoSub.png" />
+    <None Include="Resources\text_page.png" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\add.png" />
     <Content Include="Resources\AddBook.png" />
+    <None Include="Resources\AddEmp.png" />
     <Content Include="Resources\AddSub.png" />
+    <None Include="Resources\Quit.png" />
+    <None Include="Resources\lock.png" />
     <None Include="Resources\rss.png" />
     <None Include="Resources\View.png" />
     <None Include="Resources\TopBorrower.png" />
@@ -415,11 +422,15 @@
     <None Include="Resources\delete.png" />
     <None Include="Resources\Book.png" />
     <None Include="Resources\Borrow.png" />
+    <None Include="Resources\background.jpg" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\AddSub1.png" />
     <Content Include="Resources\EditBook.png" />
     <Content Include="Resources\EditSub.png" />
     <None Include="Resources\full_page.png" />
     <None Include="Resources\help.png" />
     <None Include="Resources\Employee.png" />
+    <None Include="Resources\images.jpg" />
     <Content Include="Resources\InfoBook.png" />
     <Content Include="Resources\InfoSub.png" />
     <None Include="Resources\Setting.png" />

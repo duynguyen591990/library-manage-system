@@ -48,8 +48,8 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtDescription);
             this.groupBox1.Controls.Add(this.txtSubjectName);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox1.Location = new System.Drawing.Point(210, 85);
+            this.groupBox1.ForeColor = System.Drawing.Color.Blue;
+            this.groupBox1.Location = new System.Drawing.Point(210, 88);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(270, 231);
             this.groupBox1.TabIndex = 10;
@@ -93,7 +93,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnExit.ForeColor = System.Drawing.Color.Blue;
             this.btnExit.Location = new System.Drawing.Point(369, 325);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
@@ -104,7 +104,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnReset.ForeColor = System.Drawing.Color.Blue;
             this.btnReset.Location = new System.Drawing.Point(229, 325);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 23);
@@ -115,7 +115,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnUpdate.ForeColor = System.Drawing.Color.Blue;
             this.btnUpdate.Location = new System.Drawing.Point(90, 325);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
@@ -137,12 +137,11 @@
             // 
             // pictureBox1
             // 
-            //this.pictureBox1.Image = global::librarysystem.Properties.Resources.EditSub;
-            //this.pictureBox1.Location = new System.Drawing.Point(12, 104);
-            //this.pictureBox1.Name = "pictureBox1";
-            //this.pictureBox1.Size = new System.Drawing.Size(135, 168);
-            //this.pictureBox1.TabIndex = 11;
-            //this.pictureBox1.TabStop = false;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmEditSubject
             // 

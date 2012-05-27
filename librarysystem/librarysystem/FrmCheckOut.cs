@@ -53,21 +53,29 @@ namespace librarysystem
         private void btnCheckout_Click(object sender, EventArgs e)
         {
           // if(issuedate.
-            conn=Connect.getConnection();
-            conn.Open();
-            int index = dataGridView3.CurrentRow.Index;
-            string id = dataGridView3[0, index].Value.ToString();
-            for (int i = 0; i < dataGridView2.RowCount; i++)
+           // string dt1 = DateTime.Parse(issuedate.Value.ToString);
+            DateTime dt1 = issuedate.Value;
+            DateTime dt2 = duedate.Value;
+            if (DateTime.Compare(dt1, dt2) < 0)
             {
-                String idbook = dataGridView2[0, i].Value.ToString();
-                String sqlstr = "insert into BorrowDetail(EmployeeID, BookID, IssueDate, DueDate,Status)values('" + Int32.Parse(id) + "','" + Int32.Parse(idbook) + "', '" + issuedate.Text + "' ,'" + duedate.Text + "','"+1+"')";
-                SqlCommand cmd = new SqlCommand(sqlstr, conn);
-                cmd.ExecuteNonQuery();
+                conn = Connect.getConnection();
+                conn.Open();
+                int index = dataGridView3.CurrentRow.Index;
+                string id = dataGridView3[0, index].Value.ToString();
+                for (int i = 0; i < dataGridView2.RowCount; i++)
+                {
+                    String idbook = dataGridView2[0, i].Value.ToString();
+                    String sqlstr = "insert into BorrowDetail(EmployeeID, BookID, IssueDate, DueDate,Status)values('" + Int32.Parse(id) + "','" + Int32.Parse(idbook) + "', '" + issuedate.Text + "' ,'" + duedate.Text + "','" + 1 + "')";
+                    SqlCommand cmd = new SqlCommand(sqlstr, conn);
+                    cmd.ExecuteNonQuery();
+                }
+                MessageBox.Show("Check-Out Successfull");
+                FrmBorrow frm = new FrmBorrow();
+                frm.Show();
+                this.Dispose();
             }
-            MessageBox.Show("Check-Out Successfull");
-            FrmBorrow frm = new FrmBorrow();
-            frm.Show();
-            this.Dispose();
+            else { MessageBox.Show("Due Date must great Issue Date","Error"); }
+            
          
         }
 

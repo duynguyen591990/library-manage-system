@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAddEmployee));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdFemale = new System.Windows.Forms.RadioButton();
             this.rdMale = new System.Windows.Forms.RadioButton();
@@ -55,9 +56,11 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.employeeTableAdapter = new librarysystem.systemlibraryDataSetTableAdapters.EmployeeTableAdapter();
             this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemlibraryDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -81,8 +84,8 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.groupBox1.Location = new System.Drawing.Point(86, 80);
+            this.groupBox1.ForeColor = System.Drawing.Color.Blue;
+            this.groupBox1.Location = new System.Drawing.Point(181, 80);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(382, 369);
             this.groupBox1.TabIndex = 0;
@@ -113,6 +116,8 @@
             // 
             // datetimepicker
             // 
+            this.datetimepicker.CalendarForeColor = System.Drawing.Color.Blue;
+            this.datetimepicker.CalendarTitleForeColor = System.Drawing.Color.Blue;
             this.datetimepicker.CustomFormat = "dd/MM/yyyy";
             this.datetimepicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datetimepicker.Location = new System.Drawing.Point(113, 103);
@@ -130,6 +135,7 @@
             // 
             // txtDepartment
             // 
+            this.txtDepartment.ForeColor = System.Drawing.Color.Blue;
             this.txtDepartment.Location = new System.Drawing.Point(113, 288);
             this.txtDepartment.Name = "txtDepartment";
             this.txtDepartment.Size = new System.Drawing.Size(217, 20);
@@ -137,6 +143,7 @@
             // 
             // txtPhone
             // 
+            this.txtPhone.ForeColor = System.Drawing.Color.Blue;
             this.txtPhone.Location = new System.Drawing.Point(113, 256);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(217, 20);
@@ -144,6 +151,7 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.ForeColor = System.Drawing.Color.Blue;
             this.txtEmail.Location = new System.Drawing.Point(113, 222);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(217, 20);
@@ -151,6 +159,7 @@
             // 
             // txtPassword
             // 
+            this.txtPassword.ForeColor = System.Drawing.Color.Blue;
             this.txtPassword.Location = new System.Drawing.Point(113, 183);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(217, 20);
@@ -158,6 +167,7 @@
             // 
             // txtAddress
             // 
+            this.txtAddress.ForeColor = System.Drawing.Color.Blue;
             this.txtAddress.Location = new System.Drawing.Point(113, 144);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(217, 20);
@@ -165,6 +175,7 @@
             // 
             // txtName
             // 
+            this.txtName.ForeColor = System.Drawing.Color.Blue;
             this.txtName.Location = new System.Drawing.Point(113, 32);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(217, 20);
@@ -263,25 +274,29 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnAdd.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnAdd.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAdd.ForeColor = System.Drawing.Color.Blue;
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
+            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdd.Location = new System.Drawing.Point(145, 468);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(75, 36);
             this.btnAdd.TabIndex = 1;
-            this.btnAdd.Text = "Add";
+            this.btnAdd.Text = "     Add";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCancel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnCancel.Location = new System.Drawing.Point(302, 468);
+            this.btnCancel.ForeColor = System.Drawing.Color.Blue;
+            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
+            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancel.Location = new System.Drawing.Point(357, 469);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(90, 36);
             this.btnCancel.TabIndex = 2;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "     Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -300,12 +315,22 @@
             this.label11.TabIndex = 9;
             this.label11.Text = "Add New Employee";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(2, 197);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(163, 191);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmAddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(561, 517);
+            this.ClientSize = new System.Drawing.Size(591, 517);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAdd);
@@ -318,6 +343,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemlibraryDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,5 +377,6 @@
         private System.Windows.Forms.BindingSource employeeBindingSource;
         private systemlibraryDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
