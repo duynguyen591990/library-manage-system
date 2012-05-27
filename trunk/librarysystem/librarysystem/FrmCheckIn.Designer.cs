@@ -32,7 +32,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lblPhone = new System.Windows.Forms.Label();
             this.lblAddress = new System.Windows.Forms.Label();
-            this.issuedate = new System.Windows.Forms.DateTimePicker();
+            this.returndate = new System.Windows.Forms.DateTimePicker();
             this.lblFee = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -47,6 +47,7 @@
             this.btnCheckin = new System.Windows.Forms.Button();
             this.lblDOB = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.duedate = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtBookSearch = new System.Windows.Forms.TextBox();
             this.cboBook = new System.Windows.Forms.ComboBox();
@@ -61,7 +62,6 @@
             this.txtSearchBorrow = new System.Windows.Forms.TextBox();
             this.btnSearchBorrow = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtDueDate = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -106,17 +106,17 @@
             this.lblAddress.TabIndex = 3;
             this.lblAddress.Text = "Address:";
             // 
-            // issuedate
+            // returndate
             // 
-            this.issuedate.CalendarForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.issuedate.CalendarTitleForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.issuedate.CustomFormat = "dd/MM/yyy";
-            this.issuedate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.issuedate.Location = new System.Drawing.Point(100, 49);
-            this.issuedate.Name = "issuedate";
-            this.issuedate.Size = new System.Drawing.Size(200, 20);
-            this.issuedate.TabIndex = 1;
-            this.issuedate.Value = new System.DateTime(2012, 5, 26, 0, 0, 0, 0);
+            this.returndate.CalendarForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.returndate.CalendarTitleForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.returndate.CustomFormat = "dd/MM/yyy";
+            this.returndate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.returndate.Location = new System.Drawing.Point(100, 49);
+            this.returndate.Name = "returndate";
+            this.returndate.Size = new System.Drawing.Size(200, 20);
+            this.returndate.TabIndex = 1;
+            this.returndate.Value = new System.DateTime(2012, 5, 26, 0, 0, 0, 0);
             // 
             // lblFee
             // 
@@ -213,7 +213,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCancel.ForeColor = System.Drawing.Color.Blue;
             this.btnCancel.Location = new System.Drawing.Point(833, 498);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
@@ -224,13 +224,14 @@
             // 
             // btnCheckin
             // 
-            this.btnCheckin.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCheckin.ForeColor = System.Drawing.Color.Blue;
             this.btnCheckin.Location = new System.Drawing.Point(691, 498);
             this.btnCheckin.Name = "btnCheckin";
             this.btnCheckin.Size = new System.Drawing.Size(75, 23);
             this.btnCheckin.TabIndex = 10;
             this.btnCheckin.Text = "Check-in";
             this.btnCheckin.UseVisualStyleBackColor = true;
+            this.btnCheckin.Click += new System.EventHandler(this.btnCheckin_Click);
             // 
             // lblDOB
             // 
@@ -243,13 +244,13 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.txtDueDate);
-            this.groupBox3.Controls.Add(this.issuedate);
+            this.groupBox3.Controls.Add(this.returndate);
+            this.groupBox3.Controls.Add(this.duedate);
             this.groupBox3.Controls.Add(this.lblFee);
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.groupBox3.ForeColor = System.Drawing.Color.Blue;
             this.groupBox3.Location = new System.Drawing.Point(651, 361);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(303, 100);
@@ -257,13 +258,26 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Check-In Information";
             // 
+            // duedate
+            // 
+            this.duedate.CalendarForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.duedate.CalendarTitleForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.duedate.CustomFormat = "dd/MM/yyy";
+            this.duedate.Enabled = false;
+            this.duedate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.duedate.Location = new System.Drawing.Point(97, 19);
+            this.duedate.Name = "duedate";
+            this.duedate.Size = new System.Drawing.Size(200, 20);
+            this.duedate.TabIndex = 1;
+            this.duedate.Value = new System.DateTime(2012, 5, 26, 0, 0, 0, 0);
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtBookSearch);
             this.groupBox1.Controls.Add(this.cboBook);
             this.groupBox1.Controls.Add(this.btnBookSearch);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(450, 20);
+            this.groupBox1.ForeColor = System.Drawing.Color.Blue;
+            this.groupBox1.Location = new System.Drawing.Point(450, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(477, 52);
             this.groupBox1.TabIndex = 5;
@@ -272,7 +286,7 @@
             // 
             // txtBookSearch
             // 
-            this.txtBookSearch.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txtBookSearch.ForeColor = System.Drawing.Color.Blue;
             this.txtBookSearch.Location = new System.Drawing.Point(129, 23);
             this.txtBookSearch.Name = "txtBookSearch";
             this.txtBookSearch.Size = new System.Drawing.Size(147, 20);
@@ -280,7 +294,7 @@
             // 
             // cboBook
             // 
-            this.cboBook.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.cboBook.ForeColor = System.Drawing.Color.Blue;
             this.cboBook.FormattingEnabled = true;
             this.cboBook.Items.AddRange(new object[] {
             "All",
@@ -320,7 +334,7 @@
             this.groupBox2.Controls.Add(this.lblName);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.groupBox2.ForeColor = System.Drawing.Color.Blue;
             this.groupBox2.Location = new System.Drawing.Point(651, 99);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(303, 256);
@@ -380,8 +394,8 @@
             this.groupBox4.Controls.Add(this.txtSearchBorrow);
             this.groupBox4.Controls.Add(this.btnSearchBorrow);
             this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.groupBox4.Location = new System.Drawing.Point(0, 20);
+            this.groupBox4.ForeColor = System.Drawing.Color.Blue;
+            this.groupBox4.Location = new System.Drawing.Point(0, 12);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(392, 52);
             this.groupBox4.TabIndex = 5;
@@ -390,7 +404,7 @@
             // 
             // txtSearchBorrow
             // 
-            this.txtSearchBorrow.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txtSearchBorrow.ForeColor = System.Drawing.Color.Blue;
             this.txtSearchBorrow.Location = new System.Drawing.Point(218, 22);
             this.txtSearchBorrow.Name = "txtSearchBorrow";
             this.txtSearchBorrow.Size = new System.Drawing.Size(147, 20);
@@ -415,14 +429,6 @@
             this.label8.Size = new System.Drawing.Size(60, 13);
             this.label8.TabIndex = 3;
             this.label8.Text = "Borrow No:";
-            // 
-            // txtDueDate
-            // 
-            this.txtDueDate.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtDueDate.Location = new System.Drawing.Point(100, 19);
-            this.txtDueDate.Name = "txtDueDate";
-            this.txtDueDate.Size = new System.Drawing.Size(197, 20);
-            this.txtDueDate.TabIndex = 2;
             // 
             // FrmCheckIn
             // 
@@ -461,7 +467,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.Label lblAddress;
-        private System.Windows.Forms.DateTimePicker issuedate;
+        private System.Windows.Forms.DateTimePicker returndate;
         private System.Windows.Forms.Label lblFee;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label17;
@@ -490,6 +496,6 @@
         private System.Windows.Forms.TextBox txtSearchBorrow;
         public System.Windows.Forms.Button btnSearchBorrow;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtDueDate;
+        private System.Windows.Forms.DateTimePicker duedate;
     }
 }

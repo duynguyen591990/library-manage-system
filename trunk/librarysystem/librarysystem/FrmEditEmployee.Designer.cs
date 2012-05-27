@@ -88,7 +88,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox1.ForeColor = System.Drawing.Color.Blue;
             this.groupBox1.Location = new System.Drawing.Point(62, 73);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(382, 369);
@@ -129,6 +129,7 @@
             // 
             // cboPermission
             // 
+            this.cboPermission.ForeColor = System.Drawing.Color.Blue;
             this.cboPermission.FormattingEnabled = true;
             this.cboPermission.Items.AddRange(new object[] {
             "Librarian",
@@ -140,6 +141,7 @@
             // 
             // txtDepartment
             // 
+            this.txtDepartment.ForeColor = System.Drawing.Color.Blue;
             this.txtDepartment.Location = new System.Drawing.Point(170, 316);
             this.txtDepartment.Name = "txtDepartment";
             this.txtDepartment.Size = new System.Drawing.Size(141, 20);
@@ -147,6 +149,7 @@
             // 
             // txtPhone
             // 
+            this.txtPhone.ForeColor = System.Drawing.Color.Blue;
             this.txtPhone.Location = new System.Drawing.Point(170, 284);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(141, 20);
@@ -154,6 +157,7 @@
             // 
             // txtEmail
             // 
+            this.txtEmail.ForeColor = System.Drawing.Color.Blue;
             this.txtEmail.Location = new System.Drawing.Point(170, 246);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(141, 20);
@@ -161,6 +165,7 @@
             // 
             // txtPassword
             // 
+            this.txtPassword.ForeColor = System.Drawing.Color.Blue;
             this.txtPassword.Location = new System.Drawing.Point(170, 207);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(141, 20);
@@ -168,6 +173,7 @@
             // 
             // txtAddress
             // 
+            this.txtAddress.ForeColor = System.Drawing.Color.Blue;
             this.txtAddress.Location = new System.Drawing.Point(170, 172);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(141, 20);
@@ -175,6 +181,7 @@
             // 
             // txtName
             // 
+            this.txtName.ForeColor = System.Drawing.Color.Blue;
             this.txtName.Location = new System.Drawing.Point(170, 63);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(141, 20);
@@ -182,6 +189,7 @@
             // 
             // txtEmployeeID
             // 
+            this.txtEmployeeID.ForeColor = System.Drawing.Color.Blue;
             this.txtEmployeeID.Location = new System.Drawing.Point(170, 34);
             this.txtEmployeeID.Name = "txtEmployeeID";
             this.txtEmployeeID.Size = new System.Drawing.Size(141, 20);
@@ -280,19 +288,19 @@
             // btnOK
             // 
             this.btnOK.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnOK.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnOK.ForeColor = System.Drawing.Color.Blue;
             this.btnOK.Location = new System.Drawing.Point(134, 464);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 5;
-            this.btnOK.Text = "Ok";
+            this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = false;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCancel.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btnCancel.ForeColor = System.Drawing.Color.Blue;
             this.btnCancel.Location = new System.Drawing.Point(289, 464);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);

@@ -6,16 +6,27 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace librarysystem
 {
     public partial class FrmMain : Form
-    {
+    {   public static string username;
         public FrmMain()
         {
             InitializeComponent();
         }
 
+        public void EnableMenu()
+        {
+            quảnLýEmployeeToolStripMenuItem.Enabled = true;
+            thốngKêToolStripMenuItem.Enabled = true;
+        }
+        public void DisableMenu()
+        {
+            quảnLýEmployeeToolStripMenuItem.Enabled = false;
+            thốngKêToolStripMenuItem.Enabled=false;
+        }
         private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmLogin frmdangnhap = new FrmLogin();
@@ -75,7 +86,8 @@ namespace librarysystem
         private void timer1_Tick(object sender, EventArgs e)
         {
             string text = label1.Text;
-            label1.Text = text.Substring(1,text.Length-1)+text.Substring(0,1);
+           label1.Text = text.Substring(1,text.Length-1)+text.Substring(0,1);
+           // label1.Left += 10;
         }
 
         private void guideToolStripMenuItem_Click(object sender, EventArgs e)
@@ -83,12 +95,62 @@ namespace librarysystem
             System.Diagnostics.Process.Start("Guide.docx");
         }
 
-        private void FrmMain_Load(object sender, EventArgs e)
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
         {
-            label1.Text = "Library";
+            //FrmLogin.Username=text
+            
         }
 
-      
-       
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            toolStripStatusLabel2.Text = DateTime.Now.ToString() ;
+            toolStripStatusLabel1.Text=FrmLogin.Username+" Online!";
+        }
+
+        private void btnBackup_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sqlBackup = "BACKUP DATABASE [systemlibrary] TO DISK='D:\\library-manage-system\\librarysystem\\systemlibrary.bak'";
+                SqlConnection con = new SqlConnection("Data Source=DEll-PC;Initial Catalog=systemlibrary;Integrated Security=True");
+                con.Open();
+                SqlCommand cmd = new SqlCommand(sqlBackup, con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Backup Database Successfull!");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message, "Backup Database");
+                return;
+            }
+        }
+
+        private void btnRestore_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string path = "D:\\library-manage-system\\librarysystem\\systemlibrary.bak";
+                string sqlRestore = "Use master Restore Database [systemlibrary] from disk='" + path + "'";
+                SqlConnection con = new SqlConnection("Data Source=DEll-PC;Initial Catalog=systemlibrary;Integrated Security=True");
+                con.Open();
+
+                SqlCommand cmd = new SqlCommand(sqlRestore, con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Database restore successfull ");
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message, "Restore Database");
+                return;
+            }
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DisableMenu();
+        }   
     }
 }

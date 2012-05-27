@@ -14,8 +14,12 @@ namespace librarysystem
         SqlCommand cmd;
         SqlDataAdapter da;
         DataSet ds;
-       // DataTable dt;
-       // SqlDataReader dr;
+        DataTable dt;
+        SqlDataReader dr;
+        public String EmployeeID, Name, Date, Gender,
+            Address, Email, Permission, Phone, Department;
+        public String BorrowID, CallNumber, ISBN, Author, Title, subject, Numberofbook, Bookinlibrary, Publisher,Issuedate,Duedate,
+            Returndate,Status,Totalfee;
         public void searchBorrow(String cbxSearch, String txtSearch, DataGridView dgvBorrow)
         {
 
@@ -122,6 +126,83 @@ namespace librarysystem
             da.Fill(ds, "Borrow");
             dgv.DataSource = ds.Tables["Borrow"];
             conn.Close();
+        }
+        public void DetailBorrowBook()
+        {
+            {
+                try
+                {
+                    conn = Connect.getConnection();
+                    conn.Open();
+                    String strSql = "select c.BorrowID,CallNumber,ISBN,b.SubjectName,Title,Author,Publisher,Issuedate,DueDate,Status,ReturnDate,Totalfee from Book a,Subject b,Borrowdetail c where a.SubjectID=b.SubjectID and a.BookID=c.BookID and c.BorrowID='" + FrmBorrow.BorrowID + "'";
+                    cmd = new SqlCommand(strSql, conn);
+                    dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        BorrowID = dr.GetInt32(0).ToString();
+                        CallNumber = dr.GetString(1);
+                        ISBN = dr.GetString(2);
+                        subject = dr.GetString(3);
+                        Title = dr.GetString(4);
+                        Author = dr.GetString(5);
+                        Publisher = dr.GetString(6);
+                        Issuedate = dr.GetDateTime(7).ToString();
+                        Duedate = dr.GetDateTime(8).ToString();           
+                        Status = dr.GetBoolean(9).ToString();
+                        if (Status.Equals("True"))
+                            Status = "Check-Out";
+                        else Status = "Check-In";
+                        
+                        Returndate = dr.GetDateTime(10).ToString();
+                        if (Returndate.Equals(null)) Returndate = "----";
+                        
+                        Totalfee = dr.GetFloat(11).ToString();
+                        if (Totalfee.Equals(null)) Totalfee = "-----";
+                    
+                    }
+                    conn.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Book still check-out");
+                }
+            }
+
+        }
+        public void DetailBorrowEmployee()
+        {
+            {
+                try
+                {
+
+                    conn = Connect.getConnection();
+                    conn.Open();
+                    String strSql = "select a.EmployeeID,Name,[Date of birth],Gender,Address,Email,[Phone number],Department,Permission from Employee a,Borrowdetail b where a.EmployeeID=b.EmployeeID and BorrowID ='" + FrmBorrow.BorrowID + "'";
+                    cmd = new SqlCommand(strSql, conn);
+                    dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        EmployeeID = dr.GetInt32(0).ToString();
+                        Name =dr.GetString(1);
+                        Date = dr.GetDateTime(2).ToString();
+                        Gender = dr.GetBoolean(3).ToString();
+                        if (Gender.Equals("True"))
+                            Gender = "Male";
+                        else Gender = "Female";
+                        Address = dr.GetString(4);
+                        Email = dr.GetString(5);
+                        Phone = dr.GetString(6);
+                        Department = dr.GetString(7);
+                        Permission = dr.GetString(8);
+                    }
+                    conn.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
         }
     }
 }

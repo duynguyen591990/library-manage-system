@@ -299,12 +299,11 @@
             // 
             // pictureBox1
             // 
-            //this.pictureBox1.Image = global::librarysystem.Properties.Resources.InfoBook1;
-            //this.pictureBox1.Location = new System.Drawing.Point(27, 107);
-            //this.pictureBox1.Name = "pictureBox1";
-            //this.pictureBox1.Size = new System.Drawing.Size(165, 168);
-            //this.pictureBox1.TabIndex = 5;
-            //this.pictureBox1.TabStop = false;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 110);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmDetailBook
             // 

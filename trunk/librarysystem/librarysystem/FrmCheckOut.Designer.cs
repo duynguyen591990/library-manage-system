@@ -73,8 +73,8 @@
             this.groupBox1.Controls.Add(this.txtBookSearch);
             this.groupBox1.Controls.Add(this.cboBook);
             this.groupBox1.Controls.Add(this.btnBookSearch);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(27, 12);
+            this.groupBox1.ForeColor = System.Drawing.Color.Blue;
+            this.groupBox1.Location = new System.Drawing.Point(29, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(749, 52);
             this.groupBox1.TabIndex = 0;
@@ -83,7 +83,7 @@
             // 
             // txtBookSearch
             // 
-            this.txtBookSearch.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txtBookSearch.ForeColor = System.Drawing.Color.Blue;
             this.txtBookSearch.Location = new System.Drawing.Point(266, 23);
             this.txtBookSearch.Name = "txtBookSearch";
             this.txtBookSearch.Size = new System.Drawing.Size(147, 20);
@@ -91,7 +91,7 @@
             // 
             // cboBook
             // 
-            this.cboBook.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.cboBook.ForeColor = System.Drawing.Color.Blue;
             this.cboBook.FormattingEnabled = true;
             this.cboBook.Items.AddRange(new object[] {
             "All",
@@ -134,7 +134,7 @@
             this.groupBox2.Controls.Add(this.txtEmployeeSearch);
             this.groupBox2.Controls.Add(this.cboEmployee);
             this.groupBox2.Controls.Add(this.btnEmployee);
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.groupBox2.ForeColor = System.Drawing.Color.Blue;
             this.groupBox2.Location = new System.Drawing.Point(663, 83);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(316, 314);
@@ -263,7 +263,7 @@
             // 
             // txtEmployeeSearch
             // 
-            this.txtEmployeeSearch.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.txtEmployeeSearch.ForeColor = System.Drawing.Color.Blue;
             this.txtEmployeeSearch.Location = new System.Drawing.Point(157, 21);
             this.txtEmployeeSearch.Name = "txtEmployeeSearch";
             this.txtEmployeeSearch.Size = new System.Drawing.Size(147, 20);
@@ -271,7 +271,7 @@
             // 
             // cboEmployee
             // 
-            this.cboEmployee.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.cboEmployee.ForeColor = System.Drawing.Color.Blue;
             this.cboEmployee.FormattingEnabled = true;
             this.cboEmployee.Items.AddRange(new object[] {
             "All",
@@ -298,7 +298,7 @@
             this.groupBox3.Controls.Add(this.issuedate);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.groupBox3.ForeColor = System.Drawing.Color.Blue;
             this.groupBox3.Location = new System.Drawing.Point(663, 403);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(316, 100);
@@ -360,7 +360,7 @@
             // 
             // btnCheckout
             // 
-            this.btnCheckout.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCheckout.ForeColor = System.Drawing.Color.Blue;
             this.btnCheckout.Location = new System.Drawing.Point(703, 522);
             this.btnCheckout.Name = "btnCheckout";
             this.btnCheckout.Size = new System.Drawing.Size(75, 23);
@@ -371,7 +371,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnCancel.ForeColor = System.Drawing.Color.Blue;
             this.btnCancel.Location = new System.Drawing.Point(845, 522);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);

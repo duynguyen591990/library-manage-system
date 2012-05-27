@@ -18,6 +18,7 @@ namespace librarysystem
        // DataSet ds;
         //DataTable dt;
         SqlDataReader rd;
+       public static string Username;
        
         public FrmLogin()
         {
@@ -26,7 +27,7 @@ namespace librarysystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
+            Username = txtusername.Text;
             String quyen;
             try
             {
@@ -83,10 +84,6 @@ namespace librarysystem
         {
             Application.Exit();
         }
-
-       
-
-
 
     }
 }

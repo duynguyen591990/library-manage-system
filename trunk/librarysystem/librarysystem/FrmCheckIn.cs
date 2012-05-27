@@ -16,8 +16,8 @@ namespace librarysystem
         SqlDataAdapter da;
         SqlConnection conn;
         classBorrow clb = new classBorrow();
-        SqlCommand cmd;
-        DataSet ds;
+        //SqlCommand cmd;
+        //DataSet ds;
         SqlDataReader dr;
         public FrmCheckIn()
         {
@@ -85,7 +85,7 @@ namespace librarysystem
             dr = cmd1.ExecuteReader();
             while (dr.Read())
             {
-                txtDueDate.Text = dr.GetDateTime(0).ToShortDateString();
+                duedate.Text = dr.GetDateTime(0).ToShortDateString();
             }
 
         }
@@ -105,9 +105,18 @@ namespace librarysystem
             da = new SqlDataAdapter(str, conn);
             da.Fill(dt);
             dataGridView2.DataSource = dt;
-                //int r = this.dataGridView1.CurrentCell.RowIndex;
-                //dataGridView2.Rows[0].Cells[0].Value = dataGridView1.Rows[r].Cells[0].Value;
             }
+
+        private void btnCheckin_Click(object sender, EventArgs e)
+        {
+            DateTime dt1 = duedate.Value;
+            DateTime dt2 = returndate.Value;
+            if (DateTime.Compare(dt1, dt2) < 0)
+            {
+                //viet code tiep o day
+            }
+            else { MessageBox.Show("Return Date must great Due Date","Error"); }
+        }
 
 
         }
