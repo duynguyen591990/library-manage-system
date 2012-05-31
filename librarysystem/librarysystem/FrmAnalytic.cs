@@ -27,7 +27,7 @@ namespace librarysystem
         {
             conn = Connect.getConnection();
             conn.Open();
-            String strsql = "select BookID, CallNumber, ISBN, SubjectName, Title, Author, Publisher,[No Book] - [Book in Library] [No of Borrowed] from Book, Subject where Book.SubjectID = Subject.SubjectID";
+            String strsql = "select top 5 BookID, CallNumber, ISBN, SubjectName, Title, Author, Publisher,[No Book] - [Book in Library] [No of Borrowed] from Book, Subject where Book.SubjectID = Subject.SubjectID";
             cmd = new SqlCommand(strsql, conn);
             da = new SqlDataAdapter(cmd);
             ds = new DataSet();
@@ -42,7 +42,7 @@ namespace librarysystem
             dgv.Show();
             conn = Connect.getConnection();
             conn.Open();
-            String strsql = "select   Employee.EmployeeID,   Name,   Gender,   Email,   Department,   [Phone number],   Permission,Count(BorrowID)   [No Borrowed] from   Borrow,   Employee where   Borrow.EmployeeID =   Employee.EmployeeID group   by   Employee.EmployeeID,   Name,   Gender,   Email,   Department,   [Phone number],   Permission";
+            String strsql = "select top 5  Employee.EmployeeID,   Name,   Gender,   Email,   Department,   [Phone number],   Permission,Count(BorrowID)   [No Borrowed] from   Borrowdetail,   Employee where   Borrowdetail.EmployeeID =   Employee.EmployeeID group   by   Employee.EmployeeID,   Name,   Gender,   Email,   Department,   [Phone number],   Permission order by [No Borrowed] desc";
             cmd = new SqlCommand(strsql, conn);
             da = new SqlDataAdapter(cmd);
             ds = new DataSet();
@@ -57,7 +57,7 @@ namespace librarysystem
             dgv.Show();
             conn = Connect.getConnection();
             conn.Open();
-            String strsql = "select   Borrow.BorrowID, Borrow.EmployeeID, Book.BookID, Name, CallNumber, Title,   IssueDate,   DueDate from Borrow, Employee, Book,Borrowdetail where   Borrow.EmployeeID =   Employee.EmployeeID and DueDate='" + dtpDueDate.Value.ToString() + "'";
+            String strsql = "select   Borrowdetail.BorrowID, Borrowdetail.EmployeeID, Book.BookID, Name, CallNumber, Title,   IssueDate,   DueDate from Employee, Book,Borrowdetail where   Borrowdetail.EmployeeID =   Employee.EmployeeID and DueDate='" + dtpDueDate.Text + "'";
             cmd = new SqlCommand(strsql, conn);
             da = new SqlDataAdapter(cmd);
             ds = new DataSet();

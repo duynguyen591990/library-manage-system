@@ -18,8 +18,10 @@ namespace librarysystem
         SqlDataReader dr;
         public String EmployeeID, Name, Date, Gender,
             Address, Email, Permission, Phone, Department;
-        public String BorrowID, CallNumber, ISBN, Author, Title, subject, Numberofbook, Bookinlibrary, Publisher,Issuedate,Duedate,
-            Returndate,Status,Totalfee;
+        public String BorrowID, CallNumber, ISBN, Author, Title, subject, Numberofbook, Bookinlibrary, Publisher, Issuedate, Duedate,
+            Returndate, Status, Totalfee;
+        public String borrowFee, lateFee;
+        public String affectdate;
         public void searchBorrow(String cbxSearch, String txtSearch, DataGridView dgvBorrow)
         {
 
@@ -147,18 +149,18 @@ namespace librarysystem
                         Author = dr.GetString(5);
                         Publisher = dr.GetString(6);
                         Issuedate = dr.GetDateTime(7).ToString();
-                        Duedate = dr.GetDateTime(8).ToString();           
+                        Duedate = dr.GetDateTime(8).ToString();
                         Status = dr.GetBoolean(9).ToString();
                         if (Status.Equals("True"))
                             Status = "Check-Out";
                         else Status = "Check-In";
-                        
+
                         Returndate = dr.GetDateTime(10).ToString();
                         if (Returndate.Equals(null)) Returndate = "----";
-                        
+
                         Totalfee = dr.GetFloat(11).ToString();
                         if (Totalfee.Equals(null)) Totalfee = "-----";
-                    
+
                     }
                     conn.Close();
                 }
@@ -183,7 +185,7 @@ namespace librarysystem
                     while (dr.Read())
                     {
                         EmployeeID = dr.GetInt32(0).ToString();
-                        Name =dr.GetString(1);
+                        Name = dr.GetString(1);
                         Date = dr.GetDateTime(2).ToString();
                         Gender = dr.GetBoolean(3).ToString();
                         if (Gender.Equals("True"))
@@ -204,5 +206,75 @@ namespace librarysystem
             }
 
         }
+        public void changerate(Double BorrowFee, Double LateFee, String Affectdate)
+        {
+            try
+            {
+                conn = Connect.getConnection();
+                conn.Open();
+                String sqlstr = "insert into Fee values('" + BorrowFee + "','" + LateFee + "', '" + Affectdate + "')";
+                cmd = new SqlCommand(sqlstr, conn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Change Fee successfull ", "Alert");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error", ex.Message);
+            }
+        }
+        public void previousfee()
+        {
+            try
+            {
+                conn = Connect.getConnection();
+                conn.Open();
+                String strSql = "select top 1 *  from Fee order by fee desc  ";
+                cmd = new SqlCommand(strSql, conn);
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    borrowFee = dr.GetDouble(1).ToString();
+                    lateFee = dr.GetDouble(2).ToString();
+                    affectdate = dr.GetDateTime(3).ToString();
+
+                }
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error", ex.Message);
+            }
+        }
+        public String BorrowFee, LateFee, Affectdate;
+        //public void getfee()
+        //{
+        //    try
+        //    {
+        //        conn = Connect.getConnection();
+        //        conn.Open();
+        //        String strSql = "select *  from Fee order by fee desc  ";
+        //        cmd = new SqlCommand(strSql, conn);
+        //        dr = cmd.ExecuteReader();
+        //        while (dr.Read())
+        //        {
+        //            BorrowFee = dr.GetDouble(1).ToString();
+        //            LateFee = dr.GetDouble(2).ToString();
+        //            Affectdate = dr.GetDateTime(3).ToString();
+
+        //        }
+        //        for (int i = 0; i < dr.FieldCount; i++)
+        //        {
+        //            if (DateTime.Compare(DateTime.Parse(Affectdate), DateTime.Parse(Issuedate)) > 0)
+        //            {
+        //                String latefee = LateFee;
+        //            }
+        //        }
+        //        conn.Close();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Error", ex.Message);
+        //    }
+        //}
     }
 }

@@ -72,6 +72,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Book.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Book.xsd</DependentUpon>
+    </Compile>
     <Compile Include="classBook.cs" />
     <Compile Include="classBorrow.cs" />
     <Compile Include="classSubject.cs" />
@@ -85,6 +90,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CRAnalytic1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRBook.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRBook.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CREmployee.cs">
@@ -245,6 +256,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CRAnalytic1.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="CRBook.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRBook.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="CREmployee.resx">
       <DependentUpon>CREmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -318,6 +333,17 @@
     </EmbeddedResource>
     <None Include="app.config">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="Book.xsc">
+      <DependentUpon>Book.xsd</DependentUpon>
+    </None>
+    <None Include="Book.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Book.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Book.xss">
+      <DependentUpon>Book.xsd</DependentUpon>
     </None>
     <None Include="DsAnalytic.xsc">
       <DependentUpon>DsAnalytic.xsd</DependentUpon>

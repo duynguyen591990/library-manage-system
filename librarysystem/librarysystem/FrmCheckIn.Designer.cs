@@ -32,7 +32,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lblPhone = new System.Windows.Forms.Label();
             this.lblAddress = new System.Windows.Forms.Label();
-            this.returndate = new System.Windows.Forms.DateTimePicker();
             this.lblFee = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -47,6 +46,7 @@
             this.btnCheckin = new System.Windows.Forms.Button();
             this.lblDOB = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.returndate = new System.Windows.Forms.DateTimePicker();
             this.duedate = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtBookSearch = new System.Windows.Forms.TextBox();
@@ -106,22 +106,10 @@
             this.lblAddress.TabIndex = 3;
             this.lblAddress.Text = "Address:";
             // 
-            // returndate
-            // 
-            this.returndate.CalendarForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.returndate.CalendarTitleForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.returndate.CustomFormat = "dd/MM/yyy";
-            this.returndate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.returndate.Location = new System.Drawing.Point(100, 49);
-            this.returndate.Name = "returndate";
-            this.returndate.Size = new System.Drawing.Size(200, 20);
-            this.returndate.TabIndex = 1;
-            this.returndate.Value = new System.DateTime(2012, 5, 26, 0, 0, 0, 0);
-            // 
             // lblFee
             // 
             this.lblFee.AutoSize = true;
-            this.lblFee.Location = new System.Drawing.Point(97, 72);
+            this.lblFee.Location = new System.Drawing.Point(97, 85);
             this.lblFee.Name = "lblFee";
             this.lblFee.Size = new System.Drawing.Size(25, 13);
             this.lblFee.TabIndex = 0;
@@ -139,7 +127,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(21, 72);
+            this.label17.Location = new System.Drawing.Point(21, 85);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(25, 13);
             this.label17.TabIndex = 0;
@@ -253,23 +241,34 @@
             this.groupBox3.ForeColor = System.Drawing.Color.Blue;
             this.groupBox3.Location = new System.Drawing.Point(651, 361);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(303, 100);
+            this.groupBox3.Size = new System.Drawing.Size(303, 119);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Check-In Information";
+            // 
+            // returndate
+            // 
+            this.returndate.CalendarForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.returndate.CalendarTitleForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.returndate.CustomFormat = "";
+            this.returndate.Enabled = false;
+            this.returndate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.returndate.Location = new System.Drawing.Point(97, 49);
+            this.returndate.Name = "returndate";
+            this.returndate.Size = new System.Drawing.Size(200, 20);
+            this.returndate.TabIndex = 2;
             // 
             // duedate
             // 
             this.duedate.CalendarForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.duedate.CalendarTitleForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.duedate.CustomFormat = "dd/MM/yyy";
+            this.duedate.CustomFormat = "";
             this.duedate.Enabled = false;
             this.duedate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.duedate.Location = new System.Drawing.Point(97, 19);
             this.duedate.Name = "duedate";
             this.duedate.Size = new System.Drawing.Size(200, 20);
-            this.duedate.TabIndex = 1;
-            this.duedate.Value = new System.DateTime(2012, 5, 26, 0, 0, 0, 0);
+            this.duedate.TabIndex = 2;
             // 
             // groupBox1
             // 
@@ -386,6 +385,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(645, 224);
             this.dataGridView1.TabIndex = 11;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
@@ -467,7 +467,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.Label lblAddress;
-        private System.Windows.Forms.DateTimePicker returndate;
         private System.Windows.Forms.Label lblFee;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label17;
@@ -496,6 +495,7 @@
         private System.Windows.Forms.TextBox txtSearchBorrow;
         public System.Windows.Forms.Button btnSearchBorrow;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DateTimePicker returndate;
         private System.Windows.Forms.DateTimePicker duedate;
     }
 }

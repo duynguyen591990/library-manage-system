@@ -51,7 +51,7 @@
             // 
             // dtpDueDate
             // 
-            this.dtpDueDate.CustomFormat = "dd/MM/yyyy";
+            this.dtpDueDate.CustomFormat = "";
             this.dtpDueDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpDueDate.Location = new System.Drawing.Point(289, 426);
             this.dtpDueDate.Name = "dtpDueDate";
