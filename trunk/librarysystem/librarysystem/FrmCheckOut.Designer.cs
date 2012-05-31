@@ -51,6 +51,8 @@
             this.cboEmployee = new System.Windows.Forms.ComboBox();
             this.btnEmployee = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblFee = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.duedate = new System.Windows.Forms.DateTimePicker();
             this.issuedate = new System.Windows.Forms.DateTimePicker();
             this.label16 = new System.Windows.Forms.Label();
@@ -294,6 +296,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.lblFee);
+            this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.duedate);
             this.groupBox3.Controls.Add(this.issuedate);
             this.groupBox3.Controls.Add(this.label16);
@@ -306,12 +310,30 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Check-Out Information";
             // 
+            // lblFee
+            // 
+            this.lblFee.AutoSize = true;
+            this.lblFee.Location = new System.Drawing.Point(97, 74);
+            this.lblFee.Name = "lblFee";
+            this.lblFee.Size = new System.Drawing.Size(25, 13);
+            this.lblFee.TabIndex = 3;
+            this.lblFee.Text = "Fee";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(21, 74);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(25, 13);
+            this.label17.TabIndex = 2;
+            this.label17.Text = "Fee";
+            // 
             // duedate
             // 
             this.duedate.CalendarForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.duedate.CalendarTitleForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.duedate.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
-            this.duedate.CustomFormat = "dd/MM/yyy";
+            this.duedate.CustomFormat = "";
             this.duedate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.duedate.Location = new System.Drawing.Point(100, 45);
             this.duedate.Name = "duedate";
@@ -322,7 +344,7 @@
             // 
             this.issuedate.CalendarForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.issuedate.CalendarTitleForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.issuedate.CustomFormat = "dd/MM/yyy";
+            this.issuedate.CustomFormat = "";
             this.issuedate.Enabled = false;
             this.issuedate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.issuedate.Location = new System.Drawing.Point(100, 16);
@@ -466,5 +488,7 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Label lblFee;
+        private System.Windows.Forms.Label label17;
     }
 }

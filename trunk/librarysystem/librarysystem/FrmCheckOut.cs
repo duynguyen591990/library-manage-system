@@ -14,6 +14,7 @@ namespace librarysystem
     {
         classEmployee cle = new classEmployee();
         classBook clb = new classBook();
+        classBorrow clbo = new classBorrow();
         DataTable dt = new DataTable();
         SqlDataAdapter da;
         SqlConnection conn;
@@ -65,7 +66,8 @@ namespace librarysystem
                 for (int i = 0; i < dataGridView2.RowCount; i++)
                 {
                     String idbook = dataGridView2[0, i].Value.ToString();
-                    String sqlstr = "insert into BorrowDetail(EmployeeID, BookID, IssueDate, DueDate,Status)values('" + Int32.Parse(id) + "','" + Int32.Parse(idbook) + "', '" + issuedate.Text + "' ,'" + duedate.Text + "','" + 1 + "')";
+                    String sqlstr = "insert into BorrowDetail(EmployeeID, BookID, IssueDate, DueDate,Status) values('" + Int32.Parse(id) + "','" + Int32.Parse(idbook) + "', '" + issuedate.Text + "' ,'" + duedate.Text + "','" + 1 + "')";
+                    MessageBox.Show(sqlstr);
                     SqlCommand cmd = new SqlCommand(sqlstr, conn);
                     cmd.ExecuteNonQuery();
                 }
@@ -82,6 +84,8 @@ namespace librarysystem
         private void FrmCheckOut_Load(object sender, EventArgs e)
         {
             btnCheckout.Visible = false;
+            clbo.previousfee();
+            lblFee.Text = clbo.borrowFee + "$/Day-" + clbo.lateFee + "$/Day";
         }
 
         private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -117,5 +121,6 @@ namespace librarysystem
             frm.Show();
             this.Dispose();
         }
+
         }
 }
