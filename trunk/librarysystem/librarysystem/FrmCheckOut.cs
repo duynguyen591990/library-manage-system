@@ -67,9 +67,12 @@ namespace librarysystem
                 {
                     String idbook = dataGridView2[0, i].Value.ToString();
                     String sqlstr = "insert into BorrowDetail(EmployeeID, BookID, IssueDate, DueDate,Status) values('" + Int32.Parse(id) + "','" + Int32.Parse(idbook) + "', '" + issuedate.Text + "' ,'" + duedate.Text + "','" + 1 + "')";
-                    MessageBox.Show(sqlstr);
+                    //MessageBox.Show(sqlstr);
                     SqlCommand cmd = new SqlCommand(sqlstr, conn);
                     cmd.ExecuteNonQuery();
+                    //String sql = "";
+                    //SqlCommand cmd1 = new SqlCommand(sql, conn);
+                    //cmd1.ExecuteNonQuery();
                 }
                 MessageBox.Show("Check-Out Successfull");
                 FrmBorrow frm = new FrmBorrow();

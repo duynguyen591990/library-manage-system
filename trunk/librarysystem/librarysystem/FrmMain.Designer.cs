@@ -57,6 +57,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -83,35 +84,31 @@
             this.logoutToolStripMenuItem,
             this.thoátToolStripMenuItem});
             this.toolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-           // this.toolStripMenuItem1.Image = global::librarysystem.Properties.Resources.Setting;
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(73, 20);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(57, 20);
             this.toolStripMenuItem1.Text = "System";
             // 
             // đăngNhậpToolStripMenuItem
             // 
             this.đăngNhậpToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-           // this.đăngNhậpToolStripMenuItem.Image = global::librarysystem.Properties.Resources.unlock;
             this.đăngNhậpToolStripMenuItem.Name = "đăngNhậpToolStripMenuItem";
-            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.đăngNhậpToolStripMenuItem.Text = "Login";
             this.đăngNhậpToolStripMenuItem.Click += new System.EventHandler(this.đăngNhậpToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
-           // this.logoutToolStripMenuItem.Image = global::librarysystem.Properties.Resources._lock;
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-           // this.thoátToolStripMenuItem.Image = global::librarysystem.Properties.Resources.Quit;
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.thoátToolStripMenuItem.Text = "Exit";
             this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
@@ -123,15 +120,13 @@
             this.subjectManagerToolStripMenuItem,
             this.borrowManagerToolStripMenuItem});
             this.quảnLýEmployeeToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            //this.quảnLýEmployeeToolStripMenuItem.Image = global::librarysystem.Properties.Resources.Computer;
             this.quảnLýEmployeeToolStripMenuItem.Name = "quảnLýEmployeeToolStripMenuItem";
-            this.quảnLýEmployeeToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.quảnLýEmployeeToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.quảnLýEmployeeToolStripMenuItem.Text = "Manager";
             // 
             // quánLýEmployeeToolStripMenuItem
             // 
             this.quánLýEmployeeToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-           // this.quánLýEmployeeToolStripMenuItem.Image = global::librarysystem.Properties.Resources.Employee;
             this.quánLýEmployeeToolStripMenuItem.Name = "quánLýEmployeeToolStripMenuItem";
             this.quánLýEmployeeToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.quánLýEmployeeToolStripMenuItem.Text = "Employee Manager";
@@ -140,7 +135,6 @@
             // bookManagerToolStripMenuItem
             // 
             this.bookManagerToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-           // this.bookManagerToolStripMenuItem.Image = global::librarysystem.Properties.Resources.Book;
             this.bookManagerToolStripMenuItem.Name = "bookManagerToolStripMenuItem";
             this.bookManagerToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.bookManagerToolStripMenuItem.Text = "Book Manager";
@@ -149,7 +143,6 @@
             // subjectManagerToolStripMenuItem
             // 
             this.subjectManagerToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-          //  this.subjectManagerToolStripMenuItem.Image = global::librarysystem.Properties.Resources.Sub;
             this.subjectManagerToolStripMenuItem.Name = "subjectManagerToolStripMenuItem";
             this.subjectManagerToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.subjectManagerToolStripMenuItem.Text = "Subject Manager";
@@ -158,7 +151,6 @@
             // borrowManagerToolStripMenuItem
             // 
             this.borrowManagerToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-           // this.borrowManagerToolStripMenuItem.Image = global::librarysystem.Properties.Resources.Borrow;
             this.borrowManagerToolStripMenuItem.Name = "borrowManagerToolStripMenuItem";
             this.borrowManagerToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.borrowManagerToolStripMenuItem.Text = "Borrow Manager";
@@ -168,17 +160,16 @@
             // 
             this.thốngKêToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.analyticToolStripMenuItem,
-            this.employeeToolStripMenuItem});
+            this.employeeToolStripMenuItem,
+            this.bookToolStripMenuItem});
             this.thốngKêToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-          //  this.thốngKêToolStripMenuItem.Image = global::librarysystem.Properties.Resources.full_page;
             this.thốngKêToolStripMenuItem.Name = "thốngKêToolStripMenuItem";
-            this.thốngKêToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.thốngKêToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.thốngKêToolStripMenuItem.Text = "Report";
             // 
             // analyticToolStripMenuItem
             // 
             this.analyticToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-           // this.analyticToolStripMenuItem.Image = global::librarysystem.Properties.Resources.TopBook;
             this.analyticToolStripMenuItem.Name = "analyticToolStripMenuItem";
             this.analyticToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.analyticToolStripMenuItem.Text = "Analytic";
@@ -187,7 +178,6 @@
             // employeeToolStripMenuItem
             // 
             this.employeeToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-        //    this.employeeToolStripMenuItem.Image = global::librarysystem.Properties.Resources.TopBorrower;
             this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
             this.employeeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.employeeToolStripMenuItem.Text = "Employee";
@@ -199,15 +189,13 @@
             this.guideToolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-           // this.helpToolStripMenuItem.Image = global::librarysystem.Properties.Resources.help;
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // guideToolStripMenuItem
             // 
             this.guideToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-           // this.guideToolStripMenuItem.Image = global::librarysystem.Properties.Resources.View;
             this.guideToolStripMenuItem.Name = "guideToolStripMenuItem";
             this.guideToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.guideToolStripMenuItem.Text = "Guide";
@@ -216,7 +204,6 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-          //  this.aboutToolStripMenuItem.Image = global::librarysystem.Properties.Resources.rss;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
@@ -316,7 +303,6 @@
             // 
             // pictureBox1
             // 
-           // this.pictureBox1.Image = global::librarysystem.Properties.Resources.images;
             this.pictureBox1.Location = new System.Drawing.Point(23, 39);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(135, 149);
@@ -334,6 +320,14 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Support Database";
+            // 
+            // bookToolStripMenuItem
+            // 
+            this.bookToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bookToolStripMenuItem.Name = "bookToolStripMenuItem";
+            this.bookToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.bookToolStripMenuItem.Text = "Book";
+            this.bookToolStripMenuItem.Click += new System.EventHandler(this.bookToolStripMenuItem_Click);
             // 
             // FrmMain
             // 
@@ -394,6 +388,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ToolStripMenuItem bookToolStripMenuItem;
     }
 }
 

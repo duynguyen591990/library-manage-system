@@ -151,6 +151,13 @@ namespace librarysystem
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DisableMenu();
+        }
+
+        private void bookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           CRBook cremployee = new CRBook();
+            cremployee.Show();
+            this.Hide();
         }   
     }
 }
