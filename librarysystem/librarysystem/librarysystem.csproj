@@ -93,9 +93,15 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CRBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRBook.Designer.cs">
+      <DependentUpon>CRBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRBook1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CRBook.rpt</DependentUpon>
+      <DependentUpon>CRBook1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CREmployee.cs">
@@ -256,9 +262,12 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CRAnalytic1.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="CRBook.rpt">
+    <EmbeddedResource Include="CRBook.resx">
+      <DependentUpon>CRBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRBook1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CRBook.cs</LastGenOutput>
+      <LastGenOutput>CRBook1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="CREmployee.resx">
       <DependentUpon>CREmployee.cs</DependentUpon>

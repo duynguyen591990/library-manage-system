@@ -251,7 +251,6 @@
             this.returndate.CalendarForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.returndate.CalendarTitleForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.returndate.CustomFormat = "";
-            this.returndate.Enabled = false;
             this.returndate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.returndate.Location = new System.Drawing.Point(97, 49);
             this.returndate.Name = "returndate";
@@ -388,6 +387,7 @@
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // groupBox4
             // 
