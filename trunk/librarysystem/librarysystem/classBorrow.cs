@@ -44,7 +44,7 @@ namespace librarysystem
                     MessageBox.Show("Error " + ex.Message);
                 }
             }
-            else if (cbxSearch == "Call Number")
+            else if (cbxSearch == "CallNumber")
             {
                 try
                 {
@@ -246,35 +246,27 @@ namespace librarysystem
             }
         }
         public String BorrowFee, LateFee, Affectdate;
-        //public void getfee()
-        //{
-        //    try
-        //    {
-        //        conn = Connect.getConnection();
-        //        conn.Open();
-        //        String strSql = "select *  from Fee order by fee desc  ";
-        //        cmd = new SqlCommand(strSql, conn);
-        //        dr = cmd.ExecuteReader();
-        //        while (dr.Read())
-        //        {
-        //            BorrowFee = dr.GetDouble(1).ToString();
-        //            LateFee = dr.GetDouble(2).ToString();
-        //            Affectdate = dr.GetDateTime(3).ToString();
 
-        //        }
-        //        for (int i = 0; i < dr.FieldCount; i++)
-        //        {
-        //            if (DateTime.Compare(DateTime.Parse(Affectdate), DateTime.Parse(Issuedate)) > 0)
-        //            {
-        //                String latefee = LateFee;
-        //            }
-        //        }
-        //        conn.Close();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show("Error", ex.Message);
-        //    }
-        //}
+        public void searchEmployeeName(String txtSearch, DataGridView dgvBorrow)
+        {
+
+            try
+            {
+                conn = Connect.getConnection();
+                conn.Open();
+                String strSql = "select EmployeeID,Name,[Date of birth],Address,[Phone Number] from Employee where Name like'%" + txtSearch + "%'";
+                cmd = new SqlCommand(strSql, conn);
+                da = new SqlDataAdapter(cmd);
+                ds = new DataSet();
+                da.Fill(ds, "Employee");
+                dgvBorrow.DataSource = ds.Tables["Employee"];
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error " + ex.Message);
+            }
+
+        }
     }
 }

@@ -60,23 +60,16 @@ namespace librarysystem.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap _lock {
+            get {
+                object obj = ResourceManager.GetObject("lock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap AddBook {
             get {
                 object obj = ResourceManager.GetObject("AddBook", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap Book {
-            get {
-                object obj = ResourceManager.GetObject("Book", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap Borrow {
-            get {
-                object obj = ResourceManager.GetObject("Borrow", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -88,79 +81,16 @@ namespace librarysystem.Properties {
             }
         }
         
-        internal static System.Drawing.Bitmap delete {
+        internal static System.Drawing.Bitmap Database {
             get {
-                object obj = ResourceManager.GetObject("delete", resourceCulture);
+                object obj = ResourceManager.GetObject("Database", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
-        internal static System.Drawing.Bitmap EditBook {
+        internal static System.Drawing.Bitmap Quit {
             get {
-                object obj = ResourceManager.GetObject("EditBook", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap Employee {
-            get {
-                object obj = ResourceManager.GetObject("Employee", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap full_page {
-            get {
-                object obj = ResourceManager.GetObject("full_page", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap help {
-            get {
-                object obj = ResourceManager.GetObject("help", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap InfoBook {
-            get {
-                object obj = ResourceManager.GetObject("InfoBook", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap rss {
-            get {
-                object obj = ResourceManager.GetObject("rss", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap Setting {
-            get {
-                object obj = ResourceManager.GetObject("Setting", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap Sub {
-            get {
-                object obj = ResourceManager.GetObject("Sub", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap TopBook {
-            get {
-                object obj = ResourceManager.GetObject("TopBook", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap TopBorrower {
-            get {
-                object obj = ResourceManager.GetObject("TopBorrower", resourceCulture);
+                object obj = ResourceManager.GetObject("Quit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -168,13 +98,6 @@ namespace librarysystem.Properties {
         internal static System.Drawing.Bitmap unlock {
             get {
                 object obj = ResourceManager.GetObject("unlock", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap View {
-            get {
-                object obj = ResourceManager.GetObject("View", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

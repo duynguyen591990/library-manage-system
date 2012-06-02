@@ -28,27 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnFee = new System.Windows.Forms.Button();
             this.btnView = new System.Windows.Forms.Button();
             this.btnCheckout = new System.Windows.Forms.Button();
             this.btnCheckin = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.cbxSearch = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvBorrow = new System.Windows.Forms.DataGridView();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBorrow)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtSearch.Location = new System.Drawing.Point(266, 84);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(199, 20);
-            this.txtSearch.TabIndex = 11;
             // 
             // btnExit
             // 
@@ -105,32 +96,6 @@
             this.btnCheckin.UseVisualStyleBackColor = true;
             this.btnCheckin.Click += new System.EventHandler(this.btnCheckin_Click);
             // 
-            // btnSearch
-            // 
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.Blue;
-            this.btnSearch.Location = new System.Drawing.Point(528, 81);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 12;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
-            // cbxSearch
-            // 
-            this.cbxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxSearch.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.cbxSearch.FormattingEnabled = true;
-            this.cbxSearch.Items.AddRange(new object[] {
-            "All",
-            "Call Number",
-            "Employee ID"});
-            this.cbxSearch.Location = new System.Drawing.Point(71, 83);
-            this.cbxSearch.Name = "cbxSearch";
-            this.cbxSearch.Size = new System.Drawing.Size(117, 21);
-            this.cbxSearch.TabIndex = 10;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -151,20 +116,52 @@
             this.dgvBorrow.Size = new System.Drawing.Size(656, 186);
             this.dgvBorrow.TabIndex = 19;
             // 
+            // btnSearch
+            // 
+            this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnSearch.Location = new System.Drawing.Point(147, 79);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 20;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.txtSearch.Location = new System.Drawing.Point(285, 79);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(100, 20);
+            this.txtSearch.TabIndex = 21;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "All",
+            "CallNumber",
+            "EmployeeID"});
+            this.comboBox1.Location = new System.Drawing.Point(449, 78);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 22;
+            // 
             // FrmBorrow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(717, 399);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnFee);
             this.Controls.Add(this.btnView);
             this.Controls.Add(this.btnCheckout);
             this.Controls.Add(this.btnCheckin);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.cbxSearch);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvBorrow);
             this.Name = "FrmBorrow";
@@ -178,15 +175,15 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnFee;
         private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.Button btnCheckout;
         private System.Windows.Forms.Button btnCheckin;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.ComboBox cbxSearch;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvBorrow;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

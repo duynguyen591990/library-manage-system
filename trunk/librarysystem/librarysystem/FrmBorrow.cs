@@ -23,11 +23,6 @@ namespace librarysystem
             clb.reloadgv(dgvBorrow);
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            clb.searchBorrow(cbxSearch.Text,txtSearch.Text,dgvBorrow);
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             FrmMain frm = new FrmMain();
@@ -62,6 +57,11 @@ namespace librarysystem
             FrmCheckOut frm = new FrmCheckOut();
             frm.Show();
             this.Hide();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            clb.searchBorrow(comboBox1.Text, txtSearch.Text, dgvBorrow);
         }
 
     }
