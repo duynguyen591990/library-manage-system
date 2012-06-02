@@ -62,12 +62,17 @@
             this.txtSearchBorrow = new System.Windows.Forms.TextBox();
             this.btnSearchBorrow = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnSearchEmployee = new System.Windows.Forms.Button();
+            this.txtEmployeeName = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblPermission
@@ -171,6 +176,7 @@
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.Size = new System.Drawing.Size(645, 216);
             this.dataGridView2.TabIndex = 8;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
             // lblDepartment
             // 
@@ -275,7 +281,7 @@
             this.groupBox1.Controls.Add(this.cboBook);
             this.groupBox1.Controls.Add(this.btnBookSearch);
             this.groupBox1.ForeColor = System.Drawing.Color.Blue;
-            this.groupBox1.Location = new System.Drawing.Point(450, 12);
+            this.groupBox1.Location = new System.Drawing.Point(271, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(477, 52);
             this.groupBox1.TabIndex = 5;
@@ -308,13 +314,13 @@
             // btnBookSearch
             // 
             this.btnBookSearch.ImageKey = "(none)";
-            this.btnBookSearch.Location = new System.Drawing.Point(26, 23);
+            this.btnBookSearch.Location = new System.Drawing.Point(27, 24);
             this.btnBookSearch.Name = "btnBookSearch";
             this.btnBookSearch.Size = new System.Drawing.Size(75, 23);
             this.btnBookSearch.TabIndex = 0;
             this.btnBookSearch.Text = "Search";
             this.btnBookSearch.UseVisualStyleBackColor = true;
-            this.btnBookSearch.Click += new System.EventHandler(this.btnBookSearch_Click);
+            //this.btnBookSearch.Click += new System.EventHandler(this.btnBookSearch_Click);
             // 
             // groupBox2
             // 
@@ -380,13 +386,11 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 99);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 103);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(645, 224);
             this.dataGridView1.TabIndex = 11;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // groupBox4
@@ -395,9 +399,9 @@
             this.groupBox4.Controls.Add(this.btnSearchBorrow);
             this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.ForeColor = System.Drawing.Color.Blue;
-            this.groupBox4.Location = new System.Drawing.Point(0, 12);
+            this.groupBox4.Location = new System.Drawing.Point(12, 12);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(392, 52);
+            this.groupBox4.Size = new System.Drawing.Size(242, 52);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Borrow Search";
@@ -405,9 +409,9 @@
             // txtSearchBorrow
             // 
             this.txtSearchBorrow.ForeColor = System.Drawing.Color.Blue;
-            this.txtSearchBorrow.Location = new System.Drawing.Point(218, 22);
+            this.txtSearchBorrow.Location = new System.Drawing.Point(173, 27);
             this.txtSearchBorrow.Name = "txtSearchBorrow";
-            this.txtSearchBorrow.Size = new System.Drawing.Size(147, 20);
+            this.txtSearchBorrow.Size = new System.Drawing.Size(61, 20);
             this.txtSearchBorrow.TabIndex = 2;
             // 
             // btnSearchBorrow
@@ -419,33 +423,74 @@
             this.btnSearchBorrow.TabIndex = 0;
             this.btnSearchBorrow.Text = "Search";
             this.btnSearchBorrow.UseVisualStyleBackColor = true;
-            this.btnSearchBorrow.Click += new System.EventHandler(this.btnSearchBorrow_Click);
+           // this.btnSearchBorrow.Click += new System.EventHandler(this.btnSearchBorrow_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(127, 28);
+            this.label8.Location = new System.Drawing.Point(107, 30);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(60, 13);
             this.label8.TabIndex = 3;
             this.label8.Text = "Borrow No:";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.btnSearchEmployee);
+            this.groupBox5.Controls.Add(this.txtEmployeeName);
+            this.groupBox5.Controls.Add(this.label9);
+            this.groupBox5.ForeColor = System.Drawing.Color.Blue;
+            this.groupBox5.Location = new System.Drawing.Point(770, 12);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(294, 52);
+            this.groupBox5.TabIndex = 5;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Borrow Search";
+            // 
+            // btnSearchEmployee
+            // 
+            this.btnSearchEmployee.Location = new System.Drawing.Point(20, 22);
+            this.btnSearchEmployee.Name = "btnSearchEmployee";
+            this.btnSearchEmployee.Size = new System.Drawing.Size(75, 23);
+            this.btnSearchEmployee.TabIndex = 4;
+            this.btnSearchEmployee.Text = "Search";
+            this.btnSearchEmployee.UseVisualStyleBackColor = true;
+            this.btnSearchEmployee.Click += new System.EventHandler(this.btnSearchEmployee_Click);
+            // 
+            // txtEmployeeName
+            // 
+            this.txtEmployeeName.ForeColor = System.Drawing.Color.Blue;
+            this.txtEmployeeName.Location = new System.Drawing.Point(173, 27);
+            this.txtEmployeeName.Name = "txtEmployeeName";
+            this.txtEmployeeName.Size = new System.Drawing.Size(95, 20);
+            this.txtEmployeeName.TabIndex = 2;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(107, 30);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(38, 13);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Name:";
             // 
             // FrmCheckIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(966, 588);
+            this.ClientSize = new System.Drawing.Size(1087, 588);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnCheckin);
             this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FrmCheckIn";
-            this.Text = "FrmCheckIn";
+            this.Text = "Employee Search";
             this.Load += new System.EventHandler(this.FrmCheckIn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox3.ResumeLayout(false);
@@ -457,6 +502,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -497,5 +544,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker returndate;
         private System.Windows.Forms.DateTimePicker duedate;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.TextBox txtEmployeeName;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnSearchEmployee;
     }
 }

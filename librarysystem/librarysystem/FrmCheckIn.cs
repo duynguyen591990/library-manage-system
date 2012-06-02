@@ -24,70 +24,11 @@ namespace librarysystem
             InitializeComponent();
         }
 
-        private void btnBookSearch_Click(object sender, EventArgs e)
-        {
-            clb.searchborrowbook(dataGridView1);
-            //btnCheckin.Visible = true;
-       
-            // SqlCommand cmd = new SqlCommand(strSql, conn);
-            //SqlDataReader rd;
-            //rd = cmd.ExecuteReader();
-            //while (rd.Read())
-            //{
-            //    txtDueDate.Text=rd.GetDateTime(6).ToString();}
-            //conn.Close();
-        
-        }
-
-        private void btnSearchBorrow_Click(object sender, EventArgs e)
-        {
-            clb.searchBorrowID(txtSearchBorrow.Text, dataGridView1);
-        }
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
             FrmBorrow frm = new FrmBorrow();
             frm.Show();
             this.Dispose();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //btnCheckin.Visible = true;
-            //int index = dataGridView1.CurrentRow.Index;
-            //string id = dataGridView1[1, index].Value.ToString();
-            //conn = Connect.getConnection();
-            //conn.Open();
-            //String strSql = "select * from Employee where EmployeeID='" + id + "'";
-            //SqlCommand cmd = new SqlCommand(strSql, conn);
-            //SqlDataReader rd;
-            //rd = cmd.ExecuteReader();
-            //while (rd.Read())
-            //{
-            //    lblName.Text = rd.GetString(1);
-            //    lblDOB.Text = rd.GetDateTime(2).ToString();
-            //    lblGender.Text = rd.GetBoolean(3).ToString();
-            //    if (lblGender.Equals("True"))
-            //        lblGender.Text = "Male";
-            //    else lblGender.Text = "Female";
-            //    lblAddress.Text = rd.GetString(4);
-            //    lblPermission.Text = rd.GetString(7);
-            //    lblPhone.Text = rd.GetString(8);
-            //    lblDepartment.Text = rd.GetString(9);
-            //}
-            //conn.Close();
-            //conn = Connect.getConnection();
-            //conn.Open();
-            //int index1 = dataGridView1.CurrentRow.Index;
-            //string id1 = dataGridView1[0, index1].Value.ToString();
-            //String Sql = "select Duedate from Borrowdetail where BorrowID='" + id1 + "'";
-            //SqlCommand cmd1 = new SqlCommand(Sql, conn);
-            //dr = cmd1.ExecuteReader();
-            //while (dr.Read())
-            //{
-            //    duedate.Text = dr.GetDateTime(0).ToShortDateString();
-            //}
-
         }
 
         private void FrmCheckIn_Load(object sender, EventArgs e)
@@ -98,17 +39,6 @@ namespace librarysystem
 
         }
 
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //conn = Connect.getConnection();
-            //conn.Open();
-            //int index1 = dataGridView1.CurrentRow.Index;
-            //string id1 = dataGridView1[0, index1].Value.ToString();
-            //string str = @"select distinct borrowid,a.bookid,callnumber,title,publisher from book a,borrowdetail b where a.bookid=b.bookid and b.borrowid='" + id1 + "' ";
-            //da = new SqlDataAdapter(str, conn);
-            //da.Fill(dt);
-            //dataGridView2.DataSource = dt;
-            }
         public double tinhngay(){
             String duedatebook = duedate.Value.ToString();
             DateTime startdate = DateTime.Parse(duedatebook);
@@ -132,16 +62,24 @@ namespace librarysystem
            //     //viet code tiep o day
                 conn = Connect.getConnection();
                 conn.Open();
-                int index = dataGridView1.CurrentRow.Index;
-                string id = dataGridView1[0, index].Value.ToString();
-                for (int i = 0; i < dataGridView2.RowCount; i++)
-                {
-                    String idbook = dataGridView2[0, i].Value.ToString();
-                    String sqlstr = "update BorrowDetail set Returndate=" + returndate.Text + ",Totalfee=" + tinhngay() * Double.Parse(clb.lateFee) + ",Status='0' where borrowid='" + idbook + "'";
+               SqlConnection conn1 = Connect.getConnection();
+                conn1.Open();
+                int index = dataGridView2.CurrentRow.Index;
+                //string id = dataGridView1[0, index].Value.ToString();
+                //for (int i = 0; i < dataGridView2.RowCount; i++)
+             //   {
+                    String borrowid = dataGridView2[0,index].Value.ToString();
+                    String bookid = dataGridView2[1, index].Value.ToString();
+                    MessageBox.Show(bookid);
+                    String sqlstr = "update BorrowDetail set Returndate='" + returndate.Text + "',Totalfee='" + tinhngay() * Double.Parse(clb.lateFee) + "',Status='0' where borrowid='" + borrowid + "'";
                     MessageBox.Show(sqlstr);
                     SqlCommand cmd = new SqlCommand(sqlstr, conn);
                     cmd.ExecuteNonQuery();
-                } 
+                    String sql = "update Book set [Book in Library]=[Book in Library]+1 where bookid='" + bookid + "'";
+                    MessageBox.Show(sql);
+                    SqlCommand cmd1 = new SqlCommand(sql, conn1);
+                    cmd1.ExecuteNonQuery();
+              //  } 
                 
                 MessageBox.Show("Check-In Successfull");
                 FrmBorrow frm = new FrmBorrow();
@@ -156,44 +94,21 @@ namespace librarysystem
 
             int index = dataGridView1.CurrentRow.Index;
             string str1 = dataGridView1[0, index].Value.ToString();
-            int i = 0;
-            bool flag = false;
-            while (i < dataGridView2.Rows.Count)
-            {
-                MessageBox.Show(dataGridView2[0, i].Value.ToString());
-
-                if (str1.Equals(dataGridView2[0, i].Value.ToString()))
-                {
-                    //MessageBox.Show("Oh Shit!!!Cái này có rồi!!!");
-                    flag = true;
-                    break;
-                }
-                i++;
-            }
-            if (flag)
-            {
-                MessageBox.Show("Oh Shit!!!Cái này có rồi!!!");
-            }
-            else
-            {
                 conn = Connect.getConnection();
                 conn.Open();
-                ///int index1 = dataGridView1.CurrentRow.Index;
-                //string id1 = dataGridView1[0, index1].Value.ToString();
-                string str = @"select distinct borrowid,a.bookid,callnumber,title,publisher from book a,borrowdetail b where a.bookid=b.bookid and b.borrowid='" + str1 + "' ";
+                string str = @"select borrowid,a.bookid,callnumber,title,publisher from book a,borrowdetail b where a.bookid=b.bookid and b.EmployeeID='" + str1 + "' ";
                 da = new SqlDataAdapter(str, conn);
                 da.Fill(dt);
                 dataGridView2.DataSource = dt;
-                dataGridView1[0, index].ReadOnly = true;
-                dataGridView1[0, index].ErrorText = "Đã chọn";
-            }
+               // dataGridView1[0, index].ReadOnly = true;
+               // dataGridView1[0, index].ErrorText = "Đã chọn";
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             btnCheckin.Visible = true;
             int index = dataGridView1.CurrentRow.Index;
-            string id = dataGridView1[1, index].Value.ToString();
+            string id = dataGridView1[0, index].Value.ToString();
             conn = Connect.getConnection();
             conn.Open();
             String strSql = "select * from Employee where EmployeeID='" + id + "'";
@@ -214,10 +129,21 @@ namespace librarysystem
                 lblDepartment.Text = rd.GetString(9);
             }
             conn.Close();
+            
+
+        }
+
+        private void btnSearchEmployee_Click(object sender, EventArgs e)
+        {
+            clb.searchEmployeeName(txtEmployeeName.Text,dataGridView1);
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
             conn = Connect.getConnection();
             conn.Open();
-            int index1 = dataGridView1.CurrentRow.Index;
-            string id1 = dataGridView1[0, index1].Value.ToString();
+            int index1 = dataGridView2.CurrentRow.Index;
+            string id1 = dataGridView2[0, index1].Value.ToString();
             String Sql = "select Duedate from Borrowdetail where BorrowID='" + id1 + "'";
             SqlCommand cmd1 = new SqlCommand(Sql, conn);
             dr = cmd1.ExecuteReader();
@@ -225,7 +151,6 @@ namespace librarysystem
             {
                 duedate.Text = dr.GetDateTime(0).ToShortDateString();
             }
-
         }
 
 

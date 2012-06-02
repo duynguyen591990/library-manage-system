@@ -41,14 +41,14 @@ namespace librarysystem
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
            // SqlConnection sql = new SqlConnection(@"Data Source=DELL-PC;Initial Catalog=systemlibrary;Integrated Security=True");
-            conn = Connect.getConnection();
-            conn.Open();
-            int index = dataGridView1.CurrentRow.Index;
-            string id=dataGridView1[0,index].Value.ToString();
-            string str = "select BookID,CallNumber,ISBN,Title,Author,Publisher from Book where bookid='" + id + "' ";
-            da = new SqlDataAdapter(str,conn);
-            da.Fill(dt);
-            dataGridView2.DataSource = dt;
+            //conn = Connect.getConnection();
+            //conn.Open();
+            //int index = dataGridView1.CurrentRow.Index;
+            //string id=dataGridView1[0,index].Value.ToString();
+            //string str = "select BookID,CallNumber,ISBN,Title,Author,Publisher from Book where bookid='" + id + "' ";
+            //da = new SqlDataAdapter(str,conn);
+            //da.Fill(dt);
+            //dataGridView2.DataSource = dt;
         }
 
         private void btnCheckout_Click(object sender, EventArgs e)
@@ -60,6 +60,8 @@ namespace librarysystem
             if (DateTime.Compare(dt1, dt2) < 0)
             {
                 conn = Connect.getConnection();
+                SqlConnection conn1 = Connect.getConnection();
+                conn1.Open();
                 conn.Open();
                 int index = dataGridView3.CurrentRow.Index;
                 string id = dataGridView3[0, index].Value.ToString();
@@ -70,9 +72,10 @@ namespace librarysystem
                     //MessageBox.Show(sqlstr);
                     SqlCommand cmd = new SqlCommand(sqlstr, conn);
                     cmd.ExecuteNonQuery();
-                    //String sql = "";
-                    //SqlCommand cmd1 = new SqlCommand(sql, conn);
-                    //cmd1.ExecuteNonQuery();
+                    String sql = "update Book set [Book in Library]=[Book in Library]-1 where bookid='"+idbook+"'";
+                    MessageBox.Show(sql);
+                    SqlCommand cmd1 = new SqlCommand(sql, conn1);
+                    cmd1.ExecuteNonQuery();
                 }
                 MessageBox.Show("Check-Out Successfull");
                 FrmBorrow frm = new FrmBorrow();
@@ -93,28 +96,28 @@ namespace librarysystem
 
         private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            btnCheckout.Visible = true;
-            int index = dataGridView3.CurrentRow.Index;
-            string id = dataGridView3[0, index].Value.ToString();
-            conn = Connect.getConnection();
-                conn.Open();
-                String strSql = "select * from Employee where EmployeeID='"+id+"'";
-                SqlCommand cmd = new SqlCommand(strSql, conn);
-                SqlDataReader rd;
-                rd = cmd.ExecuteReader();
-                while (rd.Read())
-                {
-                    lblName.Text= rd.GetString(1);
-                    lblDOB.Text = rd.GetDateTime(2).ToString();
-                    lblGender.Text = rd.GetBoolean(3).ToString();
-                    if (lblGender.Equals("True"))
-                        lblGender.Text = "Male";
-                    else lblGender.Text = "Female";
-                    lblAddress.Text = rd.GetString(4);
-                    lblPermission.Text = rd.GetString(7);
-                    lblPhone.Text = rd.GetString(8);
-                    lblDepartment.Text = rd.GetString(9);
-        }
+        //    btnCheckout.Visible = true;
+        //    int index = dataGridView3.CurrentRow.Index;
+        //    string id = dataGridView3[0, index].Value.ToString();
+        //    conn = Connect.getConnection();
+        //        conn.Open();
+        //        String strSql = "select * from Employee where EmployeeID='"+id+"'";
+        //        SqlCommand cmd = new SqlCommand(strSql, conn);
+        //        SqlDataReader rd;
+        //        rd = cmd.ExecuteReader();
+        //        while (rd.Read())
+        //        {
+        //            lblName.Text= rd.GetString(1);
+        //            lblDOB.Text = rd.GetDateTime(2).ToString();
+        //            lblGender.Text = rd.GetBoolean(3).ToString();
+        //            if (lblGender.Equals("True"))
+        //                lblGender.Text = "Male";
+        //            else lblGender.Text = "Female";
+        //            lblAddress.Text = rd.GetString(4);
+        //            lblPermission.Text = rd.GetString(7);
+        //            lblPhone.Text = rd.GetString(8);
+        //            lblDepartment.Text = rd.GetString(9);
+        //}
 
     }
 
@@ -123,6 +126,45 @@ namespace librarysystem
             FrmBorrow frm = new FrmBorrow();
             frm.Show();
             this.Dispose();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            conn = Connect.getConnection();
+            conn.Open();
+            int index = dataGridView1.CurrentRow.Index;
+            string id = dataGridView1[0, index].Value.ToString();
+            string str = "select BookID,CallNumber,ISBN,Title,Author,Publisher from Book where bookid='" + id + "' ";
+            da = new SqlDataAdapter(str, conn);
+            da.Fill(dt);
+            dataGridView2.DataSource = dt;
+
+        }
+
+        private void dataGridView3_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnCheckout.Visible = true;
+            int index = dataGridView3.CurrentRow.Index;
+            string id = dataGridView3[0, index].Value.ToString();
+            conn = Connect.getConnection();
+            conn.Open();
+            String strSql = "select * from Employee where EmployeeID='" + id + "'";
+            SqlCommand cmd = new SqlCommand(strSql, conn);
+            SqlDataReader rd;
+            rd = cmd.ExecuteReader();
+            while (rd.Read())
+            {
+                lblName.Text = rd.GetString(1);
+                lblDOB.Text = rd.GetDateTime(2).ToString();
+                lblGender.Text = rd.GetBoolean(3).ToString();
+                if (lblGender.Equals("True"))
+                    lblGender.Text = "Male";
+                else lblGender.Text = "Female";
+                lblAddress.Text = rd.GetString(4);
+                lblPermission.Text = rd.GetString(7);
+                lblPhone.Text = rd.GetString(8);
+                lblDepartment.Text = rd.GetString(9);
+            }
         }
 
         }
