@@ -167,16 +167,14 @@
             // 
             // dataGridView2
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(0, 345);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
             this.dataGridView2.Size = new System.Drawing.Size(645, 216);
             this.dataGridView2.TabIndex = 8;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
+            this.dataGridView2.Click += new System.EventHandler(this.dataGridView2_Click);
             // 
             // lblDepartment
             // 
@@ -208,22 +206,28 @@
             // btnCancel
             // 
             this.btnCancel.ForeColor = System.Drawing.Color.Blue;
+            this.btnCancel.Image = global::librarysystem.Properties.Resources.back;
+            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancel.Location = new System.Drawing.Point(833, 498);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(82, 39);
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnCheckin
             // 
             this.btnCheckin.ForeColor = System.Drawing.Color.Blue;
+            this.btnCheckin.Image = global::librarysystem.Properties.Resources.CheckIn;
+            this.btnCheckin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCheckin.Location = new System.Drawing.Point(691, 498);
             this.btnCheckin.Name = "btnCheckin";
-            this.btnCheckin.Size = new System.Drawing.Size(75, 23);
+            this.btnCheckin.Size = new System.Drawing.Size(91, 39);
             this.btnCheckin.TabIndex = 10;
             this.btnCheckin.Text = "Check-in";
+            this.btnCheckin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCheckin.UseVisualStyleBackColor = true;
             this.btnCheckin.Click += new System.EventHandler(this.btnCheckin_Click);
             // 
@@ -283,7 +287,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.Blue;
             this.groupBox1.Location = new System.Drawing.Point(271, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(477, 52);
+            this.groupBox1.Size = new System.Drawing.Size(477, 71);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Book Search";
@@ -313,14 +317,16 @@
             // 
             // btnBookSearch
             // 
+            this.btnBookSearch.Image = global::librarysystem.Properties.Resources.Search;
+            this.btnBookSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBookSearch.ImageKey = "(none)";
             this.btnBookSearch.Location = new System.Drawing.Point(27, 24);
             this.btnBookSearch.Name = "btnBookSearch";
-            this.btnBookSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnBookSearch.Size = new System.Drawing.Size(75, 34);
             this.btnBookSearch.TabIndex = 0;
             this.btnBookSearch.Text = "Search";
+            this.btnBookSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBookSearch.UseVisualStyleBackColor = true;
-            //this.btnBookSearch.Click += new System.EventHandler(this.btnBookSearch_Click);
             // 
             // groupBox2
             // 
@@ -401,7 +407,7 @@
             this.groupBox4.ForeColor = System.Drawing.Color.Blue;
             this.groupBox4.Location = new System.Drawing.Point(12, 12);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(242, 52);
+            this.groupBox4.Size = new System.Drawing.Size(242, 71);
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Borrow Search";
@@ -416,14 +422,16 @@
             // 
             // btnSearchBorrow
             // 
+            this.btnSearchBorrow.Image = global::librarysystem.Properties.Resources.Search;
+            this.btnSearchBorrow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSearchBorrow.ImageKey = "(none)";
             this.btnSearchBorrow.Location = new System.Drawing.Point(26, 23);
             this.btnSearchBorrow.Name = "btnSearchBorrow";
-            this.btnSearchBorrow.Size = new System.Drawing.Size(75, 23);
+            this.btnSearchBorrow.Size = new System.Drawing.Size(81, 35);
             this.btnSearchBorrow.TabIndex = 0;
             this.btnSearchBorrow.Text = "Search";
+            this.btnSearchBorrow.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSearchBorrow.UseVisualStyleBackColor = true;
-           // this.btnSearchBorrow.Click += new System.EventHandler(this.btnSearchBorrow_Click);
             // 
             // label8
             // 
@@ -442,18 +450,21 @@
             this.groupBox5.ForeColor = System.Drawing.Color.Blue;
             this.groupBox5.Location = new System.Drawing.Point(770, 12);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(294, 52);
+            this.groupBox5.Size = new System.Drawing.Size(294, 71);
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Borrow Search";
             // 
             // btnSearchEmployee
             // 
+            this.btnSearchEmployee.Image = global::librarysystem.Properties.Resources.Search;
+            this.btnSearchEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSearchEmployee.Location = new System.Drawing.Point(20, 22);
             this.btnSearchEmployee.Name = "btnSearchEmployee";
-            this.btnSearchEmployee.Size = new System.Drawing.Size(75, 23);
+            this.btnSearchEmployee.Size = new System.Drawing.Size(75, 36);
             this.btnSearchEmployee.TabIndex = 4;
             this.btnSearchEmployee.Text = "Search";
+            this.btnSearchEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSearchEmployee.UseVisualStyleBackColor = true;
             this.btnSearchEmployee.Click += new System.EventHandler(this.btnSearchEmployee_Click);
             // 

@@ -24,6 +24,11 @@ namespace librarysystem
         private void FrmBook_Load(object sender, EventArgs e)
         {
             clb.reloadgv(dgvBook);
+            if (FrmLogin.quyen != "Librarian ") { 
+                btnAdd.Enabled = false; 
+                btnDelete.Enabled = false; 
+                btnEdit.Enabled = false;
+            }
         }
 
         private void btnSearch_Click(object sender, EventArgs e)

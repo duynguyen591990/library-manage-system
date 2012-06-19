@@ -116,6 +116,18 @@
       <DependentUpon>CREmployee1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CRTopBook.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRTopBook.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CRTopBorrow.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRTopBorrow.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DsAnalytic.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -237,6 +249,12 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBackup.designer.cs">
+      <DependentUpon>FrmBackup.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSubject.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -280,6 +298,14 @@
     <EmbeddedResource Include="CREmployee1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CREmployee11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRTopBook.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRTopBook.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRTopBorrow.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRTopBorrow.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAddBook.resx">
       <DependentUpon>FrmAddBook.cs</DependentUpon>
@@ -337,6 +363,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBackup.resx">
+      <DependentUpon>FrmBackup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSubject.resx">
       <DependentUpon>FrmSubject.cs</DependentUpon>
@@ -446,6 +475,93 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attachment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfoBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfoBorrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfoEmp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfoSub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditEmp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditSub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FeeRate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_pie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corner-of-a-book-wallpaper_422_14806.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

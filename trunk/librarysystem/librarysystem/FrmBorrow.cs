@@ -21,6 +21,7 @@ namespace librarysystem
         private void FrmBorrow_Load(object sender, EventArgs e)
         {
             clb.reloadgv(dgvBorrow);
+            if (FrmLogin.quyen != "Librarian ") { btnFee.Enabled = false; }
         }
 
         private void btnExit_Click(object sender, EventArgs e)

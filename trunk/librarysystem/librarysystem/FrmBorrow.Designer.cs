@@ -29,72 +29,31 @@
         private void InitializeComponent()
         {
             this.btnExit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgvBorrow = new System.Windows.Forms.DataGridView();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.btnFee = new System.Windows.Forms.Button();
             this.btnView = new System.Windows.Forms.Button();
             this.btnCheckout = new System.Windows.Forms.Button();
             this.btnCheckin = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dgvBorrow = new System.Windows.Forms.DataGridView();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBorrow)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
             // 
             this.btnExit.ForeColor = System.Drawing.Color.Blue;
+            this.btnExit.Image = global::librarysystem.Properties.Resources.back;
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.Location = new System.Drawing.Point(587, 339);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(75, 37);
             this.btnExit.TabIndex = 17;
             this.btnExit.Text = "Exit";
+            this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnFee
-            // 
-            this.btnFee.ForeColor = System.Drawing.Color.Blue;
-            this.btnFee.Location = new System.Drawing.Point(439, 339);
-            this.btnFee.Name = "btnFee";
-            this.btnFee.Size = new System.Drawing.Size(75, 23);
-            this.btnFee.TabIndex = 16;
-            this.btnFee.Text = "Fee Rate";
-            this.btnFee.UseVisualStyleBackColor = true;
-            this.btnFee.Click += new System.EventHandler(this.btnFee_Click);
-            // 
-            // btnView
-            // 
-            this.btnView.ForeColor = System.Drawing.Color.Blue;
-            this.btnView.Location = new System.Drawing.Point(291, 339);
-            this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(94, 23);
-            this.btnView.TabIndex = 15;
-            this.btnView.Text = "View Information";
-            this.btnView.UseVisualStyleBackColor = true;
-            this.btnView.Click += new System.EventHandler(this.btnView_Click);
-            // 
-            // btnCheckout
-            // 
-            this.btnCheckout.ForeColor = System.Drawing.Color.Blue;
-            this.btnCheckout.Location = new System.Drawing.Point(171, 339);
-            this.btnCheckout.Name = "btnCheckout";
-            this.btnCheckout.Size = new System.Drawing.Size(75, 23);
-            this.btnCheckout.TabIndex = 14;
-            this.btnCheckout.Text = "Check-Out";
-            this.btnCheckout.UseVisualStyleBackColor = true;
-            this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click);
-            // 
-            // btnCheckin
-            // 
-            this.btnCheckin.ForeColor = System.Drawing.Color.Blue;
-            this.btnCheckin.Location = new System.Drawing.Point(38, 339);
-            this.btnCheckin.Name = "btnCheckin";
-            this.btnCheckin.Size = new System.Drawing.Size(75, 23);
-            this.btnCheckin.TabIndex = 13;
-            this.btnCheckin.Text = "Check-In";
-            this.btnCheckin.UseVisualStyleBackColor = true;
-            this.btnCheckin.Click += new System.EventHandler(this.btnCheckin_Click);
             // 
             // label1
             // 
@@ -116,17 +75,6 @@
             this.dgvBorrow.Size = new System.Drawing.Size(656, 186);
             this.dgvBorrow.TabIndex = 19;
             // 
-            // btnSearch
-            // 
-            this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnSearch.Location = new System.Drawing.Point(147, 79);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 20;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
             // txtSearch
             // 
             this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -147,6 +95,76 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 22;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnSearch.Image = global::librarysystem.Properties.Resources.Search;
+            this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSearch.Location = new System.Drawing.Point(119, 72);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(83, 43);
+            this.btnSearch.TabIndex = 20;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // btnFee
+            // 
+            this.btnFee.ForeColor = System.Drawing.Color.Blue;
+            this.btnFee.Image = global::librarysystem.Properties.Resources.Fee;
+            this.btnFee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFee.Location = new System.Drawing.Point(439, 339);
+            this.btnFee.Name = "btnFee";
+            this.btnFee.Size = new System.Drawing.Size(91, 37);
+            this.btnFee.TabIndex = 16;
+            this.btnFee.Text = "Fee Rate";
+            this.btnFee.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFee.UseVisualStyleBackColor = true;
+            this.btnFee.Click += new System.EventHandler(this.btnFee_Click);
+            // 
+            // btnView
+            // 
+            this.btnView.ForeColor = System.Drawing.Color.Blue;
+            this.btnView.Image = global::librarysystem.Properties.Resources.View;
+            this.btnView.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnView.Location = new System.Drawing.Point(291, 339);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(117, 37);
+            this.btnView.TabIndex = 15;
+            this.btnView.Text = "View Information";
+            this.btnView.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
+            // 
+            // btnCheckout
+            // 
+            this.btnCheckout.ForeColor = System.Drawing.Color.Blue;
+            this.btnCheckout.Image = global::librarysystem.Properties.Resources.CheckOut;
+            this.btnCheckout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCheckout.Location = new System.Drawing.Point(171, 339);
+            this.btnCheckout.Name = "btnCheckout";
+            this.btnCheckout.Size = new System.Drawing.Size(93, 37);
+            this.btnCheckout.TabIndex = 14;
+            this.btnCheckout.Text = "Check-Out";
+            this.btnCheckout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCheckout.UseVisualStyleBackColor = true;
+            this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click);
+            // 
+            // btnCheckin
+            // 
+            this.btnCheckin.ForeColor = System.Drawing.Color.Blue;
+            this.btnCheckin.Image = global::librarysystem.Properties.Resources.CheckIn;
+            this.btnCheckin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCheckin.Location = new System.Drawing.Point(38, 339);
+            this.btnCheckin.Name = "btnCheckin";
+            this.btnCheckin.Size = new System.Drawing.Size(88, 37);
+            this.btnCheckin.TabIndex = 13;
+            this.btnCheckin.Text = "Check-In";
+            this.btnCheckin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCheckin.UseVisualStyleBackColor = true;
+            this.btnCheckin.Click += new System.EventHandler(this.btnCheckin_Click);
             // 
             // FrmBorrow
             // 

@@ -142,3 +142,4 @@ C:\Users\Dell\Desktop\library-manage-system\librarysystem\librarysystem\obj\x86\
 C:\Users\Dell\Desktop\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Dell\Desktop\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Dell\Desktop\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.CRBook.resources
+C:\Users\Dell\Desktop\library-manage-system\librarysystem\librarysystem\obj\x86\Debug\librarysystem.frmBackup.resources

@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnalytic));
             this.dgv = new System.Windows.Forms.DataGridView();
             this.dtpDueDate = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.label4 = new System.Windows.Forms.Label();
             this.btnReport = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.btnTopBorrow = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnTopBook = new System.Windows.Forms.Button();
@@ -43,6 +43,7 @@
             // 
             // dgv
             // 
+            this.dgv.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Location = new System.Drawing.Point(37, 79);
             this.dgv.Name = "dgv";
@@ -69,38 +70,14 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Due Date";
             // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnExit.ForeColor = System.Drawing.Color.Blue;
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(631, 463);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(80, 39);
-            this.btnExit.TabIndex = 6;
-            this.btnExit.Text = "     Exit";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // crystalReportViewer1
-            // 
-            this.crystalReportViewer1.ActiveViewIndex = -1;
-            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(37, 79);
-            this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(697, 309);
-            this.crystalReportViewer1.TabIndex = 10;
-            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
             this.label4.Location = new System.Drawing.Point(327, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 33);
+            this.label4.Size = new System.Drawing.Size(126, 33);
             this.label4.TabIndex = 18;
             this.label4.Text = "Analytic";
             // 
@@ -108,6 +85,7 @@
             // 
             this.btnReport.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnReport.ForeColor = System.Drawing.Color.Blue;
+            this.btnReport.Image = global::librarysystem.Properties.Resources.attachment;
             this.btnReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReport.Location = new System.Drawing.Point(429, 463);
             this.btnReport.Name = "btnReport";
@@ -117,10 +95,25 @@
             this.btnReport.UseVisualStyleBackColor = false;
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnExit.ForeColor = System.Drawing.Color.Blue;
+            this.btnExit.Image = global::librarysystem.Properties.Resources.back;
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.Location = new System.Drawing.Point(631, 463);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(80, 39);
+            this.btnExit.TabIndex = 6;
+            this.btnExit.Text = "     Exit";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // btnTopBorrow
             // 
             this.btnTopBorrow.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnTopBorrow.ForeColor = System.Drawing.Color.Blue;
+            this.btnTopBorrow.Image = ((System.Drawing.Image)(resources.GetObject("btnTopBorrow.Image")));
             this.btnTopBorrow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTopBorrow.Location = new System.Drawing.Point(241, 463);
             this.btnTopBorrow.Name = "btnTopBorrow";
@@ -134,6 +127,7 @@
             // 
             this.btnSearch.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSearch.ForeColor = System.Drawing.Color.Blue;
+            this.btnSearch.Image = global::librarysystem.Properties.Resources.Search;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSearch.Location = new System.Drawing.Point(518, 420);
             this.btnSearch.Name = "btnSearch";
@@ -147,6 +141,7 @@
             // 
             this.btnTopBook.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnTopBook.ForeColor = System.Drawing.Color.Blue;
+            this.btnTopBook.Image = ((System.Drawing.Image)(resources.GetObject("btnTopBook.Image")));
             this.btnTopBook.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTopBook.Location = new System.Drawing.Point(58, 463);
             this.btnTopBook.Name = "btnTopBook";
@@ -163,7 +158,6 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(778, 553);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.btnReport);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
@@ -191,7 +185,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnReport;
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private System.Windows.Forms.Label label4;
     }
 }

@@ -18,12 +18,15 @@ namespace librarysystem
             InitializeComponent();
             mDS = ds;
         }
-        
+   // phan nay quen ko gưi zzzz6
+
         private void CRAnalytic_Load(object sender, EventArgs e)
         {
-            FrmAnalytic frma = new FrmAnalytic();
             ReportDocument cRep = new ReportDocument();
-            cRep.Load("D:/library-manage-system/librarysystem/librarysystem/CRAnalytic1.rpt");
+            if (FrmAnalytic.report == 1)
+                cRep.Load("C:/Users/Dell/Desktop/library-manage-system/librarysystem/librarysystem/CRTopBook.rpt");
+            else
+                cRep.Load("C:/Users/Dell/Desktop/library-manage-system/librarysystem/librarysystem/CRTopBorrow.rpt");
             cRep.SetDataSource(mDS);
             crystalReportViewer1.ReportSource = cRep;
             

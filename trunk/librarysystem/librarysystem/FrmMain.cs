@@ -26,12 +26,13 @@ namespace librarysystem
         {
             quảnLýEmployeeToolStripMenuItem.Enabled = false;
             thốngKêToolStripMenuItem.Enabled=false;
+            backUpDatabaseToolStripMenuItem.Enabled = false;
         }
         private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmLogin frmdangnhap = new FrmLogin();
             frmdangnhap.Show();
-            this.Dispose();
+            this.Hide();
                       
         }
 
@@ -39,7 +40,7 @@ namespace librarysystem
         {
             FrmEmployee frmaddemployee = new FrmEmployee();
             frmaddemployee.Show();
-            this.Dispose();
+            this.Hide();
         }
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
@@ -59,7 +60,7 @@ namespace librarysystem
         {
             FrmBook frm = new FrmBook();
             frm.Show();
-            this.Dispose();
+            this.Hide();
         }
 
         private void employeeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -105,6 +106,7 @@ namespace librarysystem
         {
             toolStripStatusLabel2.Text = DateTime.Now.ToString() ;
             toolStripStatusLabel1.Text=FrmLogin.Username+" Online!";
+            if (FrmLogin.quyen != "Librarian ") { backUpDatabaseToolStripMenuItem.Enabled = false; }
         }
 
         private void btnBackup_Click(object sender, EventArgs e)
@@ -157,6 +159,13 @@ namespace librarysystem
         {
            CRBook cremployee = new CRBook();
             cremployee.Show();
+            this.Hide();
+        }
+
+        private void backUpDatabaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBackup backup = new frmBackup();
+            backup.Show();
             this.Hide();
         }   
     }

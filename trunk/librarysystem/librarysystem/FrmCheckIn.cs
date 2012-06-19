@@ -140,10 +140,11 @@ namespace librarysystem
 
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            
             conn = Connect.getConnection();
             conn.Open();
             int index1 = dataGridView2.CurrentRow.Index;
-            string id1 = dataGridView2[0, index1].Value.ToString();
+            string id1 = dataGridView2[1, index1].Value.ToString();
             String Sql = "select Duedate from Borrowdetail where BorrowID='" + id1 + "'";
             SqlCommand cmd1 = new SqlCommand(Sql, conn);
             dr = cmd1.ExecuteReader();
@@ -151,6 +152,13 @@ namespace librarysystem
             {
                 duedate.Text = dr.GetDateTime(0).ToShortDateString();
             }
+            //if (dataGridView2[0, index1].Value.ToString() = "1") { }
+        }
+
+        private void dataGridView2_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow r in dataGridView2.Rows)
+                r.Cells[0].Value = true;
         }
 
 

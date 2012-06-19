@@ -78,7 +78,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.Blue;
             this.groupBox1.Location = new System.Drawing.Point(29, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(749, 52);
+            this.groupBox1.Size = new System.Drawing.Size(749, 65);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Book Search";
@@ -108,12 +108,15 @@
             // 
             // btnBookSearch
             // 
+            this.btnBookSearch.Image = global::librarysystem.Properties.Resources.Search;
+            this.btnBookSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBookSearch.ImageKey = "(none)";
-            this.btnBookSearch.Location = new System.Drawing.Point(107, 21);
+            this.btnBookSearch.Location = new System.Drawing.Point(99, 12);
             this.btnBookSearch.Name = "btnBookSearch";
-            this.btnBookSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnBookSearch.Size = new System.Drawing.Size(75, 40);
             this.btnBookSearch.TabIndex = 0;
             this.btnBookSearch.Text = "Search";
+            this.btnBookSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBookSearch.UseVisualStyleBackColor = true;
             this.btnBookSearch.Click += new System.EventHandler(this.btnBookSearch_Click);
             // 
@@ -286,11 +289,14 @@
             // 
             // btnEmployee
             // 
+            this.btnEmployee.Image = global::librarysystem.Properties.Resources.Search;
+            this.btnEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEmployee.Location = new System.Drawing.Point(100, 60);
             this.btnEmployee.Name = "btnEmployee";
-            this.btnEmployee.Size = new System.Drawing.Size(114, 23);
+            this.btnEmployee.Size = new System.Drawing.Size(79, 33);
             this.btnEmployee.TabIndex = 0;
             this.btnEmployee.Text = "Search";
+            this.btnEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEmployee.UseVisualStyleBackColor = true;
             this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
             // 
@@ -384,22 +390,28 @@
             // btnCheckout
             // 
             this.btnCheckout.ForeColor = System.Drawing.Color.Blue;
+            this.btnCheckout.Image = global::librarysystem.Properties.Resources.CheckOut;
+            this.btnCheckout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCheckout.Location = new System.Drawing.Point(703, 522);
             this.btnCheckout.Name = "btnCheckout";
-            this.btnCheckout.Size = new System.Drawing.Size(75, 23);
+            this.btnCheckout.Size = new System.Drawing.Size(92, 38);
             this.btnCheckout.TabIndex = 2;
             this.btnCheckout.Text = "Check-out";
+            this.btnCheckout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCheckout.UseVisualStyleBackColor = true;
             this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click);
             // 
             // btnCancel
             // 
             this.btnCancel.ForeColor = System.Drawing.Color.Blue;
+            this.btnCancel.Image = global::librarysystem.Properties.Resources.back;
+            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancel.Location = new System.Drawing.Point(845, 522);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(84, 38);
             this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "Cancel";
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 

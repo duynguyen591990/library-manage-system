@@ -47,6 +47,7 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backUpDatabaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnBackup = new System.Windows.Forms.Button();
             this.btnRestore = new System.Windows.Forms.Button();
@@ -57,12 +58,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -96,8 +97,9 @@
             this.đăngNhậpToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.đăngNhậpToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("đăngNhậpToolStripMenuItem.Image")));
             this.đăngNhậpToolStripMenuItem.Name = "đăngNhậpToolStripMenuItem";
-            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.đăngNhậpToolStripMenuItem.Text = "Login";
+            this.đăngNhậpToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
+            this.đăngNhậpToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.đăngNhậpToolStripMenuItem.Text = "Log&in";
             this.đăngNhậpToolStripMenuItem.Click += new System.EventHandler(this.đăngNhậpToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
@@ -105,8 +107,9 @@
             this.logoutToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
             this.logoutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("logoutToolStripMenuItem.Image")));
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.logoutToolStripMenuItem.Text = "Log&out";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // thoátToolStripMenuItem
@@ -114,8 +117,9 @@
             this.thoátToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.thoátToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("thoátToolStripMenuItem.Image")));
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.thoátToolStripMenuItem.Text = "Exit";
+            this.thoátToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.thoátToolStripMenuItem.Text = "E&xit";
             this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
             // quảnLýEmployeeToolStripMenuItem
@@ -136,8 +140,9 @@
             this.quánLýEmployeeToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.quánLýEmployeeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("quánLýEmployeeToolStripMenuItem.Image")));
             this.quánLýEmployeeToolStripMenuItem.Name = "quánLýEmployeeToolStripMenuItem";
-            this.quánLýEmployeeToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.quánLýEmployeeToolStripMenuItem.Text = "Employee Manager";
+            this.quánLýEmployeeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
+            this.quánLýEmployeeToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.quánLýEmployeeToolStripMenuItem.Text = "&Employee Manager";
             this.quánLýEmployeeToolStripMenuItem.Click += new System.EventHandler(this.quánLýEmployeeToolStripMenuItem_Click);
             // 
             // bookManagerToolStripMenuItem
@@ -145,8 +150,9 @@
             this.bookManagerToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.bookManagerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("bookManagerToolStripMenuItem.Image")));
             this.bookManagerToolStripMenuItem.Name = "bookManagerToolStripMenuItem";
-            this.bookManagerToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.bookManagerToolStripMenuItem.Text = "Book Manager";
+            this.bookManagerToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
+            this.bookManagerToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.bookManagerToolStripMenuItem.Text = "&Book Manager";
             this.bookManagerToolStripMenuItem.Click += new System.EventHandler(this.bookManagerToolStripMenuItem_Click);
             // 
             // subjectManagerToolStripMenuItem
@@ -154,8 +160,9 @@
             this.subjectManagerToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.subjectManagerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("subjectManagerToolStripMenuItem.Image")));
             this.subjectManagerToolStripMenuItem.Name = "subjectManagerToolStripMenuItem";
-            this.subjectManagerToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.subjectManagerToolStripMenuItem.Text = "Subject Manager";
+            this.subjectManagerToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.subjectManagerToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.subjectManagerToolStripMenuItem.Text = "&Subject Manager";
             this.subjectManagerToolStripMenuItem.Click += new System.EventHandler(this.subjectManagerToolStripMenuItem_Click);
             // 
             // borrowManagerToolStripMenuItem
@@ -163,8 +170,9 @@
             this.borrowManagerToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.borrowManagerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("borrowManagerToolStripMenuItem.Image")));
             this.borrowManagerToolStripMenuItem.Name = "borrowManagerToolStripMenuItem";
-            this.borrowManagerToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.borrowManagerToolStripMenuItem.Text = "Borrow Manager";
+            this.borrowManagerToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
+            this.borrowManagerToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.borrowManagerToolStripMenuItem.Text = "Bo&rrow Manager";
             this.borrowManagerToolStripMenuItem.Click += new System.EventHandler(this.borrowManagerToolStripMenuItem_Click);
             // 
             // thốngKêToolStripMenuItem
@@ -184,8 +192,9 @@
             this.analyticToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.analyticToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("analyticToolStripMenuItem.Image")));
             this.analyticToolStripMenuItem.Name = "analyticToolStripMenuItem";
-            this.analyticToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.analyticToolStripMenuItem.Text = "Analytic";
+            this.analyticToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.analyticToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.analyticToolStripMenuItem.Text = "&Analytic";
             this.analyticToolStripMenuItem.Click += new System.EventHandler(this.analyticToolStripMenuItem_Click);
             // 
             // employeeToolStripMenuItem
@@ -193,8 +202,9 @@
             this.employeeToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.employeeToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("employeeToolStripMenuItem.Image")));
             this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
-            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.employeeToolStripMenuItem.Text = "Employee";
+            this.employeeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)));
+            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.employeeToolStripMenuItem.Text = "E&mployee";
             this.employeeToolStripMenuItem.Click += new System.EventHandler(this.employeeToolStripMenuItem_Click);
             // 
             // bookToolStripMenuItem
@@ -202,15 +212,17 @@
             this.bookToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.bookToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("bookToolStripMenuItem.Image")));
             this.bookToolStripMenuItem.Name = "bookToolStripMenuItem";
-            this.bookToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.bookToolStripMenuItem.Text = "Book";
+            this.bookToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.K)));
+            this.bookToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.bookToolStripMenuItem.Text = "Boo&k";
             this.bookToolStripMenuItem.Click += new System.EventHandler(this.bookToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.guideToolStripMenuItem,
-            this.aboutToolStripMenuItem});
+            this.aboutToolStripMenuItem,
+            this.backUpDatabaseToolStripMenuItem});
             this.helpToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.helpToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripMenuItem.Image")));
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
@@ -222,8 +234,9 @@
             this.guideToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.guideToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("guideToolStripMenuItem.Image")));
             this.guideToolStripMenuItem.Name = "guideToolStripMenuItem";
-            this.guideToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.guideToolStripMenuItem.Text = "Guide";
+            this.guideToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
+            this.guideToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.guideToolStripMenuItem.Text = "&Guide";
             this.guideToolStripMenuItem.Click += new System.EventHandler(this.guideToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
@@ -231,8 +244,19 @@
             this.aboutToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.aboutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("aboutToolStripMenuItem.Image")));
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.aboutToolStripMenuItem.Text = "Abo&ut";
+            // 
+            // backUpDatabaseToolStripMenuItem
+            // 
+            this.backUpDatabaseToolStripMenuItem.ForeColor = System.Drawing.Color.Blue;
+            this.backUpDatabaseToolStripMenuItem.Image = global::librarysystem.Properties.Resources.Database;
+            this.backUpDatabaseToolStripMenuItem.Name = "backUpDatabaseToolStripMenuItem";
+            this.backUpDatabaseToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
+            this.backUpDatabaseToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            this.backUpDatabaseToolStripMenuItem.Text = "BackUp &Database";
+            this.backUpDatabaseToolStripMenuItem.Click += new System.EventHandler(this.backUpDatabaseToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
@@ -327,15 +351,6 @@
                 "c Duy - 43853\r\n                                             Phạm Ngọc Việt - 109" +
                 "53";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 51);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(140, 150);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnBackup);
@@ -348,12 +363,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Support Database";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 51);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(140, 150);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(637, 403);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -364,14 +389,14 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmMain";
+            this.Text = "Main";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -408,6 +433,7 @@
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ToolStripMenuItem bookToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backUpDatabaseToolStripMenuItem;
     }
 }
 
