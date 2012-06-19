@@ -37,9 +37,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblBorrowFee = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnChange = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnChange = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +55,7 @@
             this.groupBox1.Controls.Add(this.lblBorrowFee);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.ForeColor = System.Drawing.Color.Blue;
-            this.groupBox1.Location = new System.Drawing.Point(120, 32);
+            this.groupBox1.Location = new System.Drawing.Point(176, 32);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(329, 145);
             this.groupBox1.TabIndex = 0;
@@ -132,42 +132,49 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Borrow Fee";
             // 
-            // btnChange
-            // 
-            this.btnChange.ForeColor = System.Drawing.Color.Blue;
-            this.btnChange.Location = new System.Drawing.Point(90, 183);
-            this.btnChange.Name = "btnChange";
-            this.btnChange.Size = new System.Drawing.Size(75, 23);
-            this.btnChange.TabIndex = 1;
-            this.btnChange.Text = "Change";
-            this.btnChange.UseVisualStyleBackColor = true;
-            this.btnChange.Click += new System.EventHandler(this.btnChange_Click);
-            // 
             // btnCancel
             // 
             this.btnCancel.ForeColor = System.Drawing.Color.Blue;
-            this.btnCancel.Location = new System.Drawing.Point(247, 183);
+            this.btnCancel.Image = global::librarysystem.Properties.Resources.back2;
+            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancel.Location = new System.Drawing.Point(351, 183);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(75, 34);
             this.btnCancel.TabIndex = 1;
             this.btnCancel.Text = "Cancel";
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::librarysystem.Properties.Resources.FeeRate;
             this.pictureBox1.Location = new System.Drawing.Point(12, 32);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(102, 128);
+            this.pictureBox1.Size = new System.Drawing.Size(158, 167);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnChange
+            // 
+            this.btnChange.ForeColor = System.Drawing.Color.Blue;
+            this.btnChange.Image = global::librarysystem.Properties.Resources.chart_pie;
+            this.btnChange.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChange.Location = new System.Drawing.Point(197, 183);
+            this.btnChange.Name = "btnChange";
+            this.btnChange.Size = new System.Drawing.Size(83, 34);
+            this.btnChange.TabIndex = 1;
+            this.btnChange.Text = "Change";
+            this.btnChange.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnChange.UseVisualStyleBackColor = true;
+            this.btnChange.Click += new System.EventHandler(this.btnChange_Click);
             // 
             // FrmFee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(483, 218);
+            this.ClientSize = new System.Drawing.Size(517, 234);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnChange);

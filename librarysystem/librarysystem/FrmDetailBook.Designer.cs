@@ -48,9 +48,9 @@
             this.lblBookID = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnOK = new System.Windows.Forms.Button();
             this.dgvDetailbook = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnOK = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetailbook)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -276,18 +276,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "BookID";
             // 
-            // btnOK
-            // 
-            this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btnOK.Location = new System.Drawing.Point(304, 615);
-            this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(97, 34);
-            this.btnOK.TabIndex = 2;
-            this.btnOK.Text = "OK";
-            this.btnOK.UseVisualStyleBackColor = true;
-            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
-            // 
             // dgvDetailbook
             // 
             this.dgvDetailbook.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -299,11 +287,27 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::librarysystem.Properties.Resources.InfoBook;
             this.pictureBox1.Location = new System.Drawing.Point(12, 110);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(165, 177);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnOK
+            // 
+            this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOK.ForeColor = System.Drawing.Color.Blue;
+            this.btnOK.Image = global::librarysystem.Properties.Resources.accept;
+            this.btnOK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOK.Location = new System.Drawing.Point(304, 615);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(77, 34);
+            this.btnOK.TabIndex = 2;
+            this.btnOK.Text = "OK";
+            this.btnOK.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // FrmDetailBook
             // 

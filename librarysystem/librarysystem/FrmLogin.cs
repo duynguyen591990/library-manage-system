@@ -18,6 +18,7 @@ namespace librarysystem
        // DataSet ds;
         //DataTable dt;
         SqlDataReader rd;
+       public static string quyen;
        public static string Username;
        
         public FrmLogin()
@@ -28,7 +29,6 @@ namespace librarysystem
         private void btnLogin_Click(object sender, EventArgs e)
         {
             Username = txtusername.Text;
-            String quyen;
             try
             {
 
@@ -44,7 +44,7 @@ namespace librarysystem
                         quyen = rd.GetValue(0).ToString();
                         if (quyen.Equals("Librarian "))
                         {
-                            MessageBox.Show("Chúc mừng Librarian đã đăng nhập thành công", "Thành Công");
+                            MessageBox.Show("Welcome Librarian Login Success!");
                             this.Hide();
                             FrmMain frmMain = new FrmMain();
                             frmMain.Show();
@@ -53,7 +53,7 @@ namespace librarysystem
                         }
                         else
                         {
-                            MessageBox.Show("Chúc mừng " + txtusername.Text + " đã đăng nhập thành công", "Thành Công");
+                            MessageBox.Show("Welcome " + txtusername.Text + " login success!");
                             this.Hide();
                             FrmMain frmMain = new FrmMain();
                             frmMain.Show();
@@ -62,7 +62,7 @@ namespace librarysystem
                     }
                     else
                     {
-                        MessageBox.Show(this, "Tên hoặc mật khẩu sai!");
+                        MessageBox.Show(this, "Username or password wrong!");
                         txtpassword.Clear();
                         txtusername.Clear();
                         txtusername.Focus();
@@ -73,7 +73,7 @@ namespace librarysystem
             }
             catch (Exception)
             {
-                MessageBox.Show("Tên đăng nhập và mật khẩu không hợp lệ", "Có lỗi xảy ra");
+                MessageBox.Show("Username or password wrong!");
                 txtusername.Focus();
             }
 

@@ -27,6 +27,7 @@ namespace librarysystem
         private void FrmEmployee_Load(object sender, EventArgs e)
         {
             nhap.loadall(dataGridView1);
+            if (FrmLogin.quyen != "Librarian ") { btnDelete.Enabled = false; btnEdit.Enabled = false; }
 
         }
 

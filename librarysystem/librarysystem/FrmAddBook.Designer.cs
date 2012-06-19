@@ -330,18 +330,18 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(222, 30);
+            this.label10.Location = new System.Drawing.Point(183, 29);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(206, 33);
+            this.label10.Size = new System.Drawing.Size(218, 33);
             this.label10.TabIndex = 4;
             this.label10.Text = "Add New Book";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 151);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 141);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(162, 170);
             this.pictureBox1.TabIndex = 0;
@@ -352,9 +352,9 @@
             this.btnExit.ForeColor = System.Drawing.Color.Blue;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(459, 467);
+            this.btnExit.Location = new System.Drawing.Point(459, 461);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 31);
+            this.btnExit.Size = new System.Drawing.Size(75, 37);
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "     Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -365,9 +365,9 @@
             this.btnReset.ForeColor = System.Drawing.Color.Blue;
             this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Location = new System.Drawing.Point(273, 467);
+            this.btnReset.Location = new System.Drawing.Point(273, 461);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(80, 31);
+            this.btnReset.Size = new System.Drawing.Size(80, 37);
             this.btnReset.TabIndex = 2;
             this.btnReset.Text = "     Reset";
             this.btnReset.UseVisualStyleBackColor = true;
@@ -376,11 +376,12 @@
             // btnAdd
             // 
             this.btnAdd.ForeColor = System.Drawing.Color.Blue;
+            this.btnAdd.Image = global::librarysystem.Properties.Resources.add;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdd.ImageKey = "(none)";
-            this.btnAdd.Location = new System.Drawing.Point(76, 467);
+            this.btnAdd.Location = new System.Drawing.Point(76, 461);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 31);
+            this.btnAdd.Size = new System.Drawing.Size(75, 37);
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "     Add";
             this.btnAdd.UseVisualStyleBackColor = true;
