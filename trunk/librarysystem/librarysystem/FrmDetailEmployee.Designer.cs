@@ -335,7 +335,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmDetailEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmDetailEmployee";
+            this.Text = "Detail Employee";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

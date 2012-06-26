@@ -67,6 +67,13 @@ namespace librarysystem.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap About {
+            get {
+                object obj = ResourceManager.GetObject("About", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap accept {
             get {
                 object obj = ResourceManager.GetObject("accept", resourceCulture);
@@ -84,6 +91,13 @@ namespace librarysystem.Properties {
         internal static System.Drawing.Bitmap add {
             get {
                 object obj = ResourceManager.GetObject("add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap add1 {
+            get {
+                object obj = ResourceManager.GetObject("add1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,6 +137,34 @@ namespace librarysystem.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap Book {
+            get {
+                object obj = ResourceManager.GetObject("Book", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Books {
+            get {
+                object obj = ResourceManager.GetObject("Books", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Borrow {
+            get {
+                object obj = ResourceManager.GetObject("Borrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap BorrowBook {
+            get {
+                object obj = ResourceManager.GetObject("BorrowBook", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap chart_pie {
             get {
                 object obj = ResourceManager.GetObject("chart_pie", resourceCulture);
@@ -154,6 +196,13 @@ namespace librarysystem.Properties {
         internal static System.Drawing.Bitmap corner_of_a_book_wallpaper_422_14806 {
             get {
                 object obj = ResourceManager.GetObject("corner-of-a-book-wallpaper_422_14806", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap CSDLMain {
+            get {
+                object obj = ResourceManager.GetObject("CSDLMain", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -214,6 +263,20 @@ namespace librarysystem.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap Employee {
+            get {
+                object obj = ResourceManager.GetObject("Employee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Employee1 {
+            get {
+                object obj = ResourceManager.GetObject("Employee1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap Fee {
             get {
                 object obj = ResourceManager.GetObject("Fee", resourceCulture);
@@ -263,6 +326,13 @@ namespace librarysystem.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap Main {
+            get {
+                object obj = ResourceManager.GetObject("Main", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap Quit {
             get {
                 object obj = ResourceManager.GetObject("Quit", resourceCulture);
@@ -287,6 +357,13 @@ namespace librarysystem.Properties {
         internal static System.Drawing.Bitmap Search {
             get {
                 object obj = ResourceManager.GetObject("Search", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Subject {
+            get {
+                object obj = ResourceManager.GetObject("Subject", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

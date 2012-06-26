@@ -133,6 +133,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DsAnalytic.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAddBook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -306,6 +312,9 @@
     <EmbeddedResource Include="CRTopBorrow.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CRTopBorrow.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAddBook.resx">
       <DependentUpon>FrmAddBook.cs</DependentUpon>
@@ -562,6 +571,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\corner-of-a-book-wallpaper_422_14806.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BorrowBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Employee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subject.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Employee1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borrow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CSDLMain.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

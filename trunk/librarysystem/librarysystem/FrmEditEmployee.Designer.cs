@@ -369,7 +369,7 @@
             this.Controls.Add(this.btnCancel);
             this.Name = "FrmEditEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmEditEmployee";
+            this.Text = "Edit Employee";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.systemlibraryDataSet1)).EndInit();

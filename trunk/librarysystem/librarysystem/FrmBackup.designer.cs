@@ -30,12 +30,12 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnBackup = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtPath = new System.Windows.Forms.TextBox();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.btnSelectfile = new System.Windows.Forms.Button();
             this.btnRestore = new System.Windows.Forms.Button();
-            this.btnBackup = new System.Windows.Forms.Button();
+            this.txtPath = new System.Windows.Forms.TextBox();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +62,20 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "BackUp";
             // 
+            // btnBackup
+            // 
+            this.btnBackup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBackup.Image = global::librarysystem.Properties.Resources.Database2;
+            this.btnBackup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBackup.Location = new System.Drawing.Point(25, 50);
+            this.btnBackup.Name = "btnBackup";
+            this.btnBackup.Size = new System.Drawing.Size(240, 59);
+            this.btnBackup.TabIndex = 1;
+            this.btnBackup.Text = "Create a new file BackUp";
+            this.btnBackup.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBackup.UseVisualStyleBackColor = true;
+            this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnSelectfile);
@@ -74,27 +88,6 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Restore";
-            // 
-            // txtPath
-            // 
-            this.txtPath.Location = new System.Drawing.Point(23, 28);
-            this.txtPath.Name = "txtPath";
-            this.txtPath.Size = new System.Drawing.Size(236, 20);
-            this.txtPath.TabIndex = 1;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.ForeColor = System.Drawing.Color.Blue;
-            this.btnCancel.Image = global::librarysystem.Properties.Resources.back;
-            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancel.Location = new System.Drawing.Point(344, 233);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(85, 31);
-            this.btnCancel.TabIndex = 4;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnSelectfile
             // 
@@ -123,19 +116,26 @@
             this.btnRestore.UseVisualStyleBackColor = true;
             this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
             // 
-            // btnBackup
+            // txtPath
             // 
-            this.btnBackup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBackup.Image = global::librarysystem.Properties.Resources.Database2;
-            this.btnBackup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBackup.Location = new System.Drawing.Point(25, 50);
-            this.btnBackup.Name = "btnBackup";
-            this.btnBackup.Size = new System.Drawing.Size(240, 59);
-            this.btnBackup.TabIndex = 1;
-            this.btnBackup.Text = "Create a new file BackUp";
-            this.btnBackup.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBackup.UseVisualStyleBackColor = true;
-            this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
+            this.txtPath.Location = new System.Drawing.Point(23, 28);
+            this.txtPath.Name = "txtPath";
+            this.txtPath.Size = new System.Drawing.Size(236, 20);
+            this.txtPath.TabIndex = 1;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.ForeColor = System.Drawing.Color.Blue;
+            this.btnCancel.Image = global::librarysystem.Properties.Resources.back;
+            this.btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancel.Location = new System.Drawing.Point(344, 233);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(85, 31);
+            this.btnCancel.TabIndex = 4;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // frmBackup
             // 
@@ -148,6 +148,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "frmBackup";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BackUp";
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

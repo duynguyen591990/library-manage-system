@@ -317,7 +317,6 @@
             // 
             // btnBookSearch
             // 
-            this.btnBookSearch.Image = global::librarysystem.Properties.Resources.Search;
             this.btnBookSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBookSearch.ImageKey = "(none)";
             this.btnBookSearch.Location = new System.Drawing.Point(27, 24);
@@ -422,7 +421,6 @@
             // 
             // btnSearchBorrow
             // 
-            this.btnSearchBorrow.Image = global::librarysystem.Properties.Resources.Search;
             this.btnSearchBorrow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSearchBorrow.ImageKey = "(none)";
             this.btnSearchBorrow.Location = new System.Drawing.Point(26, 23);
@@ -501,7 +499,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FrmCheckIn";
-            this.Text = "Employee Search";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Check In";
             this.Load += new System.EventHandler(this.FrmCheckIn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox3.ResumeLayout(false);

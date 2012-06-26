@@ -376,14 +376,14 @@
             // btnAdd
             // 
             this.btnAdd.ForeColor = System.Drawing.Color.Blue;
-            this.btnAdd.Image = global::librarysystem.Properties.Resources.add;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdd.ImageKey = "(none)";
             this.btnAdd.Location = new System.Drawing.Point(76, 461);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 37);
             this.btnAdd.TabIndex = 1;
-            this.btnAdd.Text = "     Add";
+            this.btnAdd.Text = " Add";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -400,7 +400,8 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmAddBook";
-            this.Text = "FrmAddBook";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Add Book";
             this.Load += new System.EventHandler(this.FrmAddBook_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

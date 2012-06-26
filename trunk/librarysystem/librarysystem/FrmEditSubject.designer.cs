@@ -166,7 +166,8 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.label1);
             this.Name = "FrmEditSubject";
-            this.Text = "FrmEditSubject";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Edit Subject";
             this.Load += new System.EventHandler(this.FrmEditSubject_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

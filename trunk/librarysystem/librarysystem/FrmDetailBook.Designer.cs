@@ -321,7 +321,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "FrmDetailBook";
-            this.Text = "FrmDetailBook";
+            this.Text = "Detail Book";
             this.Load += new System.EventHandler(this.FrmDetailBook_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

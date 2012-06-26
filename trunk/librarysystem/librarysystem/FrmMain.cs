@@ -45,7 +45,10 @@ namespace librarysystem
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Do you want to close the program?", "Notice", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void analyticToolStripMenuItem_Click(object sender, EventArgs e)
@@ -83,23 +86,9 @@ namespace librarysystem
             frm.Show();
             this.Hide();
         }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            string text = label1.Text;
-           label1.Text = text.Substring(1,text.Length-1)+text.Substring(0,1);
-           // label1.Left += 10;
-        }
-
         private void guideToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("Guide.docx");
-        }
-
-        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
-        {
-            //FrmLogin.Username=text
-            
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
@@ -108,48 +97,6 @@ namespace librarysystem
             toolStripStatusLabel1.Text=FrmLogin.Username+" Online!";
             if (FrmLogin.quyen != "Librarian ") { backUpDatabaseToolStripMenuItem.Enabled = false; }
         }
-
-        private void btnBackup_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                string sqlBackup = "BACKUP DATABASE [systemlibrary] TO DISK='D:\\library-manage-system\\librarysystem\\systemlibrary.bak'";
-                SqlConnection con = new SqlConnection("Data Source=DEll-PC;Initial Catalog=systemlibrary;Integrated Security=True");
-                con.Open();
-                SqlCommand cmd = new SqlCommand(sqlBackup, con);
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("Backup Database Successfull!");
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show(ex.Message, "Backup Database");
-                return;
-            }
-        }
-
-        private void btnRestore_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                string path = "D:\\library-manage-system\\librarysystem\\systemlibrary.bak";
-                string sqlRestore = "Use master Restore Database [systemlibrary] from disk='" + path + "'";
-                SqlConnection con = new SqlConnection("Data Source=DEll-PC;Initial Catalog=systemlibrary;Integrated Security=True");
-                con.Open();
-
-                SqlCommand cmd = new SqlCommand(sqlRestore, con);
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("Database restore successfull ");
-
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show(ex.Message, "Restore Database");
-                return;
-            }
-        }
-
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DisableMenu();
@@ -166,6 +113,13 @@ namespace librarysystem
         {
             frmBackup backup = new frmBackup();
             backup.Show();
+            this.Hide();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAbout fa = new frmAbout();
+            fa.Show();
             this.Hide();
         }   
     }

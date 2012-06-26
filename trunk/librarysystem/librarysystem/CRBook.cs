@@ -35,7 +35,7 @@ namespace librarysystem
             crystalReportViewer1.Show();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             FrmMain frm = new FrmMain();
             frm.Show();

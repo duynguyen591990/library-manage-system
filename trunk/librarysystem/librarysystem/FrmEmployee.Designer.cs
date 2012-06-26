@@ -64,9 +64,9 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(33, 74);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 87);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(764, 327);
+            this.dataGridView1.Size = new System.Drawing.Size(654, 314);
             this.dataGridView1.TabIndex = 8;
             // 
             // employeeBindingSource3
@@ -105,7 +105,7 @@
             this.btnAdd.ForeColor = System.Drawing.Color.Blue;
             this.btnAdd.Image = global::librarysystem.Properties.Resources.add;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(225, 463);
+            this.btnAdd.Location = new System.Drawing.Point(166, 462);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 36);
             this.btnAdd.TabIndex = 9;
@@ -120,7 +120,7 @@
             this.btnEdit.ForeColor = System.Drawing.Color.Blue;
             this.btnEdit.Image = global::librarysystem.Properties.Resources.Edit;
             this.btnEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEdit.Location = new System.Drawing.Point(378, 463);
+            this.btnEdit.Location = new System.Drawing.Point(319, 462);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(67, 36);
             this.btnEdit.TabIndex = 10;
@@ -135,7 +135,7 @@
             this.btnDelete.ForeColor = System.Drawing.Color.Blue;
             this.btnDelete.Image = global::librarysystem.Properties.Resources.Delete;
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelete.Location = new System.Drawing.Point(534, 463);
+            this.btnDelete.Location = new System.Drawing.Point(475, 462);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 36);
             this.btnDelete.TabIndex = 11;
@@ -150,7 +150,7 @@
             this.btnShow.ForeColor = System.Drawing.Color.Blue;
             this.btnShow.Image = global::librarysystem.Properties.Resources.View;
             this.btnShow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnShow.Location = new System.Drawing.Point(71, 463);
+            this.btnShow.Location = new System.Drawing.Point(12, 462);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(75, 36);
             this.btnShow.TabIndex = 12;
@@ -165,7 +165,7 @@
             this.btnSearch.ForeColor = System.Drawing.Color.Blue;
             this.btnSearch.Image = global::librarysystem.Properties.Resources.Search;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(534, 407);
+            this.btnSearch.Location = new System.Drawing.Point(381, 406);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 35);
             this.btnSearch.TabIndex = 13;
@@ -181,7 +181,7 @@
             // txtSearch
             // 
             this.txtSearch.ForeColor = System.Drawing.Color.Blue;
-            this.txtSearch.Location = new System.Drawing.Point(332, 419);
+            this.txtSearch.Location = new System.Drawing.Point(179, 418);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(177, 20);
             this.txtSearch.TabIndex = 14;
@@ -193,7 +193,7 @@
             this.cboList.Items.AddRange(new object[] {
             "ID",
             "Name"});
-            this.cboList.Location = new System.Drawing.Point(257, 418);
+            this.cboList.Location = new System.Drawing.Point(104, 417);
             this.cboList.Name = "cboList";
             this.cboList.Size = new System.Drawing.Size(59, 21);
             this.cboList.TabIndex = 15;
@@ -218,7 +218,7 @@
             this.btnExit.ForeColor = System.Drawing.Color.Blue;
             this.btnExit.Image = global::librarysystem.Properties.Resources.back2;
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(672, 463);
+            this.btnExit.Location = new System.Drawing.Point(613, 462);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(60, 36);
             this.btnExit.TabIndex = 16;
@@ -229,21 +229,20 @@
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(269, 22);
+            this.label4.Image = global::librarysystem.Properties.Resources.Employee1;
+            this.label4.Location = new System.Drawing.Point(2, -1);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(319, 33);
+            this.label4.Size = new System.Drawing.Size(671, 85);
             this.label4.TabIndex = 17;
-            this.label4.Text = "Employee Information";
             // 
             // FrmEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(823, 533);
+            this.ClientSize = new System.Drawing.Size(678, 533);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.cboList);
@@ -256,7 +255,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "FrmEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmEmployee";
+            this.Text = "Employee Management";
             this.Load += new System.EventHandler(this.FrmEmployee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource3)).EndInit();
