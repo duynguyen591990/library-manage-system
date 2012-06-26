@@ -405,7 +405,8 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnReset);
             this.Name = "FrmEditBook";
-            this.Text = "FrmEditBook";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Edit Book";
             this.Load += new System.EventHandler(this.FrmEditBook_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

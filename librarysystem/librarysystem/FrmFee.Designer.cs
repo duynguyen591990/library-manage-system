@@ -180,7 +180,8 @@
             this.Controls.Add(this.btnChange);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmFee";
-            this.Text = "FrmFee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Fee";
             this.Load += new System.EventHandler(this.FrmFee_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

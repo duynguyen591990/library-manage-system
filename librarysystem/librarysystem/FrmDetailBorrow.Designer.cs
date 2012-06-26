@@ -587,7 +587,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmDetailBorrow";
-            this.Text = "FrmDetailBorrow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Detail Borrow";
             this.Load += new System.EventHandler(this.FrmDetailBorrow_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

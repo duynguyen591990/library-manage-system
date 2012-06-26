@@ -108,7 +108,6 @@
             // 
             // btnBookSearch
             // 
-            this.btnBookSearch.Image = global::librarysystem.Properties.Resources.Search;
             this.btnBookSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBookSearch.ImageKey = "(none)";
             this.btnBookSearch.Location = new System.Drawing.Point(99, 12);
@@ -453,7 +452,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmCheckOut";
-            this.Text = "FrmCheckOut";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Check Out";
             this.Load += new System.EventHandler(this.FrmCheckOut_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

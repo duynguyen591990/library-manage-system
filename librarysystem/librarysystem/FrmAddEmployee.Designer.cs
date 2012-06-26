@@ -337,7 +337,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmAddEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmAddEmployee";
+            this.Text = "Add Employee";
             this.Load += new System.EventHandler(this.AddEmployee_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -164,7 +164,8 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.label1);
             this.Name = "FrmAddSubject";
-            this.Text = "FrmAddSubject";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Add Subject";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

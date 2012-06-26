@@ -168,7 +168,7 @@
             this.Controls.Add(this.dgv);
             this.Name = "FrmAnalytic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmAnalytic";
+            this.Text = "Analytic";
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

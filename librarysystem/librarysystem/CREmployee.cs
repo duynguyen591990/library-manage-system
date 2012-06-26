@@ -33,5 +33,12 @@ namespace librarysystem
             CrReportEmployee.ReportSource = rpt;
             CrReportEmployee.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmMain frm = new FrmMain();
+            frm.Show();
+            this.Dispose();
+        }
     }
 }
